@@ -1,0 +1,101 @@
+
+
+## Managing Context Limits and Memory: Restart, Summarise, Persist
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+A conversation holds a finite working space. Everything said, attached and produced so far is what Claude is working with. Very long conversations approach the platform's length and usage limits, and longer ones consume more of the usage allowance. Separately, claude.ai has memory across chats. Chat search is prompted retrieval, where you ask Claude to find something in past conversations.
+
+This lesson uses one made-up example throughout: a greengrocer who has planned the shop's Christmas veg boxes in one very long chat since August. The chat holds supplier choices, three abandoned box designs, the agreed contents and a much-revised price list.
+
+When a conversation reaches its length limit, the official guidance gives two options. Start a new conversation, or use a Project to work with larger amounts of information. Treat a long conversation like a long meeting. Know that it will end, and decide what must remain after it ends.
+
+## The Three Moves
+Restart when a piece of work is done, when the chat holds abandoned approaches and superseded drafts, or when it nears its limits. A marathon chat is a very long chat. It carries everything that has ever been in it, including the greengrocer's three abandoned designs. A clean start with exactly the right context is better than a marathon chat.
+
+Summarise before you leave the chat: have Claude summarise the decisions made, the current state and what remains. Then verify the summary yourself against the source records. The summary contains every uncorrected error from the chat that it summarises. The greengrocer verifies her summary against supplier emails and invoices. The verified summary becomes the new chat's opening brief.
+
+Persist any specific working output that the next conversation will need. Paste it into the next conversation, re-attach the file, or store it in Project knowledge, where every chat in the Project starts with it. A standing document that keeps being revised and shared has a fourth place: an artifact. In an artifact, you iterate on the document as one evolving version. The greengrocer pastes the agreed contents into the new chat. She makes the staff's weekly price list an artifact, and she stores the supplier list in Project knowledge.
+
+## What Memory Carries, and What It Does Not
+Memory is built as a set of individual topics: your role, your projects, your communication preferences, your ongoing work context. It is context about you, not transcripts, drafts or attached documents. Each Project has its own memory. Inside a Project, Claude also uses your memory from chats outside Projects, but never another Project's memory. So memory saves you the work of introducing yourself again. Memory does not reliably carry an approved outline or a data file into the next chat. The greengrocer's new chat may know her shop, but the price list is in the new chat only because she persisted it.
+
+Two out-of-date claims are wrong here, in opposite directions. One claim is that Claude cannot remember anything across chats. The other is that you can trust memory to carry a working document. Persisting a specific working output explicitly remains the dependable pattern.
+
+## In the exam
+This objective tests planning, not repair of damage, and the exam expects you to be precise about what memory holds. Check the question's time frame. A planning question describes work organised for what comes next. Examples include a long piece of work approaching limits, a project entering its final phase and a handover being planned. The greengrocer's case is a planning case. A chat that already produces poor outputs, where you diagnose the problem after it has happened, belongs to Domain 7. The same marathon chat can appear in both kinds of question. The right answer follows the question that the scenario asks. Here the right answer is the proactive practice. Restart deliberately. Summarise, and verify the summary (Domain 2 does not stop at handover). Persist what the next conversation depends on.
+
+Nothing in the official guidance claims that the product degrades in long chats. No right answer relies on that claim. Rollout dates and plan availability are dated facts, and they are on this domain's quick reference.
+The false belief that a new chat loses all context
+"A new conversation would lose all our context" is the best argument for the marathon chat, and it is false. A verified summary and persisted documents carry the context that is worth keeping into the new conversation. They do this at a fraction of the length and the usage.
+
+## Exam Traps
+
+Exam Trap
+Relying on memory or chat search to carry a specific working output into a new chat
+Memory holds context about you as individual topics, not transcripts, drafts or attachments, and chat search is prompted retrieval. A working output the next conversation depends on is transferred by explicit persistence: paste it, re-attach it, or store it in Project knowledge.
+
+Exam Trap
+Pasting an unverified summary into the new conversation as the efficient handover
+The summary contains every uncorrected error in the chat it summarises. Check it against the source records before the new chat relies on it, and paste agreed wording in word for word.
+
+Exam Trap
+Keeping everything in one enormous chat because a restart would lose the context
+This is the habit of keeping one marathon chat, presented as continuity. The chat fills with superseded drafts and abandoned approaches alongside the decisions that matter, approaches length limits, and consumes more usage; summarising and persisting move everything worth keeping into the new chat.
+
+## Practice Scenario
+A wedding coordinator has run one enormous conversation across three months of planning: venue decisions, the running order, the readings, corrections to names. The final month starts now, the chat is full of superseded detail, and the platform length limits are close. Some names and dates were corrected more than once, so any summary of the old chat may carry an outdated version. What is the best plan?
+Option AStart a fresh conversation and rely on memory and chat search to carry the seating plan and running order across, asking Claude to remember the planning details, including the corrected names and readings, before closing down the old three-month chat
+Option BHave Claude summarise decisions and open questions, verify that summary against the booking confirmations, open the final-month conversation from it, and move the seating plan and running order into artifacts and the standing documents into Project knowledge
+Option CAsk Claude for a summary of the planning so far and paste it straight into a new conversation, since Claude wrote the summary from the full history and it is the most reliable record available
+Option DKeep the single conversation going to the wedding day, since every decision lives in it, and a new conversation would lose three months of context
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Run the Handover Discipline on Your Longest Chat
+
+Difficulty
+
+30 minutes
+
+What you'll learn
+How to extract a summary of decisions, current state and remaining work from a long conversation
+How to verify a summary against source records before trusting it
+How to open a fresh conversation from a verified brief
+How to sort working outputs into three groups: paste into the next chat, artifact, and Project knowledge
+How to test what memory does and does not carry into a new chat
+
+Find your longest-running Claude conversation and ask Claude for a summary of the decisions made, the current state, and the open questionsWhy: The summary is the handover document; a long chat holds decisions worth keeping, hidden among detail that is not worth keeping.
+You should see: A structured summary in three parts: decisions, current state, open questions.
+Stuck? Get a nudge
+
+Verify the summary against your source records, the emails, bookings or documents the decisions came from, and correct what it gets wrongWhy: The summary contains every uncorrected error in the chat; verification is what makes it safe to use.
+You should see: A corrected summary, with at least one fix or a note that none was needed.
+Stuck? Get a nudge
+
+Start a fresh conversation opened with the verified summary, and note what the clean start changes about the first few responsesWhy: Experiencing the difference between a clean brief and a marathon chat makes the restart decision concrete.
+You should see: Responses working from exactly the context you chose to carry, with no superseded material.
+Stuck? Get a nudge
+
+Sort the old chat working outputs into where they belong: what gets pasted into the next chat once, what becomes an artifact because it keeps being revised and shared, and what belongs in Project knowledge because every future chat needs itWhy: Persistence is a decision about where each output goes; each place suits outputs that are used for a different length of time.
+You should see: Each significant output assigned one place, with the artifacts created and the Project knowledge stored.
+Stuck? Get a nudge
+
+Check what memory contributes at the fresh start: note what Claude usefully knows about you and your project, and confirm the working outputs themselves arrived only because you persisted themWhy: Seeing the boundary in your own work helps you remember the distinction the exam tests: memory carries context about you, persistence carries the work.
+You should see: A two-line note: what memory supplied, and what explicit persistence supplied.
+Stuck? Get a nudge
+
+## Sources
+How do usage and length limits work? — Anthropic
+Use Claude's chat search and memory to build on previous context — Anthropic
+Bringing memory to Claude — Anthropic
+What are projects? — Anthropic
+What are artifacts and how do I use them? — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonAligning Model Choice with Cost, Speed and QualityNext LessonAnalysing Requirements and Use Cases

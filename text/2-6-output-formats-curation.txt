@@ -1,0 +1,104 @@
+
+
+## Curating Information and Selecting Output Formats
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+A long, productive conversation is not a deliverable. Its findings, decisions and usable text are mixed with failed approaches and replaced drafts. Two deliberate acts turn the conversation into a deliverable, and neither act happens automatically. Curation extracts what the deliverable needs. Format selection gives the deliverable the container that its reader will use: an inline chat response, a structured table or an artifact. An artifact is substantial, standalone content that Claude puts in a dedicated window, separate from the conversation.
+
+This lesson uses one made-up example throughout: a plumbing firm. Its office manager has spent weeks planning winter work with Claude. Three outputs are due. A customer wants to know today whether the boiler service includes a flue check. The owner must choose between three boiler suppliers on price, warranty and delivery time. The plumbers need the winter call-out procedure, which the firm revises every autumn.
+
+## From Working Material to Work Product
+Curation starts from the deliverable, not the conversation. Ask who reads it, what they do with it, and whether it will be reused or revised. Then extract exactly what that reader needs, and shape it into its final container. Forwarding the whole conversation, or leaving the deliverable scattered across it, delegates the curation to the reader. The reader will not do the curation. So next month's colleague scrolls thirty screenfuls and searches for the decisions.
+
+Most of a working conversation is scaffolding: material that helped you reach the decisions. So curation is selective on purpose. The deliverable gives its reader the decisions alone. The plumbers get the final call-out steps, not the drafts.
+
+## The Three Format Homes
+The Help Center's definition of artifacts is also the selection rule. Artifacts suit significant, self-contained content you are likely to edit, iterate on or reuse outside the conversation. The opposite of this rule defines the other two containers.
+
+An inline chat response fits quick, one-off answers that the reader uses at once: a fact, a short explanation, text to paste and send immediately. A structured table fits anything the reader compares or scans: options against criteria, items with consistent attributes, schedules. If the reader needs rows and columns, prose is the wrong container. An artifact fits a standalone document, plan or reference page that stays in use: it is revised, reused or shared as a thing in itself.
+
+The choice follows the reader's use: inline for content the reader uses once, a table for content the reader compares and scans, and an artifact for content the reader reuses and revises. So the flue-check answer goes inline, the supplier choice becomes a table with the criteria as columns, and the call-out procedure becomes an artifact.
+
+## The Artifact's Life
+An artifact is useful because of what happens after the first draft. You can ask Claude to change it, or you can edit a document, deck or design directly. The deliverable then changes as one thing, not as fragments that you paste again into the chat. To try a different direction without losing what you have, edit an earlier message. Editing an earlier message creates a different version of the chat with its own artifacts. The original version stays where it was. When you share the artifact, it gets a link that other people can open.
+
+For shared work, a colleague who receives a runbook next year opens the current document. Next autumn, the plumbing firm's manager opens one revised call-out procedure. The format choice is also reversible, and it is always your decision. If useful content arrived inline, one message that asks Claude to convert it into an artifact is enough.
+
+## What Each Mismatch Costs
+Each wrong format has a predictable cost. A reusable runbook that stays as plain text in the chat is lost and then created again. A comparison delivered as paragraphs makes every reader rebuild the table in their head, and some rebuild it wrongly. Putting everything in a table puts judgements that need full sentences into cells that are too small for them. Putting everything in an artifact adds needless formality to one-off answers, such as the flue-check reply. Choose the format by the reader's use, never by habit.
+
+## In the exam
+The exam tests format selection through these failure modes. This objective is about choosing the shape of the output. Choosing the product feature or model for the task is Domain 3. That domain covers a Project for recurring context, Research for a cited report, and which model to use. A format question may mention those features in its scenario. The right answer is always about the container the reader receives.
+Key Concept
+For every output, ask one question: what does the reader do with this? Read it once, compare across it, or return to it? The answer decides the format, and it overrides every default. Exam questions reward matching each output to its use. They penalise both prose chosen without thought and structure added automatically.
+
+Current state: artifacts changed in September 2026
+Anthropic reworked artifacts on 16 September 2026. They are now designs, decks, documents, dashboards and small tools made in any conversation. Artifacts made in a chat before that date are "legacy": they can still be opened and shared, but no more can be made. The earlier Help Center article described a version selector for switching versions. The current article, checked 28 September 2026, no longer documents one. The exam guide names artifacts only as an output format, so no right answer depends on that control. Where these lessons talk about comparing versions, they mean the branching described above.
+
+## Exam Traps
+
+Exam Trap
+Answering a format question with Projects, Research mode or a model choice
+Choosing the product feature or model for the task is Domain 3. When a question asks how information should be organised or delivered, the answer is about the output's container: inline, table or artifact, matched to the reader's use.
+
+Exam Trap
+Defaulting every output to the same container
+Artifacts for everything add needless formality to one-off answers, and tables for everything force narrative judgement into cells. Options that use one format for everything sound systematic and safe, which makes them tempting. Vary the format with the use.
+
+Exam Trap
+Sharing the whole conversation instead of curating the deliverable
+Forwarding weeks of working material delegates the curation to readers who will not do it: the decisions stay hidden among failed approaches and superseded drafts. Extract what each reader needs into the container that fits their use.
+
+## Practice Scenario
+A swimming club's gala organiser has weeks of Claude conversations about the annual gala. Three outputs are now needed: the agreed start time for tonight's committee question, a comparison of three candidate dates against pool availability, volunteer numbers and fixture clashes, and the gala-day runbook that will be revised and reused every year. She wants each in the simplest form its use allows, and her successor must be able to receive the runbook and edit it. Which formats fit?
+Option ACreate artifacts for all three outputs so that nothing is lost and every answer stays permanently available in one dedicated place the whole committee can open
+Option BReply to all three needs in chat prose and share the conversation with the committee, so that members can read the full context and history behind each answer for themselves
+Option CAnswer the start time inline, put the three dates in a table with the criteria as columns, and build the runbook as an artifact revised in place each year
+Option DPut all three outputs into tables, since structured formats are easier to scan than prose, and a committee that is short of time can find each answer very quickly
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Curate One Deliverable Out of a Working Chat
+
+Difficulty
+
+30 minutes
+
+What you'll learn
+How to identify what a conversation must produce for its readers
+How to match each output to inline, table or artifact by use
+How to iterate a deliverable as one artifact that changes with each revision
+How to test a format choice by retrieving the output later
+
+Pick a real multi-session piece of work you have discussed with Claude: an event, a project, a recurring reportWhy: Curation only shows its value with a conversation long enough that things are hard to find in it.
+You should see: A working conversation with findings, decisions and drafts scattered through it.
+Stuck? Get a nudge
+
+List the three outputs it must actually produce: something used at once, something a reader will compare, and something that will be reused or revisedWhy: Starting from the deliverables, not the conversation, is the curation habit itself.
+You should see: Three one-line output descriptions, each named with its reader and their use.
+Stuck? Get a nudge
+
+Get the quick answer inline, and direct the comparison into a table with the decision criteria as columnsWhy: Practising the two lighter formats shows how little formality the quick answer and the comparison need.
+You should see: A one-line inline answer, and a table the reader can scan without rebuilding it mentally.
+Stuck? Get a nudge
+
+Have the reusable piece created as an artifact, ask for one revision, then edit your earlier message to branch the chat and confirm the first draft is still thereWhy: The artifact proves its value through revision; a revision you can compare with the first draft shows that the deliverable now changes in place.
+You should see: One artifact revised in place, with the first draft still reachable on its own branch, not fragments re-pasted through the chat.
+Stuck? Get a nudge
+
+A week later, retrieve all three outputs and note which format made retrieval trivialWhy: Retrieval is the real test of a format choice; the cost of a wrong format only shows when you return for the content.
+You should see: A short note: what was instant, what you had to search for, and what that says about the format chosen.
+Stuck? Get a nudge
+
+## Sources
+What are artifacts and how do I use them? — Anthropic
+Share artifacts — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonEditing, Adapting and Comparing Outputs for the AudienceNext LessonSelecting the Right Claude Product Feature

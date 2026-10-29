@@ -1,0 +1,104 @@
+
+
+## Optimising Workflows for Efficiency and Effectiveness
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+Overhead is anything you type, explain or attach at the start of every similar conversation. Optimising means making your work with Claude cost less time or usage. To measure the overhead, you time it and count how often it recurs. This objective covers how you work with Claude, not the business process around it (Domain 4.2).
+
+This lesson uses one made-up example throughout: a kitchen fitter who drafts customer quotes with Claude. Each quote conversation opens with how his business works and prices a job, plus the same price list and catalogue. Timed, that is about ten minutes, three or four times a week.
+
+## Measure First
+Optimising differs from fiddling because it starts from a measured number. His measured ten minutes justify moving the preamble, his repeated opening text, to a permanent place. "Quoting feels clunky" justifies nothing yet except timing it. This is the honesty rule from Domain 4.5, applied to your own workflow. Improve what you have observed, and claim no saving that you did not measure.
+
+## The Repeated-Overhead Test
+Within a single conversation, Claude remembers the context from earlier messages. The fitter's preamble recurs because he types it again at the start of each new quote conversation. Recurring overhead belongs somewhere it only has to exist once.
+
+Put context and rules that stay the same, such as his pricing rules, in a Project's instructions. Anthropic describes these instructions as tailoring Claude's responses for each project. These instructions suit work that needs Claude to keep consistent context across many conversations in the same Project. Put recurring reference material, such as his price list, in Project knowledge. Project knowledge makes the Project a self-contained workspace. A request that you make in nearly the same words every week becomes a saved form. You adapt that form per use. Put preferences that apply to everything you do in the account-wide personalisation settings. There, the preferences apply to all conversations.
+
+## Batch Related Requests, and Name Your Files
+Two documented methods take minutes to apply. The first method is batching. Anthropic's usage guidance says to group multiple related tasks or questions in a single message rather than splitting them across exchanges. It also says to be specific and concise, because Claude can need clarification after vague queries. The fitter asks for the quote and cover email in one message. Anthropic's article on usage and length limits adds that longer conversations which trigger automatic context management consume more of your usage limit. So long working chats are untidy and also use more of your usage limit.
+
+The second method is file names. In a large Project, retrieval decides which material Claude uses. Anthropic states that well-named files help Claude understand and retrieve the right information. Anthropic states this alongside two other practices: referencing documents by name and grouping related documents in the same Project. The fitter renames "pl_v3_final" to "Worktop price list". Renaming a file so a stranger could tell what it contains is a real optimisation with a documented mechanism.
+
+## Match the Settings to the Work
+Running everything at one setting causes problems with both routine work and deep analysis. Higher effort produces more thorough responses but takes longer and uses more of your usage allowance. Routine reformatting at maximum effort spends usage on depth that it never uses. Deep analysis that is rushed at a low setting is too shallow for the task. A pattern of slow, over-worked responses to routine work, such as his quote reformatting, is itself the measurement. That measurement shows a mismatched setting.
+
+## The Proportion Rule
+Some overhead is not worth removing. A twenty-minute task the fitter does once a year does not justify a Project, a saved form or an afternoon of setup. The saving never repays the setup, and the artefact he maintains becomes out of date between uses. Recognising the optimisation that costs more than it saves is as professional as spotting the one that saves more.
+
+## In the exam
+Most questions depend on whether the option in front of you has a number. The exam tests whether you notice, from a symptom or a measurement, where an optimisation belongs. This includes which piece of a repeated preamble belongs at which level. Sometimes an optimisation belongs nowhere. In this domain's hardest questions, the right answer is to decide, on the numbers, not to optimise. Choosing model and effort belongs to Domain 3.3, and writing the configuration belongs to Domain 5.
+Key Concept
+In 7.3 questions, look for the measurement. The right answer moves measured, recurring overhead to a place where it exists once, or declines a setup that costs more than it saves. Wrong options optimise something untimed, such as an unmeasured reorganisation, or they optimise everything indiscriminately.
+
+## Exam Traps
+
+Exam Trap
+Sweeping workflow changes proposed on the basis of a feeling
+Without a measurement there is no baseline, no way to know whether the change helped, and no honest claim to have saved anything. Time the work first; measure before you reorganise.
+
+Exam Trap
+Building a Project or saved form for a task done twice a year
+Setup and upkeep that exceed the overhead they remove are a cost that looks like an improvement, and the artefact becomes out of date between uses. The proportion rule says leave the rare task alone.
+
+Exam Trap
+Raising effort or switching model to speed up a workflow whose overhead is a repeated preamble
+Neither effort nor a model change gives Claude context it was never given, so the preamble would still be needed. A Project’s instructions and knowledge hold it once. Higher effort also takes longer and uses more of your usage allowance.
+
+## Practice Scenario
+A city farm’s development officer starts every funder conversation the same way: explaining what the farm is and which programmes it runs, then attaching the same three documents. Timed, that comes to about ten minutes, three or four times a week. Each January she also spends twenty minutes preparing the farm’s annual return for the charity regulator. She will put effort only into what her timings show is costing time, and only where the saving outweighs the set-up. What is the most appropriate optimisation?
+Option ACreate a funding Project, with the standing explanation in its instructions, the three documents in its knowledge, and a saved version of her usual request to adapt
+Option BRaise the effort setting for funder conversations so the drafts come back more thorough and fewer rounds are needed
+Option CSet up Projects and saved request forms for every task she repeats at any interval, including the January annual return, so nothing she does regularly ever starts from a blank conversation again
+Option DReorganise her whole working week around Claude first, then time the results afterwards to see how much the changes saved
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Time the Overhead, Then Place It or Leave It
+
+Difficulty
+
+30 minutes, spread over a week
+
+What you'll learn
+How to measure repeated overhead honestly
+How to place each piece of overhead at the level where it exists once
+How to use file names as a way to improve retrieval
+How to apply the proportion rule and decline an optimisation
+
+For one week, note what you type, explain or attach at the start of every similar Claude conversation, and time it honestlyWhy: Optimisation starts from a measurement; the week of notes turns a feeling of clunkiness into numbers you can act on.
+You should see: A short list of recurring overhead items, each with a rough time cost and how often it recurs.
+Stuck? Get a nudge
+
+Apply the repeated-overhead test to each item: context that stays the same belongs in a Project’s instructions, recurring reference material in its knowledge, and a near-identical weekly request in a saved form you adaptWhy: Each kind of overhead has a level where it only has to exist once, and placing it wrongly means either repeating it anyway or putting it where it does not apply.
+You should see: Each overhead item labelled with its destination: instructions, knowledge, saved form, or account-wide preferences.
+Stuck? Get a nudge
+
+Check the names of any files already in your Projects, and rename anything a stranger could not identify from its filename aloneWhy: Retrieval decides which material Claude works from in a large Project, and well-named files are a documented input to getting the right one.
+You should see: File names that state what each document contains, replacing versions, initials and abbreviations only you understand.
+Stuck? Get a nudge
+
+Find one repeated task you run at a mismatched setting: routine work at maximum effort, or deep analysis rushed at a low setting, and match the setting to the workWhy: Settings mismatched to the work waste time and usage in one direction and quality in the other; a pattern of over-worked routine responses is itself a measurement.
+You should see: One task moved to a setting that fits it, with a note of what changed in speed or depth.
+Stuck? Get a nudge
+
+Pick your rarest repeated task and do the proportion arithmetic: if the setup would cost more than a year of the overhead it removes, leave it alone and note that you decided toWhy: Declining an optimisation on the numbers is the discipline that separates professional optimisation from adding setup that costs more than it saves.
+You should see: A one-line record of the task, the arithmetic, and the deliberate decision not to optimise it.
+Stuck? Get a nudge
+
+## Sources
+What are projects? — Anthropic
+Understanding Claude's personalization features — Anthropic
+Usage limit best practices — Anthropic
+How do usage and length limits work? — Anthropic
+Retrieval augmented generation (RAG) for projects — Anthropic
+Change the model, effort, and thinking settings — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic. The measure-first and proportion rules draw on the exam guide's objective and standard practice. The batching, file-naming, instruction and settings levers come from the Help Center articles above.
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonAdjusting Your Approach Based on Feedback and Results

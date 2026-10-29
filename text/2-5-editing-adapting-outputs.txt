@@ -1,0 +1,106 @@
+
+
+## Editing, Adapting and Comparing Outputs for the Audience
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+Editing an output means deciding what reaches the reader, and in what form. Adapting means changing the delivery for one reader while keeping the substance. Earlier objectives in this domain asked whether an output is right. This objective asks whether it is right for its reader. That judgement is editorial, and it is yours. Claude drafts, and you edit.
+
+This lesson uses one made-up example throughout: a veterinary practice that asks Claude for a discharge note to a dog's owner after surgery. The draft is accurate but clinical, and the warning signs are halfway down page two.
+
+## You Are the Editor
+Claude's draft is unfinished material. Official documentation describes Claude as a partner for drafting and rewriting. Claude can produce anything from an email to a screenplay, and it can rework its answers on request. Claude does not make the final decision. That decision covers what stays, what goes, whether the emphasis is right, and whether this audience will understand and act on the result.
+
+You have two remedies. You can edit the output yourself, or you can direct a revision that names what must change. A directed revision gives Claude follow-up instructions, not a bare request to try again. Knowing which remedy fits is part of the skill. At the practice, moving the warning signs higher is a quick edit. A plain-language rewrite is a revision that you direct.
+
+## Right for Its Reader
+The exam tests whether you recognise that a technically correct output is wrong for its reader. Typical cases are jargon for a non-specialist audience, detail-heavy analysis for an executive with little time, and an internal register (the style of language used inside the organisation) in a customer-facing note. A reader who cannot understand a document cannot act on it. Adapting changes three things. The vocabulary becomes simpler, to match the reader's level. Each sentence holds less information. The order changes so that the urgent item comes first, not in the middle of the document.
+
+Adaptation fails in two directions, both tested. Leaving output that is hard for the reader untouched because it is correct fails the reader. Removing the substance while simplifying fails them too: to make the text easier to read, a serious point is softened until the reader cannot see it. The findings, the recommendations and the costs must stay in the text after any adaptation. A friendly note that drops the warning signs has failed the owner. After adapting, check the new version against the original for anything lost or softened.
+
+## Criteria Before Reading
+When choosing between versions, set the criteria before reading: accuracy preserved, audience fit, tone, completeness, length. Read each version against the list. Defend your choice with the criteria, not with the style. A comparison without criteria chooses the prettiest prose by default. Style is the only comparison that fluent output always wins. So in a comparison without criteria, a fluent version with less content beats a correct one.
+
+Three criteria are usually enough. For the practice, the criteria are: nothing factual lost, the right register for the owner, and warning signs first. The criteria must exist before you read either version, because criteria set afterwards tend to justify the version you already liked.
+
+## Generator, Not Judge
+Claude produces versions in different registers, lengths and structures, and says how they differ. You apply the criteria and choose a version. The practice does this when it chooses between a short note and a long one. Asking Claude which of its versions is better gives Claude the judgement that this objective certifies. Claude's assessment of its own work is not a reliable signal either. Objective 2.3 covers this limitation. In Artifacts, document versions appear side by side, and earlier versions remain retrievable. So Artifacts suit this pattern.
+
+## In the exam
+The guide describes Associate-level professionals as distinguished by their ability to critically evaluate AI-generated content and adapt outputs for different audiences.
+
+Giving Claude clearer feedback so that the next draft improves is objective 1.3, prompt refinement. Assessing, adapting and finishing the output that you already have is this objective. Improving the practice's prompt for future notes is 1.3. Fixing this note is 2.5. To distinguish the two objectives, read the action that the question tests.
+The clue in comparison questions
+When a question offers two versions and asks which to send, look at the basis that each option uses for the comparison. Options that choose by flow, tone or general appeal are wrong. The right answer sets criteria first, checks both versions against them, and then chooses on that basis. Fluency is never one of the criteria, because both versions already have it.
+
+## Exam Traps
+
+Exam Trap
+Sending an accurate but hard-to-read output because the content is correct
+A reader who cannot understand the document cannot act on it, and the urgent point stays hard to find. Adapt the delivery for the named reader while keeping the substance.
+
+Exam Trap
+Adapting for a lay audience by cutting the difficult content
+The findings, recommendations and costs are what the reader needs to act on. Softening a serious point until the reader cannot see it fails the reader. Put the substance into plain words rather than deleting it, then check the result against the original.
+
+Exam Trap
+Asking Claude to pick its own best version and sending its choice
+Claude generates the versions and explains how they differ, but the choice of what goes out belongs to the person sending it. Its self-reported confidence is not a reliable accuracy signal. Apply your criteria and choose.
+
+Exam Trap
+Choosing between two versions by which reads better, with no criteria fixed beforehand
+Style is the only comparison that fluent output always wins, so a fluent version with less content beats a correct one. Fix the criteria before reading, then judge each version against them.
+
+## Practice Scenario
+A building surveyor's assistant has a survey summary that is accurate but dense with structural terminology, and the urgent roof defect sits mid-document. It must go to the buyers: first-time buyers with no construction background. The surveyor insists that the buyers can follow every finding and that the assistant, rather than Claude, settles the final wording. What is the right way to prepare it?
+Option AHave Claude produce two adapted versions, ask it which one works better for first-time buyers, and send the version that it recommends
+Option BCut the technical sections down to a short, reassuring overview so the buyers get an easy read without the intimidating detail
+Option CSend it to the buyers unchanged: the findings are accurate as they stand, and simplifying technical content for lay readers risks misstating the surveyor’s professional conclusions in a document they may rely on
+Option DDirect a plain-language revision that keeps every defect, recommendation and cost, moves the roof issue to the top, then check the adapted version against the original for anything softened or lost
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Adapt and Compare for a Real Audience
+
+Difficulty
+
+35 minutes
+
+What you'll learn
+How to name the reader and what must stay after adaptation
+How to direct a revision that changes delivery without losing substance
+How to check an adapted version against its original
+How to compare versions against criteria fixed before reading
+
+Take an accurate but dense document from your work, or have Claude draft one from real material in a technical or specialist registerWhy: Audience adaptation only teaches its lesson when the starting document is genuinely correct; otherwise you are fixing accuracy, which is objective 2.1.
+You should see: A factually sound document that its intended lay or busy reader would struggle with.
+Stuck? Get a nudge
+
+Name the real reader and what they must do after reading, then list what must stay unchanged: findings, figures, recommendations, costsWhy: The list of what must stay prevents simplification from becoming deletion.
+You should see: One line naming the reader and their action, plus a short list of what must stay.
+Stuck? Get a nudge
+
+Direct a revision naming the audience, the reading level, the ordering with urgent items first, and the list of what must stayWhy: A directed revision states your editorial decisions; an undirected rewrite makes Claude guess them.
+You should see: An adapted version in plain language with the urgent item first.
+Stuck? Get a nudge
+
+Check the adapted version against the original: everything on the must-survive list present, nothing softened into invisibilityWhy: The check against the original is what makes adaptation an evaluation skill rather than a stylistic one.
+You should see: A tick against every item that must stay, or a directed fix for anything lost.
+Stuck? Get a nudge
+
+Ask for one more variant in a different register, write three criteria down before reading either, then choose and defend the choice against the criteriaWhy: Fixing criteria before reading is the tested comparison technique, and defending the choice proves that the criteria made the decision.
+You should see: A written three-criterion list, a choice, and a one-line defence per criterion.
+Stuck? Get a nudge
+
+## Sources
+What are some things I can use Claude for? — Anthropic
+My prompt isn't giving me a helpful answer — Anthropic
+What are artifacts and how do I use them? — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonWhen Human Review or Additional Verification Is RequiredNext LessonCurating Information and Selecting Output Formats

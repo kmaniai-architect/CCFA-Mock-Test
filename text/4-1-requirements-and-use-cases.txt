@@ -1,0 +1,111 @@
+
+
+## Analysing Requirements and Use Cases
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+A requirement is a statement of what a piece of work must achieve. Use-case analysis is judging whether a task is a good candidate for Claude before you put any effort into it. A theme is a named group of related comments. The objective tests two related skills: using Claude to turn messy input into structured requirements, and use-case analysis. Every workflow decision in this domain starts with two questions: what does this work require, and does Claude belong in it at all? Both skills follow one rule: Claude structures, and the human validates and owns the result.
+
+This lesson uses one made-up example throughout: a newsagent that runs home deliveries. The owner wants to rework her paper rounds. Her material is customer emails, staff meeting notes, order-book comments and remarks from the counter.
+
+## Structure from Mess
+Real requirements arrive as complaint threads, meeting notes, survey comments and half-remembered conversations, never as a tidy list. The Help Center lists summarising long documents and conversations among Claude's core uses, alongside generating viewpoints and providing recommendations. Given the raw material, Claude clusters it into themes and separates what people asked for from what they appear to need. It also shows where two groups want incompatible things, and names what nobody mentioned.
+
+For the newsagent, Claude might return themes like late papers and wrong magazines. It might flag that one estate wants papers before seven, while staff want later starts. The reading takes minutes instead of an afternoon, and the people involved get an outline of the problem that they can question.
+
+## A Theme Is a Hypothesis
+Claude organises what you gave it. It has no way of knowing what your organisation needs. A theme that Claude names is a hypothesis about your input, not a finding about your business. The people whose requirements the theme describes must confirm it before anyone bases any design on it. Anthropic's AI Fluency framework divides the work in the same way. Discernment means evaluating what the AI produced. Diligence means staying accountable for the result. Both stay with the human.
+
+So the owner checks the early-papers conflict with the estate's customers and her staff before she redraws any round. If she designed straight from Claude's themes, she would mistake tidy output for validated requirements. Confirming the themes is the cheap part.
+
+## The Shape of a Strong Candidate
+Good Claude use cases share some recognisable features:
+
+The work is mainly about language: drafting, summarising, reformatting, explaining, comparing. These are the tasks that the Help Center's use-case article documents.
+
+The material needed is material you can provide.
+
+The output can be checked by someone competent to check it.
+
+Either the volume is high or starting from nothing is the expensive part.
+
+AI Fluency calls this judgement Delegation: deciding what work to hand to the AI. It treats Delegation as a separate skill, and that skill comes before anyone writes any prompt. Weak candidates have the opposite features. The work needs the authority to decide rather than the ability to draft. Or it depends on information Claude has no access to. Or it is relationship work rather than document work.
+
+At the newsagent, a letter announcing new delivery times is a strong candidate: the owner can check it. Choosing who takes which round needs authority. Knowing whether a paper reached a doorstep needs information Claude lacks. Calling the regular customer who cancelled is relationship work.
+
+## The Checker Test
+People skip one test in particular. It says: if you could not tell whether the answer was wrong, you are not ready to use Claude on that task. Without a checker, a wrong output passes as easily as a right one. High stakes are not a reason to abandon the work, and neither is a missing checker. Both mean that you find the person who can tell good output from bad output, and you put that person in the process.
+
+The test also splits the blank-cheque use case. A blank-cheque use case is the announcement that Claude will handle a whole category of work. A category mixes strong and weak candidates. The commitment to the whole category comes before the analysis that should have decided its scope. Handing Claude all the delivery admin would group the letter with the choice of who takes which round.
+
+## In the exam
+The failure that the exam tests most often here is the skipped confirmation step. Whether and where the work suits Claude is this objective's question. How you then phrase the request is Domain 1's skill, and which product feature runs the work is Domain 3's skill.
+Key Concept
+When a 4.1 question ends with themes that Claude has just clustered, the right answer acts before design begins. It returns the themes to the people who own the requirements. The wrong options adopt the themes as findings, hand Claude the decision itself, or abandon the work because the stakes feel high.
+
+## Exam Traps
+
+Exam Trap
+Adopting Claude's themes as validated findings because they arrived quickly and read plausibly
+A theme is a hypothesis about the input, not a finding about the business. Basing a design on unconfirmed structure builds the wrong thing. Take the themes back to the people whose requirements they are, and confirm them before design begins.
+
+Exam Trap
+Handing Claude the decision along with the analysis
+Decisions that belong to an accountable person or group stay with them. Claude structures the material and drafts what supports the decision, but choosing the policy, picking the winner or resolving the dispute is theirs.
+
+Exam Trap
+Excluding work from Claude as too important
+Refusing to use Claude treats high stakes as if they were high risk. High stakes call for a competent checker in the process, not abandoning the drafting help. Without a checker, a wrong output passes as easily as a right one.
+
+## Practice Scenario
+The manager of a Saturday street market has a folder of complaint emails and comments from traders about how pitches are allocated. She wants to establish what a fairer allocation approach must do before anyone designs one. Claude clusters the material into six themes, including a contradiction: regular traders believe casual traders get the best corner pitches, while casual traders describe those same corners as reserved for regulars. She has no time to work through the folder again herself. What should she do next?
+Option ATreat the themes as hypotheses about her input and take them back to the traders to confirm, starting with the contradiction, before any design work begins
+Option BSet the folder aside and re-read every email herself, since pitch allocation is too contentious for Claude to be involved at all
+Option CHand the allocation question over entirely: give Claude the pitch map and the trader list and ask it to produce the fairest possible allocation for next season
+Option DAdopt the six themes as the requirements document, since they come straight from the traders’ own words, and move on to designing the new allocation approach
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Cluster, Confirm, Then Classify
+
+Difficulty
+
+30 minutes
+
+What you'll learn
+How to get Claude to structure genuinely messy input
+How to treat themes as hypotheses and confirm them with their owners
+How to sort candidate work into work that suits Claude and work that does not
+How to apply the test of whether someone can check the output before committing to a use case
+
+Collect a genuinely messy input you own: a feedback thread, the notes from your last three team meetings, or the complaints folder for one processWhy: The skill only becomes visible with genuinely messy input; a tidy input hides exactly the structuring work this objective tests.
+You should see: A single pile of raw material, unedited, in one document or conversation.
+Stuck? Get a nudge
+
+Ask Claude to cluster the material into themes, flag where two people want incompatible things, and name what nobody mentionedWhy: These three requests cover what is hardest to see in the material: patterns, contradictions and absences.
+You should see: A set of named themes, at least one flagged tension, and one or two gaps.
+Stuck? Get a nudge
+
+Mark each theme confirmed or hypothesis, then take the two hypotheses that the most work depends on back to the people who own them and record what changesWhy: This is the rule the exam tests: a theme is a hypothesis about your input until its owners confirm it.
+You should see: At least one theme revised or reframed after a real conversation.
+Stuck? Get a nudge
+
+List the pieces of work the confirmed requirements imply, and sort them: mainly about language, with material you can provide, or dependent on authority, access or relationshipsWhy: Use-case analysis happens per piece of work, never per category; sorting makes the strong and weak candidates visible.
+You should see: Two lists, with each piece of work in exactly one of them.
+Stuck? Get a nudge
+
+For every piece you would hand to Claude, name the person who could tell a wrong output from a right one; if there is no name, the use case is not readyWhy: The test of whether someone can check the output is the most effective test in the objective. Naming a real person is what makes the test genuine.
+You should see: A named checker beside every piece of work for Claude, or a note on who to recruit.
+Stuck? Get a nudge
+
+## Sources
+What are some things I can use Claude for? — Anthropic
+AI Fluency: Framework and Foundations — Anthropic (the element names are the course's module titles; the one-clause glosses of each element are our paraphrase of the course content)
+Claude Certified Associate – Foundations Exam Guide — Anthropic (exam guide; claims about professional practice are our judgement, not Anthropic guidance)
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonManaging Context Limits and Memory: Restart, Summarise, PersistNext LessonUsing Claude for Research, Planning and Process Optimisation

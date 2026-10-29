@@ -1,0 +1,124 @@
+
+
+## Applying Data Sensitivity, Regulatory and Privacy Considerations
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+Sensitive material is anything that an organisation should not give to an outside service without a decision. It may be personal data, or it may be material that is sensitive because of who owns it or what was promised about it. A safeguard changes what leaves the organisation. The ladder is four safeguards in a fixed order. A placebo is a step that acts only after the material leaves the organisation.
+
+This lesson uses one made-up example throughout: a day nursery. Its manager wants Claude to explain why fee arrears rose this term. Her spreadsheet holds each child's name, date of birth, address and allergy notes, and parents' account numbers and payments. If she uploads the spreadsheet unchanged, everything in it leaves the nursery. If she refuses, the arrears stay unexplained. The answer is between these two extremes: a safeguard that lets the work proceed within policy.
+
+## Recognising Sensitive Material
+The obvious list is names, addresses, dates of birth, reference and account numbers, health information, financial details, and anything about children. People miss the categories about ownership and promises:
+
+information held under a duty of confidence
+
+commercially confidential figures
+
+third-party material governed by a contract that says how it may be handled
+
+A supplier's pricing schedule has no personal data. It can still be the most restricted document on the desk, because a contract may govern it. The price list from the nursery's food supplier is an example.
+
+Anthropic's Usage Policy counts confidential or proprietary data as private information. It also counts non-public contact details and health data as private information. Under the policy, private information is not to be misused or accessed without permission. The policy also prohibits violating privacy rights as defined by applicable privacy laws, such as sharing personal information without consent.
+
+Anthropic's protections article describes encryption in transit and at rest. It also says that Anthropic bars employee access by default. These measures protect the data that Anthropic holds. They do not replace your organisation's own decision about what may leave the organisation.
+
+## The Ladder, in Order
+Each safeguard on the ladder preserves more of the work than the safeguard below it. So use the lowest safeguard that works.
+
+Remove. Most analysis does not need the names. Remove the identifiers and proceed today. The arrears question needs payment patterns, so the manager removes the children's names and addresses.
+
+Anonymise or aggregate. Use cohorts (groups of people) instead of individuals, and use ranges instead of exact figures. The nursery can group families by room and show arrears as ranges.
+
+Use an authorised route. Move the work to a sanctioned workspace, which is the Claude workspace that your organisation provides, under an agreement that covers this class of material.
+
+Seek authorisation. Ask whoever owns the data or the policy. Seeking authorisation is an action, not a refusal.
+
+Abandonment is at the bottom. Anonymisation lets the analysis proceed, so abandoning the analysis gains nothing.
+
+## Why the Placebo Fails
+The policy control is about what leaves the organisation. The material leaves at upload, and a later step cannot undo the upload. Every placebo fails for this reason. The placebos are telling Claude to forget the material, declaring the upload confidential, adding a confidentiality line to the prompt, or deleting the conversation. If the nursery manager uploads the full spreadsheet and then asks Claude not to retain it, the details have still left the nursery. Nothing that is typed into the chat can retroactively govern what was uploaded. The safeguard happens before the upload or not at all.
+
+## Which Product Are You On?
+Two current Anthropic privacy articles share the exact title "Is my data used for model training?". One article covers consumer products, and the other covers commercial products. The two articles give different answers. By default, Anthropic does not use inputs or outputs from its commercial products, such as Claude for Work, to train its models. Data handling depends on the plan, and the details have changed over the history of the documents. So ask three questions rather than memorise today's answer. Which product am I on? What does its documentation say today? What does my organisation's agreement add? The nursery manager asks these questions first. Objective 6.3 covers what follows from the answers.
+
+## In the exam
+In the guide's sample question for this domain, a project manager wants to upload a spreadsheet of customer names and account numbers. The right answer neither uploads the spreadsheet as it is nor abandons the analysis. It anonymises the spreadsheet so the work can proceed within policy. This pattern shows the whole objective in one example: a safeguard that enables the work, between two wrong extremes. The exam tests the order of the ladder. Abandonment is almost never the right answer, because the guide's rationale says anonymisation enables the analysis. It also says instructing the model not to retain data does not satisfy the policy control.
+What to notice in the exam
+Any option whose safeguard acts after the upload is wrong. No placebo is ever the right answer. The right answer changes what is uploaded, not what happens afterwards.
+
+Deletion and retention details change often. The Domain 6 quick reference has the current, dated figures.
+
+## Exam Traps
+
+Exam Trap
+Treating a confidentiality instruction or later deletion as the safeguard
+The exam guide says instructing the model not to retain data does not satisfy the policy control. The disclosure happens at upload, so a later instruction or deletion cannot undo it. Remove or anonymise the identifiers before uploading.
+
+Exam Trap
+Escalating up the ladder when removal is enough
+Moving the work to a sanctioned workspace or seeking authorisation looks diligent, but when simple removal of the identifiers lets the work proceed today, the higher rungs cost time for no protective gain. Use the lowest safeguard that works.
+
+Exam Trap
+Approving a document for upload because it contains no names
+Sensitivity is not only personal identifiers. Duty of confidence, commercial confidentiality and third-party contractual restrictions apply even when no one is named. Check whose material it is and what the agreement allows, then leave it out or ask the owner.
+
+Exam Trap
+Dropping the analysis because personal data is involved
+Abandoning the task is unnecessary when anonymisation enables it. Removing the identifiers lets the analysis proceed within policy, so abandoning the task loses a legitimate insight and gains nothing. Strip or anonymise first, then run it.
+
+## Practice Scenario
+A minibus driver training scheme's coordinator wants to use Claude to understand why pass rates dropped this year. The trainee records contain names, licence numbers, dates of birth and medical fitness declarations. The scheme's data policy allows personal or health details into an AI tool only where the task cannot be done without them. What is the most appropriate way to proceed?
+Option AStrip the identifiers and medical declarations from the records, then analyse pass rates by cohort, instructor and course date
+Option BUpload the records as they stand, since the analysis is an internal review and the results will stay inside the scheme
+Option CConclude that trainee records are too sensitive to give to Claude at all and compile this year on paper instead
+Option DUpload the records with a confidentiality instruction in the prompt, then delete the conversation once the analysis is done
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Apply the Ladder to One Real Dataset
+
+Difficulty
+
+30 minutes
+
+What you'll learn
+How to inventory the sensitive elements in a real document
+How to separate what the question needs from what the document contains
+How to apply removal and aggregation before using escalation
+How to name the authorised route or the owner when the work needs an element
+
+Pick one real document or dataset you would genuinely like help with, and inventory every sensitive element: identifiers, health, financial, children, duty of confidence, commercial confidence, third-party material under contractWhy: Recognition comes before technique, and the under-recognised categories only become visible when you look for them deliberately.
+You should see: A list of sensitive elements, each tagged with why it is sensitive: who it identifies, who owns it, or what was promised about it.
+Stuck? Get a nudge
+
+Write down the actual question the work must answer, then mark which sensitive elements that question truly needsWhy: The gap between what the document contains and what the question needs is the material that the ladder acts on.
+You should see: A question in one sentence, and a much shorter list of elements it genuinely depends on; expect fewer than you assumed.
+Stuck? Get a nudge
+
+Apply the first two safeguards: remove what the question does not need, and aggregate or anonymise what it needs only in outlineWhy: The lowest safeguard that works is the professional answer, and it usually lets the work proceed today.
+You should see: A prepared version of the material with identifiers stripped and remaining sensitive elements reduced to cohorts or ranges.
+Stuck? Get a nudge
+
+If the work genuinely needs a sensitive element, name the authorised route if one exists, or the person who owns the data or the policy, and draft the short request you would send themWhy: Escalation is an action, not a refusal, and naming the actual route or owner is what separates it from vague hesitation.
+You should see: Either the name of a sanctioned workspace that covers this class of material, or a two-sentence request to a named owner.
+Stuck? Get a nudge
+
+Write down the placebo you were most tempted by, and say in one sentence why it is not a controlWhy: Naming your own placebo protects you from choosing it when it appears as a wrong option under exam pressure.
+You should see: One sentence, in your own words, explaining that the placebo operates after the disclosure.
+Stuck? Get a nudge
+
+## Sources
+How long do you store my data? — Anthropic
+Is my data used for model training? (consumer products) — Anthropic
+Is my data used for model training? (commercial products) — Anthropic
+How does Anthropic protect the personal data of Claude users? — Anthropic
+Usage Policy — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic. The ladder's order and the placebo principle come from the guide's Sample 3 rationale. The Domain 6 quick reference has the current, dated retention and deletion details.
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonIdentifying Appropriate and Inappropriate Use CasesNext LessonFollowing Organisational AI Policies and Governance Standards

@@ -1,0 +1,108 @@
+
+
+## Following Organisational AI Policies and Governance Standards
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+The sanctioned workspace is the Claude workspace that your organisation provides. A personal account is an account that an individual holds for themselves. Shadow AI is work material in an AI tool that the organisation does not provide. The rule is short: use the workspace that your organisation provides. The rule sounds like etiquette. It has real reasons behind it. Understanding what the rule is based on lets you answer any version of the question without memorising a table.
+
+This lesson uses one made-up example throughout: a minicab firm that provides Claude to its office staff. A new dispatcher's access has not arrived, and a hotel contract is due on Friday. She pastes the contract and the complaints log into her personal Claude account because it is quicker. The bookings manager discovers this.
+
+## Why the Sanctioned Workspace Is Substance
+When an organisation provides Claude, the arrangement governs how Anthropic handles the organisation's data. The organisation decides what happens to its data. Anthropic handles the data only on the organisation's instructions. In the Privacy Center's terms, the customer is Controller of the data that its users submit. Anthropic is Processor on the customer's behalf. The commercial training article states that by default Anthropic will not use inputs or outputs from commercial products to train its models. Administrators control the workspace's settings. On the Enterprise plan, the organisation sets custom retention timelines for its data. Users still delete their own chats from their visible history. The organisation controls the workspace's retention, but it does not control the deletion action. The agreement, the administration and the data handling all apply to the sanctioned workspace. The rule protects these three things. In the firm's workspace, the firm's agreement would cover the contract.
+
+## Personal Accounts Are Different
+The individual's own consumer relationship with Anthropic governs a personal account. The individual's own settings decide whether Anthropic uses the chats for model improvement. Consumer deletion and retention rules apply. The employer does not administer, see or govern any of it. The problem is not carelessness. The organisation's agreement and controls do not apply to the account. The dispatcher's own agreement now covers the hotel contract, not the firm's agreement. A paid personal plan with careful settings would change nothing, because the question is whose agreement governs the data.
+
+## The Shadow-AI Response Has Two Halves
+The response to a colleague's workaround has two halves. First, do not copy the workaround, however urgent the deadline is. Second, report the workaround to whoever owns the policy or the data. The disclosure has already happened, and someone with the authority to handle it needs to know. An unreported workaround also continues. The colleague's underlying problem is real: access has not arrived for work that is due. Only the organisation can fix this problem. When you report the workaround, the organisation learns that its access process is too slow. So reporting is not an accusation against a colleague. The bookings manager keeps her own work in the workspace. She tells the policy's owner about the disclosure and the late access. Asking the dispatcher to delete her chats or close her account does not undo the disclosure, because the contract has already left the firm.
+
+## Policy Silence and Working Habits
+When a policy is silent on a question, the question has not been answered. The professional action is to ask the policy's owner. This is the escalation that objective 6.2 teaches. It is an action, not a refusal. If the firm's policy says nothing about pasting complaints into Claude, the bookings manager asks the policy's owner first. The basic working habits are plain, and the exam can test them:
+
+know which account and plan you work in
+
+know who administers it
+
+follow the rules for what may be uploaded
+
+know how to report a problem
+
+When policy conflicts with convenience, the policy takes priority. When the policy is genuinely wrong or too slow, ask its owner to change it rather than bypass it.
+
+## In the exam
+The scenario that appears often in the exam describes a colleague who uses a personal account for work material. The colleague does this because it is quicker or their access has not arrived. Candidates who treat the rule as etiquette lose marks to wrong options that are based on good intentions. The right answer does both halves, and candidates reliably miss the second half. Wrong options offer the first half alone, or deleting chats and closing the account as a remedy, or a paid personal plan with careful settings. The most common wrong option treats anything that the policy does not mention as allowed.
+Boundary discipline
+Objective 6.2 covers whether material may be uploaded at all. Domain 4 covers how to design a process. In this objective, you escalate to whoever owns the policy or the data, never to a technical specialist.
+
+Anthropic publishes no guidance on what an organisational AI policy should contain. This objective is based on the exam guide's wording and on the documented product differences that underlie the sanctioned workspace.
+
+## Exam Traps
+
+Exam Trap
+Fixing only half of the shadow-AI situation
+Declining to copy the workaround while saying nothing leaves the disclosure unknown and the access gap unfixed, so the workaround continues. The right answer does both halves: stop the practice and raise it with whoever owns the policy or the data.
+
+Exam Trap
+Offering deletion as remediation for material already disclosed
+Deleting conversations or closing the account is a step taken after the disclosure: the material has already left the organisation, and nobody with authority knows about it or the access gap. Stop the workaround and report both to whoever owns the policy or the data.
+
+Exam Trap
+Treating policy silence as permission
+A policy that does not mention something has not answered the question. Assuming permission converts a gap in a document into an unauthorised disclosure; the right move is asking the policy owner, which is an action, not a refusal.
+
+## Practice Scenario
+The operations lead at a recycling social enterprise discovers that a colleague has been pasting the local authority contract and staff shift records into a personal free Claude account at home, because the organisation's licences have not been issued yet and the work is due. The enterprise's data rules keep its material out of personal accounts on any plan, and any slip must be reported. What should the operations lead do?
+Option AAsk the colleague to delete the conversations and her account history, and confirm that the contract and the shift records are no longer held anywhere outside the organisation
+Option BLet it continue until the licences arrive, since the colleague is careful about what she pastes and the work genuinely cannot wait
+Option CMove the work onto his own personal account instead, since he pays for a plan with stricter data settings, closer to what the organisation will provide
+Option DStop the personal-account work now, and tell whoever owns the policy about the disclosure and the licence delay so both get dealt with
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Map Your Own Governance Position
+
+Difficulty
+
+25 minutes
+
+What you'll learn
+How to establish which account and plan actually govern your work material
+How to locate your AI policy and its owner
+How to find the gaps between the policy and your normal week
+How to prepare the shadow-AI conversation before you need it
+
+Write down which Claude account you actually use for work material: personal or organisation-provided, which plan, and who, if anyone, administers itWhy: Everything in this objective applies to the account, so knowing which one you are in is the habit that the other habits depend on.
+You should see: Three facts on one line: account type, plan, administrator.
+Stuck? Get a nudge
+
+Find the AI policy of your organisation; if you cannot find one, or cannot name who owns it, that is the findingWhy: A policy you cannot locate cannot guide your decisions, and discovering the gap is itself the governance result.
+You should see: Either the policy document and the name of its owner, or a written note that neither could be found.
+Stuck? Get a nudge
+
+List what the policy says may and may not be uploaded, and mark anything you handle in a normal week that the policy does not mentionWhy: In the silent areas, you could wrongly treat silence as permission, so find them before you are under pressure.
+You should see: Two lists: what the policy answers, and what it is silent on.
+Stuck? Get a nudge
+
+For one silent area, draft the two-sentence question you would send the policy owner, and send itWhy: Asking the owner is the escalation this domain teaches, and doing it once in calm conditions makes it easier to do under pressure.
+You should see: A sent message naming the material, the intended use, and asking whether the policy permits it.
+Stuck? Get a nudge
+
+Write down how you would raise a workaround by a colleague: what you would say to the colleague first, and who you would tellWhy: The two-half response fails in practice when the second half has no named recipient, so decide both in advance.
+You should see: Two lines: the sentence to the colleague, and the named person who owns the policy or the data.
+Stuck? Get a nudge
+
+## Sources
+Does Anthropic Act as a Data Processor or Controller? — Anthropic
+Is my data used for model training? (commercial products) — Anthropic
+Is my data used for model training? (consumer products) — Anthropic
+How do I change my model improvement privacy settings? — Anthropic
+Can you delete data that I sent via Team and Enterprise plans? — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic. Anthropic publishes no guidance on what an organisational AI policy should contain. This lesson draws on the exam guide's objective and the product differences documented above.
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonApplying Data Sensitivity, Regulatory and Privacy ConsiderationsNext LessonUnderstanding the Ethical Implications of AI Usage

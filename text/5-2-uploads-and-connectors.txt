@@ -1,0 +1,111 @@
+
+
+## Managing Uploaded Knowledge and Connectors
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+A Project's knowledge is the material that Claude uses inside that Project. The material reaches the Project by one of two routes. An upload puts a copy into the Project's knowledge base: documents, text, code and other files. A connector links Claude to the live source, such as Google Drive. Each route has properties the other lacks. The choice of route depends on how the material changes.
+
+This lesson uses one made-up example throughout: a painter and decorator who creates a Project for quoting and job planning. The decorator's terms and conditions and method statement barely change. The job schedule is a Google Doc in Drive. It changes every week.
+
+## A Snapshot or the Live Source
+An uploaded file is a copy taken on the day of upload. Every user of the Project sees the same copy, so it is stable and predictable. When the source is superseded, the copy stays as it was. Nothing tells you that the source was superseded. The copy looks as current in six months as on the day of upload. This stable copy suits the terms and conditions. It does not suit the job schedule, because a copy of the schedule would be wrong within a week.
+
+A connector suits material that changes, because the connector reaches the live source when you ask. The Google Workspace documentation states that Google Docs added to chats and projects sync directly from Google Drive. It says that, as a result, you are always working with the latest version. The documentation also states that Claude only accesses your data when you explicitly ask a question or request an action that requires it. It states that Claude then retrieves the minimum information needed.
+
+The latest version includes a colleague's half-finished edit at the moment of your question. If the office manager is halfway through moving Tuesday's jobs, Claude reads them half moved. Live material includes unfinished changes like this, so it is often better to upload stable reference documents.
+
+## Permissions and Governance
+Not every workplace lets each person enable connectors for themselves. On Team and Enterprise plans, an Owner or Primary Owner needs to enable connectors for the organisation before members can use them. If connectors are off in your workspace, the right step is to ask whoever administers the workspace, not to improvise.
+
+Through a connector, each person has the same access that they already have in the connected service. If someone cannot access a file in the source system, the connector cannot access it from Claude either. Two colleagues using the same Project can get different answers from the same connector. This difference is a property of the permission system, not a fault in the Project.
+
+Connectors are not read-only. They can retrieve data and take actions in connected services. The Gmail connector can send, reply to and forward email from your own account. By default Claude asks for your approval before each of these actions. The decorator still approves each quote email before Claude sends it.
+
+## Retrieval, Not Cover-to-Cover Reading
+When a Project has a substantial knowledge base, Claude does not read all of it on every question. The documentation describes how Claude searches project knowledge and loads only the most relevant content. This search, called retrieval, activates as a project approaches or exceeds the limits of its context window. Retrieval has to find the right document among all the material that you supplied.
+
+Two documented steps help. Clear, descriptive file names help retrieval find the right material. For example, "terms-and-conditions" is a better name than "final-v2-new". You can also name a specific document in your prompt to focus the search on it.
+
+## Curation Beats Completeness
+A Project's knowledge is not an archive. Every document that is never needed adds unneeded material to the search space, which is the material that Claude searches. Such a document also gives Claude a chance to quote it at the wrong moment. A small set of relevant documents is better than a bulk upload. Remove files that are no longer in active use, rather than keeping them.
+
+When you receive a shared drive, pick the few documents that the work needs. Route each document by how it changes. Route material that changes, such as the decorator's job schedule, through a connector to its live source. Upload stable reference material, such as the method statement. A colleague who wants you to add everything to the Project means well. The cost appears later, as answers based on the wrong document.
+
+## In the exam
+Exam questions test whether you match the route to the material. In almost every question, the clue is how the material changes. Domain 6 asks whether a document is permitted in the Project at all, on privacy, contractual or policy grounds. This objective is about managing material that is already allowed in the Project.
+Current state: where the Drive route is available
+The exam guide names Google Drive as a connector to manage alongside uploads. The right answer routes material that changes through the Drive connector. As of 28 September 2026, the Google Workspace connectors article describes the Drive route as adding one document at a time. The article describes adding documents only to a private Project's Files. You add each one by searching your recent documents or pasting its link. The article says the option is disabled for shared Projects. The Files of a shared Project accept uploads. The connector still works in chats: Google Docs added to a chat sync directly from Drive. On the exam, route by how the material changes.
+
+What to notice in the exam
+The right answer to an upload-or-connector question depends on how the material changes, never on how important the material is. Route the weekly job schedule through the connector, however trivial it looks. Upload the terms and conditions, which barely change, however important they are.
+
+## Exam Traps
+
+Exam Trap
+Bringing in the whole shared drive so nothing is missing
+The dump reads as diligence and is the posture curation exists to correct. Retrieval must find the right document among everything supplied, so every irrelevant file makes the relevant one harder to surface and more likely to be displaced by a wrong-moment quote.
+
+Exam Trap
+Choosing between upload and connector by how important the material is
+An upload is a snapshot that goes stale silently, however important it is. Frequently revised material suits a connector, stable material an upload. Current docs (October 2026) say the Drive route works only for private Projects, so a shared Project takes a dated upload.
+
+Exam Trap
+Having a Team-plan user switch on an organisation connector themselves
+An Owner or Primary Owner must enable connectors for the organisation before members can use them, so the right step is to ask the workspace administrator. Options in which the candidate tries to enable connectors personally are testing exactly this governance step.
+
+## Practice Scenario
+A show cave preservation society is setting up the knowledge for a Project covering guide rotas, opening arrangements and volunteer communications. The guide rota and the opening times, which change with the water level after rain, live in a shared Drive folder; the constitution, the site risk assessments and the guide handbook barely change. A trustee suggests bringing in the entire shared drive so everything is available. Material unrelated to those three areas should not be in the Project. What is the best setup?
+Option AUpload everything as files, including the current rota and opening times, so every user of the Project sees exactly the same stable set of documents whenever they ask
+Option BBring in the entire shared drive as the trustee suggests, so every document the society holds, from committee minutes to old correspondence, is available to the Project from day one without anyone having to choose
+Option CKeep knowledge out of the Project, and have whoever is asking paste the current rota and opening times into their chat each time
+Option DAdd the rota and the opening times from Drive so chats work from the current versions, upload the constitution, risk assessments and handbook as files, and leave the rest of the drive out
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Route a Real Project's Material by How It Changes
+
+Difficulty
+
+30 minutes
+
+What you'll learn
+How to classify each document by how often it changes
+How to route material that changes through a connector and stable material as uploads
+How to check connector governance before relying on it
+How to test which version of a changed document the Project actually quotes
+
+List every document a recurring piece of your work needs, then mark each one: changes weekly or monthly, or barely changes at allWhy: The routing decision is made per document, and how often a document changes is what the whole objective depends on.
+You should see: A two-column list: documents that change on one side, stable documents on the other.
+Stuck? Get a nudge
+
+Upload the current versions of the stable set to the Project knowledge and note the dateWhy: Stable material gets the properties uploads are good at: predictable, identical for everyone, and consulted without depending on a live source.
+You should see: The stable documents in the knowledge base with a dated note of when they were uploaded.
+Stuck? Get a nudge
+
+For the documents that change, identify where the live version is actually stored; if it is in Google Drive and your workplace allows the connector, add those documents from Drive rather than uploading copiesWhy: A connector keeps material that changes current without anyone remembering to re-upload, which is the failure mode uploads cannot avoid.
+You should see: The documents that change, reachable through the Drive connector, or a written request to your workspace administrator if the connector is not yet enabled.
+Stuck? Get a nudge
+
+Be strict: remove anything you listed only because it might one day be useful, and give the files that remain clear descriptive namesWhy: Every document that is never needed adds unneeded material to the search, and well-named files help the right material get found.
+You should see: A shorter knowledge list where every file is needed for a task and its name says what it is.
+Stuck? Get a nudge
+
+Test with a question whose answer changed recently and check which version the Project quotesWhy: The test proves the routing: connected material should answer with the current version, and an out-of-date answer means a document that changes was uploaded.
+You should see: An answer citing the current version, or a specific file you now know to re-route.
+Stuck? Get a nudge
+
+## Sources
+Retrieval augmented generation (RAG) for projects — Anthropic
+Use connectors to extend Claude's capabilities — Anthropic
+Use Google Workspace connectors — Anthropic
+How do usage and length limits work? — Anthropic
+What are projects? — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonConfiguring Projects with Instructions and Knowledge SourcesNext LessonCreating Effective System-Level Instructions

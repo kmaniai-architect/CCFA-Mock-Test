@@ -1,0 +1,99 @@
+
+
+## Evaluating Outputs for Accuracy and Completeness
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+Reviewing an output means checking what Claude wrote before anyone relies on it. A review asks two questions. Accuracy asks whether the specifics are right: numbers, names, dates, titles, quoted figures, and references to documents or rules. Completeness asks whether anything is missing. A review checks both against the source. The source is the material that Claude used to build the output.
+
+This lesson uses one made-up example throughout: a bakery. Its owner attaches a flour supplier's new contract and asks Claude for a summary. Her business partner will use the summary to decide whether to sign. The summary reads well, but it could contain a wrong price per sack or omit a clause.
+
+## The Reviewer's Stance
+Treat every Claude output as a good first draft that can contain errors stated with confidence. The Help Center says why: Claude "can occasionally produce responses that are incorrect or misleading", and users "should not rely on Claude as a singular source of truth". Fluency and confidence are properties of the writing, not evidence about the facts. Claude writes fluently whether it is right or wrong, so an output that reads beautifully has passed no check. The bakery summary would read just as well with a wrong price.
+
+Ownership decides who does the checking. The professional who sends Claude's work owns it. That professional is accountable for it to their team, their members or their funder. Review is the step that changes a draft into work that you can accept responsibility for. Review is not an optional extra for cautious people.
+
+## Accuracy: Are the Specifics Right?
+Check the specifics first, in order of consequence. Start with the details that would be most costly or embarrassing if they were wrong. These are usually the figure that a decision depends on, the name at the top of the letter, and the date of the deadline. A draft with twenty accurate sentences and one wrong subtotal is a wrong draft if the meeting decides on that subtotal. At the bakery, the price per sack comes first, because the partner decides on it.
+
+## Completeness: Is Anything Missing?
+Completeness is harder to check, because the evidence is absent rather than wrong. A fluent summary can omit a section, a theme or a caveat, and nothing in the prose shows the gap. So check the output against the source itself, never against your memory of the source. Follow the source's own structure: its sections, funds, themes or line items. Confirm that each element is either in the output or excluded on purpose. If you read the output alone and accept it, you send it with the gaps still in it. The bakery owner ticks each clause in the contract against the summary.
+
+Check accuracy first every time. A wrong specific is the most likely failure, and it is the quickest to catch. Check completeness second, because that check needs the source open anyway.
+
+## Verify Against the Input
+When Claude builds an output from attached material, the first check is the attachment. The attachment is already in the conversation, and it takes minutes to compare the two. Anthropic's prompting guidance gives the same advice for long documents: ask Claude to quote the relevant parts of the source before it does the task. In the chat, ask Claude where in the attachment each figure or claim came from. Then spot-check the claims that matter against those locations. An output whose claims trace to the source is checkable in minutes. Do not assume that an output is correct when you cannot trace its claims. The bakery owner asks where the price came from, then reads that clause.
+
+Asking Claude whether it is sure is not a check. The same model that made an error will repeat it with the same confidence, because no new information enters the check. A real check compares the output with its source.
+
+## In the exam
+This domain has a larger share of the exam than any other domain, and every objective in it depends on the reviewer's stance. The certification's central claim is that its holder can be trusted with what Claude produces. The holder earns that trust at the review stage, not at the prompting stage. When the stance is right, the other skills in the domain follow from it: spotting failure types, validating claims, knowing when to escalate. The exam treats self-reported confidence as a wrong answer, never as a check.
+The register exemplar
+The guide's Domain 2 sample question tests this objective. Claude summarises a regulation and cites a specific subsection. The right answer is to verify that citation against the official text before the compliance team sees it. The named wrong answers are trusting Claude's expressed confidence and rewording the summary to sound more formal. Diligence matters more than confidence, and polish is never a substitute for correctness.
+
+## Exam Traps
+
+Exam Trap
+Sending the output because it reads well or because Claude expressed high confidence
+Fluency and confidence are properties of the writing, not evidence about the facts, so neither has checked anything. Compare the output against the source material before anyone relies on it.
+
+Exam Trap
+Asking Claude to confirm its own work and treating a confident yes as review
+No new information enters the check: the same model that made an error will repeat it with the same confidence. Compare the output with its source, or ask Claude where in the source each claim came from and spot-check those locations.
+
+Exam Trap
+Verifying one named figure when part of the source may have been dropped
+Accuracy checking alone misses the second review question. When the source had more in it than the output shows, review each part of the source's own structure for completeness, not just the details that you noticed.
+
+## Practice Scenario
+A scout group treasurer has Claude draft the annual financial summary for the AGM from the group's accounts spreadsheet. The draft reads perfectly, but she must be sure it is right and leaves nothing out, without simply trusting what Claude says. What should the treasurer do before circulating it?
+Option ARework the summary into more formal accounting language so that it passes close examination by members at the meeting
+Option BCirculate it as it stands: the figures look plausible, the formatting is professional, and the AGM pack deadline is close
+Option CAsk Claude whether it is confident the summary is accurate and complete, then circulate the document once Claude says it is
+Option DCheck each stated figure against the spreadsheet, then review the list of funds the accounts track to confirm every fund appears in the summary
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Run the Two-Pass Review
+
+Difficulty
+
+25 minutes
+
+What you'll learn
+How to check every specific in an output against the source material
+How to order accuracy checking by consequence
+How to walk a source structure to catch omissions
+How to make an output traceable by asking where each claim came from
+
+Take a document that Claude drafted for you from real source material, such as a summary, a report or a data write-up. Or generate one now from a spreadsheet or document you actually useWhy: The habit of checking accuracy and then completeness shows its value only on real work, where you know what the source contains and what a miss would cost.
+You should see: A Claude draft and its source material side by side in one conversation.
+Stuck? Get a nudge
+
+Accuracy check: list every specific in the output. Specifics are figures, names, dates and references. Check each against the source, starting with the ones a decision or reader depends onWhy: Ordering by consequence puts the limited checking time where an error would cost most.
+You should see: A marked-up list of specifics: confirmed, wrong, or unverifiable.
+Stuck? Get a nudge
+
+Completeness pass: review each part of the source’s structure. The structure is its sections, funds, themes or line items. Confirm that each element is represented in the output or deliberately excludedWhy: Omissions are not visible in the prose; only the source’s structure shows what should be there.
+You should see: A tick against every element of the source, or a note explaining its absence.
+Stuck? Get a nudge
+
+Ask Claude to indicate where in the source each remaining claim came from, and spot-check the important claimsWhy: A traceable output can be verified in minutes; an untraceable one is treated as unverified.
+You should see: Each claim tied to a location in the source, with the important ones confirmed.
+Stuck? Get a nudge
+
+Record what the two checks caught and roughly how long they tookWhy: You keep the habit when you can see its cost and its benefit on your own work.
+You should see: A short note: errors caught, omissions caught, minutes spent.
+Stuck? Get a nudge
+
+## Sources
+Claude is providing incorrect or misleading responses. What's going on? — Anthropic
+Prompting best practices — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonAdapting Strategy to Task TypeNext LessonIdentifying Hallucinations, Inconsistencies and Bias

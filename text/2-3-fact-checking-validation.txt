@@ -1,0 +1,101 @@
+
+
+## Fact-Checking and Validation Techniques
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+Validation means checking an output's claims against something that can confirm them. This objective gives the review from objective 2.1 its tools. It puts them in order from the cheapest to the most costly. Your own judgement decides how much checking a given output deserves. A primary document is the original record: the official publication, the regulator's text, the funder's published criteria, the organisation's records.
+
+This lesson uses one made-up example throughout: a removals firm. The office has Claude draft a quote letter from the attached survey notes and price list. The letter states a total price and the council's parking rules for the street. Claude also drafts internal newsletter ideas.
+
+You should not treat Claude as a single source of truth, and high-stakes output deserves careful scrutiny. Claude can produce fluent, specific output that looks correct but is badly mistaken. Specificity alone is not evidence of accuracy.
+
+## Cheapest First: The Source You Gave It
+When Claude builds an output from attached material, the first check is the attachment. The attachment is already in the conversation. Each figure, section and claim matches the attachment or does not. This check is the habit from objective 2.1, used as a technique, and it costs minutes. The total is checked against the survey notes and price list. Use a check that takes more effort only when the given source cannot settle the question.
+
+## Independent, Authoritative, Primary
+External claims need external checking. The attachments cannot confirm the parking rules, which did not come from them. Web search responses include citations "so you can easily verify sources yourself". Users are advised to cross-reference cited sources and use authoritative ones for critical decisions. The Help Center's hallucination article says to review Claude's cited sources, because checking the original catches misinterpretation. Citations exist to be checked.
+
+The standard is the primary document. A second AI summary, a forum post, or Claude's own earlier output is not independent validation. A check that shares the errors of the thing that it checks proves nothing. For the parking rules, the primary document is the council's published page. Web search from within claude.ai is a legitimate way to find that page. The source validates the claim, never the search.
+
+## Make the Output Traceable
+A traceable output shows where each claim came from, so it is checkable. Do not assume that an output is correct when you cannot trace its claims. For long documents, Anthropic's prompting guidance says to ask Claude to quote the relevant parts of the source before it does its task. For research work, the guidance says to ask Claude to verify information across multiple sources. On the quote letter, ask Claude to show each claim's source and how it reached each conclusion. Then spot-check the important claims. When a decision depends on a single figure, triangulate it: confirm the figure in two independent places before anyone sends it.
+
+## Proportionality: The Judgement Layer
+The amount of checking depends on what an error would cost. The customer decides on the total, so the total gets two independent confirmations. The newsletter ideas get a read-through. Too little checking of the consequential claim is the obvious failure. Heavy checking on low-stakes work is also wrong, not safe. Time spent on triple checks of newsletter wording that nobody acts on is time not spent on checking the total.
+
+A request that Claude re-check its own output has a limited place. Anthropic's prompting guidance says a self-check catches errors, especially in coding and maths. That guidance names one exception: Claude Opus 5 verifies its own work well without an instruction to do so. A self-check instruction written for earlier models can make Claude Opus 5 verify too much. A self-check is a cheap first check for arithmetic slips and contradictions. It is not independent validation, because the same model misses the same things.
+
+## In the exam
+Questions test the techniques. They also test when each technique is proportionate, in both directions. The most common trap is a self-check that looks like verification. An option has the user ask Claude to confirm, re-check or rate its own work, and calls the confident answer validation. The guide's sample rationale says why it fails: self-reported confidence is not a reliable accuracy signal.
+Key Concept
+When a validation question offers several checking plans, test each plan against two questions. Does independent information enter the check? Does the depth of checking match what depends on each claim? The right answer passes both. The wrong options usually fail one. Self-check and circular sources (sources that share the errors of what they check) fail independence. Checking every claim to the same maximum depth fails proportionality.
+
+## Exam Traps
+
+Exam Trap
+Asking Claude to confirm or re-check its claims and calling that verification
+No independent information enters the check, and the same errors stay unnoticed. Self-check is a legitimate first check for slips and contradictions, but claims that matter go to an independent source.
+
+Exam Trap
+Checking a claim against another AI summary or Claude's own earlier output
+A check against a source made from the thing being checked shares its errors. Check against the primary document instead: the official publication, the published criteria, the organisation's records.
+
+Exam Trap
+Verifying every sentence to the same maximal depth regardless of stakes
+The amount of checking depends on what an error would cost. Checking everything to the same full depth spends limited time on prose nothing depends on, which is not the safe choice. Concentrate the checking on the claims a decision rests on.
+
+## Practice Scenario
+A heritage railway volunteer coordinator has Claude draft a grant application. The draft states annual visitor numbers, a percentage increase in school visits, and that the railway meets the funder's published eligibility criteria. She has one evening, too little to verify every line in depth, and nothing may depend on Claude's statements alone. What is the right validation plan before submission?
+Option AAsk Claude to re-check the whole draft carefully and confirm each claim, then submit once it confirms its figures
+Option BCheck the visitor numbers against the railway’s own records, recalculate the percentage from those records, and check the eligibility claims against the funder’s published criteria document
+Option CIndependently verify every sentence in the application to the same depth, including the descriptive history section, before anyone sees it
+Option DCheck the eligibility claims against the summary of the criteria that Claude produced earlier in the conversation, and confirm the visitor figures are consistent everywhere they appear across the whole draft
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Build a Validation Plan for One Real Document
+
+Difficulty
+
+35 minutes
+
+What you'll learn
+How to name the authoritative source that settles each claim
+How to sort claims by consequence and assign checking depth
+How to make an output traceable before spot-checking it
+How to see what self-check alone would have missed
+
+Take a Claude-drafted document from your work containing at least three checkable claims: a figure, an external fact, and a claim about meeting some published requirementWhy: The three claim types need three different validation moves, which makes this a small version of the full set of techniques.
+You should see: One document with at least three claims underlined and categorised.
+Stuck? Get a nudge
+
+For each claim, name the authoritative source that would settle it: your organisation’s records, the official publication, the published criteriaWhy: A claim with no nameable source is untraceable, and untraceable claims are treated as unverified.
+You should see: Each claim paired with a named source, or flagged as untraceable.
+Stuck? Get a nudge
+
+Sort the claims by consequence: give the figure a decision depends on two independent confirmations, give low-stakes phrasing a read-through, and write one sentence on why each got the depth it didWhy: Proportionality is the judgement the exam tests; the sentence makes you state the reasoning.
+You should see: A checking plan where depth visibly varies with stakes.
+Stuck? Get a nudge
+
+Ask Claude to show where each remaining claim came from and how it reached each conclusion, then spot-check the ones that carry weightWhy: Traceability turns a vague read-through into a checkable review and puts effort where it is useful.
+You should see: Claims tied to sources and reasoning, with the important ones confirmed.
+Stuck? Get a nudge
+
+Run the plan and record which claims failed, which source caught them, and what a self-check-only plan would have missedWhy: The comparison against self-check makes the independence principle concrete on your own work.
+You should see: A short record: failures found, sources that caught them, and the self-check gap.
+Stuck? Get a nudge
+
+## Sources
+Enable and use web search — Anthropic
+Claude is providing incorrect or misleading responses. What's going on? — Anthropic
+Use research on Claude — Anthropic
+Prompting best practices — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonIdentifying Hallucinations, Inconsistencies and BiasNext LessonWhen Human Review or Additional Verification Is Required

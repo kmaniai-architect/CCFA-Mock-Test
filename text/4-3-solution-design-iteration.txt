@@ -1,0 +1,98 @@
+
+
+## Supporting Solution Design, Development and Iteration
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+Solution iteration means improving a deliverable over several rounds, with Claude as the drafting partner. In this certification a solution is a process, a template, a piece of guidance, a scheme, a service design, a form or a plan. It is never software. Each round is checked against a criterion: a test drawn from the requirement established in 4.1.
+
+This lesson uses one made-up example throughout: a coffee shop whose owner wants a Saturday opening checklist for one barista working alone. The requirement says who the checklist is for and which problems it must handle, such as a late milk delivery. Claude's first draft is workable.
+
+## Why the Loop Is Worth Running
+Iteration used to be expensive, so people defended their first draft. The cost of an alternative was the reason not to look at one. Claude changes this cost. A second and third version cost minutes, so you can afford to look at them. Comparing three concrete options is a better way to design than arguing about one. The owner's question changes from whether the checklist is good to which version meets the requirement. This change of question is the purpose of this objective. The change only works while the versions stay disposable. You can discard a cheap draft with no formality, and you can honestly test a version that nobody personally prefers.
+
+## One Named Criterion per Round
+Every round needs a named criterion from the requirement. The named criterion separates iteration from random small changes. "Make it better" produces something different, not something better. Without new information, the revision has no target. For the same reason, the Help Center's remedy for an unhelpful answer is specific feedback rather than a plain retry. "Make this survive a wet day" is a testable change.
+
+Run each round against one criterion. Check the result against that criterion alone. Keep the version that passes. The owner asks for a checklist that still works when the milk delivery is late, then checks only that. You can rank two versions that you judge against the same test. When people judge two versions on overall feel, they just argue about them. Anthropic's AI Fluency course names this cycle the Description-Discernment Loop: describe what you need, evaluate what Claude returned, refine, and repeat.
+
+## Knowing When to Stop
+Stop when the remaining changes are matters of preference rather than fitness (how well the deliverable meets the requirement). Polishing a deliverable that already meets the requirement uses time that the next problem needed. Polishing also risks a subtler failure: a fluent, confident version can replace the one that your actual users needed. So check against the requirement and the users, never against how the prose reads.
+
+If a round shows that the requirement itself was wrong, the next step is to revisit the requirement, not to write another draft. No revision fixes a deliverable that is built for the wrong requirement. Suppose the owner learns that two staff open on Saturdays. The requirement needs rewriting before any further draft. Whichever way the loop ends, state the stopping reason in one line. Naming the reason keeps the loop honest the next time it runs.
+
+## Artifacts and Branches
+In the product, this loop uses artifacts. Substantial, standalone content appears in its own dedicated window. You revise the artifact by asking Claude to change it. To compare two concrete options, edit the message that produced the draft. The edit creates a different version of the chat, called a branch. The new branch has its own artifacts. The original branch keeps the first draft intact. The owner gets a second checklist without losing the first. Comparing two branches is better than trusting your memory of the round before, because memory makes whichever version came last seem better. Keep the requirement visible while you compare. The branches show the versions, but only the requirement says which version is better.
+
+## In the exam
+Candidates most often confuse this objective with Domain 1. Iterating the prompt to get a better response is Domain 1.3. Iterating the solution, with Claude as the drafting partner, is 4.3: the same loop, run on a different object.
+Key Concept
+When a 4.3 question shows a workable first draft, the right answer names one criterion drawn from the requirement and checks the revision against it. Wrong options make changes without a criterion, generate many drafts and pick the one that feels best, or put an untested draft into live use. When the question signals that the requirement itself is wrong, the right answer revisits the requirement.
+
+## Exam Traps
+
+Exam Trap
+Round after round of asking Claude to make it better with no named criterion
+Each round produces a different version, none of them checkably better, because no criterion directs the revision. Name one criterion drawn from the requirement and test the result against it.
+
+Exam Trap
+Redrafting a deliverable whose requirement was wrong
+No amount of revision fixes a deliverable built for the wrong requirement. When a round shows the requirement itself has failed, go back to the requirement from 4.1 and rework it before any further draft.
+
+Exam Trap
+Letting the best-written version replace the one that meets the requirement
+A well-written version does not always meet the requirement. Versions are checked against the requirement and the users, not against each other's prose, and the warm, confident draft that misses a hard constraint is precisely the version the exam expects you to reject.
+
+## Practice Scenario
+The party coordinator at a laser-tag arena is designing the running order for a new birthday-party package. The requirement is fixed: ages seven to eleven, a safety briefing before anyone plays, food in the party room, all inside a ninety-minute slot. Claude's first draft is workable. She wants round two to give her a version she can plainly pass or fail, before any real party relies on it. What should round two look like?
+Option AUse the draft at this weekend’s parties exactly as written, treating the live sessions as the test round and adjusting it afterwards
+Option BAsk Claude to make the running order more fun and more polished, and keep regenerating until a version feels right
+Option CStart a fresh chat for each draft and collect five alternative running orders, then choose whichever of the five reads best overall
+Option DRevise against one named criterion, say handling a party that arrives fifteen minutes late, and check the result against that criterion alone
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Three Rounds, Three Criteria
+
+Difficulty
+
+35 minutes
+
+What you'll learn
+How to write the requirement before the first draft
+How to run a revision round against exactly one named criterion
+How to compare versions by branching the chat
+How to recognise the stopping point and the requirement problem
+
+Pick a real deliverable you own: a template, a checklist, a guidance page or a planWhy: The judgement of when to stop only works on work whose users and constraints you genuinely know.
+You should see: One named deliverable with a real audience waiting for it.
+Stuck? Get a nudge
+
+Write the requirement first, in three to five lines: who it is for, which problems it must handle, and any hard constraintsWhy: Criteria come from the requirement; without it, every later round becomes a request to make it better.
+You should see: A short requirement note that a colleague could test a draft against.
+Stuck? Get a nudge
+
+Get a first draft from Claude, then run round two against exactly one named criterion from the requirement and record pass or failWhy: One criterion per round keeps the change testable; if you use three at once, you cannot tell which change fixed which problem.
+You should see: A revised version and a one-word verdict against the named criterion.
+Stuck? Get a nudge
+
+Run round three against a second criterion, branching the chat from the round-two message (or keeping side-by-side copies) to compare versions rather than trusting memoryWhy: Comparing concrete versions is the design method; memory makes whichever version came last seem better.
+You should see: Two or three versions compared directly, with the version that passes identified.
+Stuck? Get a nudge
+
+Stop, and write one line on why: either the remaining changes are preference, which means you are done, or a requirement problem appeared, which means the next step is the requirement, not another draftWhy: Naming the stopping reason builds the judgement the objective actually tests.
+You should see: A single sentence: done because fitness is met, or paused because the requirement needs rework.
+Stuck? Get a nudge
+
+## Sources
+What are artifacts and how do I use them? — Anthropic
+My prompt isn't giving me a helpful answer — Anthropic
+AI Fluency: Framework and Foundations — Anthropic (the element names are the course's module titles; the one-clause glosses of each element are our paraphrase of the course content)
+Claude Certified Associate – Foundations Exam Guide — Anthropic. No Anthropic document covers design and iteration for business deliverables. This lesson draws on the exam guide's objective and standard design practice; the artifacts article covers the product mechanics.
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonUsing Claude for Research, Planning and Process OptimisationNext LessonIntegrating Claude into Existing Workflows

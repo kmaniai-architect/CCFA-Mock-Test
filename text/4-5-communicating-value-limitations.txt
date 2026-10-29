@@ -1,0 +1,103 @@
+
+
+## Communicating Value and Limitations to Stakeholders
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+A stakeholder here is a colleague who reads your report on a Claude trial and decides what happens next. Reporting to them has one rule: say what is true, including the parts that are not impressive. The rule serves two audiences: the enthusiast and the sceptic.
+
+This lesson uses one made-up example throughout: a tyre fitter whose office manager is reporting on a three-month Claude trial. Here, accuracy is a useful tactic as well as a form of modesty. If she over-promises, she wins a mandate that she cannot deliver. Then stakeholders read the first visible error as proof that the whole trial was oversold. If she under-claims, the work does not get the support that it earned. A sceptic cannot disprove an accurate claim.
+
+## Stating Value in Four Parts
+State value in four parts: the task, the before, the after, and how you know. "The monthly board pack takes two hours instead of five, measured across three months" is a claim the tyre fitter's manager can defend. "Claude has transformed how we work" is not a claim: it names no task and no measurement, so nobody can check it. An audience that has heard that sentence before will discount everything that follows it.
+
+Anthropic's enterprise guidance says the same. Productivity gains, such as hours saved, are measured through periodic user surveys. The gains are reported to stakeholders at regular intervals. The guidance pairs quantitative data with qualitative examples, in place of enthusiasm.
+
+Every figure in the report appears because somebody measured it over a stated period, never because it sounds about right. A measured saving applies to its own task. The report never projects the board pack figure onto work that the trial did not include.
+
+## The Untested Category
+State limitations plainly: what still needs a person and why, what went wrong during the pilot, and what has not been tested. People omit the untested category. This gap causes trouble later, because stakeholders take the lack of a statement as a claim. If a stakeholder is never told that some work went untrialled, the stakeholder will reasonably assume that the trial covered that work. The eventual failure is then blamed on the report that said nothing about it, as well as on the work. If the tyre fitter never tried Claude on warranty claims, naming that gap costs one sentence. If the report leaves the gap unnamed, the report loses its credibility when the gap becomes visible.
+
+## A Caught Error Is Evidence
+A caught error is evidence for the process. Suppose a booking confirmation used the wrong date and the read-through caught the error. When you report the error, a sceptic learns that the checking step works. This is the very thing that the sceptic doubted. If the report hides the error and the error becomes visible later, readers re-read every other claim in the report as selected to look good. Reporting a caught error is the Diligence element of AI Fluency in reporting form. Diligence means that you stay accountable for what the AI produced, including in what you tell colleagues about it.
+
+## The Enthusiast and the Sceptic
+Stakeholders have one of two attitudes, and each attitude needs something different from the same truthful account. The enthusiast, perhaps the tyre fitter's owner, wants Claude in use across the whole business by Friday. The enthusiast needs to hear the limitations and the human gate without losing the enthusiasm that will make the work progress. So the answer to "can it handle all of it now?" is not a plain no: the answer names what stays human. The sceptic, perhaps a fitter, suspects that Claude is a useless novelty, a risk or a threat to somebody's job. The sceptic needs the measured result, the named human step, and an honest account of what went wrong and how it was caught.
+
+Overcorrection fails with both audiences. Overcorrection means so many caveats that a working result sounds like a failure. Under-claiming is not honesty. It gives the sceptic a conclusion that the data does not support.
+
+## In the exam
+A prepared candidate treats a caught error as evidence. Whether a use is permitted, and who must approve it, belongs to Domain 6. This objective covers the honest account of results to colleagues, never a governance sign-off.
+Use only measured numbers
+In this objective's questions, the only number that can support the right answer is one that the question itself says was measured. Any option that quotes a saving that nobody measured, or that projects a measured saving onto untested work, is wrong. The option is wrong however reasonable the figure sounds.
+
+## Exam Traps
+
+Exam Trap
+Presenting enthusiasm as evidence
+A transformation claim with no task, no before, no after and no measurement cannot be checked. So a sceptical audience discounts it. The audience also discounts the genuinely measured result underneath it. A defensible claim states the four parts and stops.
+
+Exam Trap
+Projecting a measured saving onto untested work
+A measured result belongs to the task it was measured on. Extending it to a category the trial never included quotes a number nobody measured, and the exam treats it as wrong regardless of how plausible the projection looks.
+
+Exam Trap
+Leaving the pilot's caught error out of the report
+When the error becomes visible later, every other claim gets re-read as selected to look good. Disclosed, the same error was evidence that the checking step works, which is exactly what the sceptical audience needed to hear.
+
+Exam Trap
+Hiding a working result among many caveats
+So many warnings make a working process sound like one that failed, handing the sceptic a conclusion the data does not support. State the measured result and its period plainly, keep the limits the trial found and name what it never tested.
+
+## Practice Scenario
+The coordinator of a talking newspaper for blind and partially sighted listeners has trialled Claude for three months. Listener letters now reach a first draft in minutes rather than half an hour, measured across the trial, with every letter still read and approved by a volunteer before it goes out. Edition scripts saw no saving, because the recording sessions were always the bottleneck. One draft gave the wrong date for the annual listeners' tea and was caught at the read-through. The committee has asked for what the trial showed, with nothing projected or hypothetical and nothing left out. What should the report to the management committee say?
+Option ALead with the correspondence saving and leave out the wrong date, since one caught slip would only give the committee a reason to stop a trial that is clearly working well
+Option BOpen with the risks: list every possible failure before mentioning the saving, so nobody on the committee can later accuse the coordinator of having over-sold the trial
+Option CRecommend extending Claude to the edition scripts as well, projecting a saving on the scripts similar to the one already measured on the listener letters
+Option DReport all three findings to the committee exactly as they stand, presenting the caught date for the annual tea as evidence that the volunteer read-through does its job
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## The Three-Part Account
+
+Difficulty
+
+30 minutes
+
+What you'll learn
+How to state a value claim in four defensible parts
+How to name the untested category explicitly
+How to present a caught error as evidence for the process
+How to answer the enthusiast and the sceptic from the same truthful account
+
+Take any Claude use you have actually run for a few weeks; the augmentation from the 4.4 exercise is idealWhy: The account only teaches honesty when the material is real; invented pilots have no inconvenient findings.
+You should see: One named piece of work with at least a few weeks of history behind it.
+Stuck? Get a nudge
+
+Write part one: what changed, with the task, the before, the after, and how you measured itWhy: The four-part shape is what makes a claim defensible to a sceptical reader.
+You should see: One or two sentences a sceptic could check rather than merely believe.
+Stuck? Get a nudge
+
+Write part two: what did not change and why, and what you have not tested, named explicitlyWhy: Saying nothing about the untested category is taken as a claim; naming it is what prevents the later surprise.
+You should see: An honest paragraph including at least one thing the trial never included.
+Stuck? Get a nudge
+
+Write part three: what stays human and why, including one example of something the human step caught, however smallWhy: The caught error is the evidence the sceptic needs that the checking step works.
+You should see: A named human gate and one concrete caught error, presented as the system working.
+Stuck? Get a nudge
+
+Delete every number you did not measure, then rehearse two replies aloud: the enthusiast asking can it do all of it now, and the sceptic asking so it makes mistakesWhy: The two attitudes are the objective’s test of whether one truthful account can serve both audiences.
+You should see: An enthusiast answer that names the human gate without a plain no, and a sceptic answer that treats the caught error as evidence.
+Stuck? Get a nudge
+
+## Sources
+Claude Enterprise Administrator Guide — Anthropic
+AI Fluency: Framework and Foundations — Anthropic (the element names are the course's module titles; the one-clause glosses of each element are our paraphrase of the course content)
+Claude Certified Associate – Foundations Exam Guide — Anthropic. No Anthropic document covers stakeholder communication as a skill. This lesson draws on the exam guide's objective and standard professional practice; the Enterprise Administrator Guide and AI Fluency support specific points.
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonIntegrating Claude into Existing WorkflowsNext LessonConfiguring Projects with Instructions and Knowledge Sources

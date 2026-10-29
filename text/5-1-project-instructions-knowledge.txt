@@ -1,0 +1,97 @@
+
+
+## Configuring Projects with Instructions and Knowledge Sources
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+
+## Two Containers, Two Jobs
+Anthropic's Help Center describes a Project as a self-contained workspace with its own chat histories and knowledge base. A Project has two configurable halves. The Help Center documents them separately because they do different work. Custom instructions are where you set how Claude should behave and respond. They tailor Claude's responses: for example, a more formal tone, or answers from the perspective of a specific role or industry. Project knowledge is the material Claude works from. You upload relevant documents, text and files to the knowledge base. Claude uses them to understand the context and background of chats in the Project. Instructions answer "how should this work be done?" Knowledge answers "what should it be done from?"
+
+This lesson uses one made-up example throughout: a window cleaning firm whose manager writes quotes and reminders every week. Each time, she tells Claude to write to homeowners in plain words and give the next visit date. Each time, she attaches the price list, the terms of service and good past replies. Both halves are ordinary setup steps in the Project screen: write and save the instructions, then use the add button to upload the knowledge files.
+
+## The Container Test
+Configuring a Project well depends on one sorting decision, which you apply to each piece in turn. Is this a rule about behaviour, or material to consult? For the window cleaning firm, "write to homeowners in plain words" is behaviour, so it belongs in the instructions. The price list is material, so it belongs in the knowledge.
+
+The test matters because each container has properties the other lacks. Claude applies the instructions to every chat in the Project. Claude consults knowledge when the work needs it. You can replace a knowledge file in one step when the document is revised. You have to find a policy that is pasted into the instructions and remove it by hand.
+
+## The Two Wrong-Container Failures
+The first failure is reference material pasted into the instructions. The usual reason given is thoroughness: put the whole policy where Claude can never miss it. Then the pasted content hides the behavioural rules. When the policy is revised, the stale text stays in a place where you cannot cleanly replace it. If you paste the firm's terms of service into the instructions, the two behavioural rules then sit inside pages of terms.
+
+The second failure is the reverse: a rule placed in the knowledge base. A house style guide uploaded as a document is material about behaviour, not an instruction. Nothing marks the style guide as a rule for every response, so the style guide is applied only when the Project happens to consult it. If the firm uploaded its style guide as knowledge, the style guide would apply only some of the time. A rule that is applied only some of the time is not a standard. A rule that the work depends on every time belongs in the instructions, stated as a behaviour.
+
+## Build the Setup from What You Already Do
+The method needs no fresh analysis, because anyone doing the work by hand already has both lists. Whatever you re-explain at the start of every conversation is the instruction set: the audience, the tone, the format, the standing rules. Whatever you re-attach is the knowledge base: the policies, the templates, the past examples. At the window cleaning firm, the two rules become instructions and the three files become knowledge. Write the first list as behaviours and upload the second as files. Then run the next real task with a short task-only prompt, and note what you no longer had to say.
+
+## In the exam
+This objective starts after the Project decision and tests how well you configure the Project. Whether a piece of work deserves a Project at all is Domain 3's judgement. Where a Project sits in a wider process is Domain 4's. Most questions here are a scenario that asks you to sort each piece as behaviour or material, which is the container test, so practise the test until it is automatic. Both wrong-container failures are common in real setups and make effective wrong options. Because the question begins after that decision, "use a Project" is never the right answer here. An option that argues that decision again belongs to Domain 3.
+Key Concept
+When an exam question offers competing setups, apply the container test to each piece the question mentions. The right answer puts behaviour in the instructions and material in the knowledge. The wrong options put at least one piece in the other container, usually presented as thoroughness or tidiness.
+
+## Exam Traps
+
+Exam Trap
+Pasting the reference document into the custom instructions so Claude can never miss it
+Pasted reference text hides the behavioural rules. When the document is revised, the old text has to be found and cut out by hand, whereas a knowledge file can be replaced in one step. Keep the rules in the instructions.
+
+Exam Trap
+Uploading the standing rule as a knowledge document and expecting it to govern every response
+Knowledge is material Claude consults, not standing behaviour. A rule that must hold every time gets applied only sometimes unless it is stated in the instructions, which is the job instructions exist to do.
+
+Exam Trap
+Skipping the Project and re-explaining and re-attaching everything in each chat, presented as keeping things current
+Keeping material current is handled by swapping the knowledge file when the source document changes. The per-chat workaround re-introduces the exact overhead the Project removes, and it depends on every user remembering to do it.
+
+## Practice Scenario
+The secretary of a tenants and residents association has decided the estate casework and the monthly meeting papers belong in one Project and is now setting it up. Two pieces are in hand: the association repairs policy, and the rule that every letter must name the responsible officer and the date the repair was reported. Where should each go?
+Option AUpload the repairs policy to the project knowledge, and write the rule about naming the responsible officer and the report date into the custom instructions
+Option BPaste the repairs policy into the custom instructions so Claude can never overlook it, and upload a short guidance note that mentions the responsible-officer rule to the project knowledge
+Option CUpload both the repairs policy and a document stating the responsible-officer rule as knowledge files, and leave the custom instructions empty so the Project stays flexible
+Option DKeep both out of the Project and re-attach the policy and restate the rule at the start of each new chat, since freshly pasted material is always the current version
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Sort a Month of Manual Work into the Two Containers
+
+Difficulty
+
+25 minutes
+
+What you'll learn
+How to identify the instruction set contained in what you re-explain every chat
+How to identify the knowledge base contained in what you re-attach
+How to apply the container test to ambiguous pieces
+How to confirm the setup worked by what you no longer had to say
+
+Pick a recurring piece of work you currently run in ordinary chats: something where you re-explain context and re-attach files each timeWhy: The two lists a Project needs already exist in your manual habit; a recurring task makes them visible.
+You should see: One line naming the task and how often it recurs.
+Stuck? Get a nudge
+
+Write two lists from memory of your last few conversations: everything you re-explained, such as audience, tone, format and standing rules, and everything you re-attached, such as policies, templates, examples and dataWhy: The re-explained list is the instruction set and the re-attached list is the knowledge base; the sorting is already done by your own behaviour.
+You should see: Two written lists, one of behaviours and one of documents.
+Stuck? Get a nudge
+
+Create a Project, write the first list into the custom instructions phrased as behaviours, and upload the second list as project knowledgeWhy: Phrasing instructions as behaviours keeps them checkable, and uploading the real documents works better than describing them.
+You should see: A saved instruction set and a populated knowledge base in the Project screen.
+Stuck? Get a nudge
+
+Apply the container test to every item that feels ambiguous: is it a rule about behaviour, or material to consult? Move anything sitting in the wrong halfWhy: The ambiguous items are where real setups go wrong, and the test resolves them one question at a time.
+You should see: At least one item you moved, or a note that everything passed the test where it was.
+Stuck? Get a nudge
+
+Run the next real task in the Project with a short task-only prompt, and note what you no longer had to sayWhy: The evidence of a good setup is a prompt that gets shorter; anything you still had to explain belongs in one of the two containers.
+You should see: A first output comparable to your usual standard, from a fraction of the usual prompt.
+Stuck? Get a nudge
+
+## Sources
+What are projects? — Anthropic
+How can I create and manage projects? — Anthropic
+How do usage and length limits work? — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonCommunicating Value and Limitations to StakeholdersNext LessonManaging Uploaded Knowledge and Connectors

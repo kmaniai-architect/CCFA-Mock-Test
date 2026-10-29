@@ -1,0 +1,107 @@
+
+
+## Integrating Claude into Existing Workflows
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+In this certification, integration is about two questions. Where in an existing process does a person bring work to Claude? Does the process stay the same? Integration never means a technical connection between systems. To augment is to give Claude one slow step. To redesign is to change the process itself. To escalate is to pass work beyond the Associate's role to someone else.
+
+This lesson uses one made-up example throughout: a dry cleaner. Every Monday its manager prepares a write-up of last week's damage claims. Customers who leave garments uncollected get a reminder letter.
+
+## Augment: One Step, Done Better
+When Claude does the slow step, everything else stays the same. The write-up takes ten minutes instead of an hour. The manager still owns the write-up, and nobody else's job changes. So augmentation is cheap, reversible and easy to explain to colleagues. If augmentation fails, the manager does the write-up by hand again. Augmentation is the right choice far more often than the ambitious alternative. Most successful integrations for an Associate improve one step.
+
+## Redesign: Pilot First
+In a redesign the process changes because the constraint that decided how the process works has gone. Personalising a reminder letter used to cost twenty minutes, so the dry cleaner sent one generic letter. When a personalised letter costs two minutes, a tiered approach that nobody would have proposed becomes possible.
+
+Redesign is rarer and bigger, so a redesign gets a pilot before a rollout. Anthropic's enterprise deployment guidance stages adoption this way. A pilot group is monitored for feedback over a period of weeks before wider expansion. Champions are identified per team. The dry cleaner tries tiered letters on one batch first. An all-at-once rollout measures nothing. It leaves nothing to compare against, and it risks everything at once.
+
+## The Human Gate
+Find the step where the decision happens. Keep a person on that step. Integrations fail when the checking step is removed. Checking has no visible output, so it looks like waste to anyone redesigning from a diagram. The dry cleaner's manager signs each letter before the letter is sent. This signing step is the human gate. The gate also makes augmentation safe to adopt quickly. The person who always signed the letters still signs them, so a person still makes the judgement in the process.
+
+## The Associate's Boundary
+Some requests are outside this role because they need a technical implementation. A technical implementation means systems that communicate with each other, data that moves on its own, or a process built to run with nobody present. Suppose the owner wants reminders sent overnight, straight from the till system. That request means connecting the till system to whatever sends the letters. This connection is technical work. The professional action is to escalate the request to a Claude Developer or Architect, with a clear written description of what the process needs. Describing the need well is itself the Associate's contribution. Escalation is no failure. Escalation shows that you know the limits of your own job.
+
+Connectors let Claude retrieve data and take actions in connected services. Connectors operate inside a conversation, when a person's requests need them. The Google Workspace documentation states that Claude only accesses your data when you explicitly ask a question or request an action requiring it. The features this exam covers include chat, Projects, research, artifacts and connectors. Within these features, work starts when a person asks for it.
+
+Current state (checked 14 October 2026): Claude Cowork, which the exam guide does not name, has scheduled tasks. Anthropic's Cowork course says a task that only uses your connectors can run remotely at its set time. On the exam, the Associate still escalates a request for work that runs by itself. This is because the exam treats such a request as a technical implementation beyond this role.
+
+## Where Recurring Work Lives
+Recurring work belongs in a Project, not in one conversation that grows longer and longer. A Project is a self-contained workspace with its own chat histories and knowledge. When a chat approaches its length limit, the Help Center advises starting a new conversation or using a Project. The manager keeps the Monday write-up in a Project. Where a plan supports sharing, a Project gives a team one shared environment for its documents and instructions. Chats inside a Project are not shared by default. A member sees the Project's contents, knowledge and instructions. Each person's own conversations stay private unless they choose to share one. This objective is about deciding that the work belongs in a Project. Domain 5 is about configuring the Project and maintaining its instructions and knowledge.
+
+## In the exam
+If you know the meaning of integration, you can answer many questions. The wrong options are usually integrations in the technical sense. The right answer is an integration in this lesson's sense. Learn the words in a question that signal a technical implementation, which needs an escalation: automatically, without anyone having to, straight from the system, overnight.
+Proposing full automation
+Connecting Claude to a system, or configuring Claude to run unattended, is this domain's typical wrong option. It is never the right answer. Escalate because the request is a technical implementation, beyond this role and the features this exam covers. Never base the escalation on a claim that no Claude product could run the work. Cowork's scheduled tasks can run some tasks at a set time. The exam guide does not name these scheduled tasks.
+
+## Exam Traps
+
+Exam Trap
+Improvising an unattended pipeline that connects systems together
+Systems connected together, auto-publishing and unattended pipelines are technical implementations, beyond the Associate's role and the features this exam covers. Improvised versions fail silently with nobody present to catch them. The professional action is a clear escalation brief to a Claude Developer or Architect.
+
+Exam Trap
+Redesigning the whole process at once
+The all-at-once rollout means that if it fails, everything fails together and nothing was learned. A redesign needs a pilot on one part of the process first, with a measurement, exactly as Anthropic's own deployment guidance stages adoption.
+
+Exam Trap
+Removing the checking step to save time
+The human gate produces no visible output, which makes it look like waste on a process diagram. It is the step where a person makes the process's judgement, so keep the person on the deciding step and check each output before it goes out.
+
+## Practice Scenario
+A local newspaper's events page is compiled every week by an editorial assistant from event details that venues email in. A colleague proposes that Claude should instead gather the listings from the venues' websites overnight and publish the finished page without anyone touching it. The assistant still wants to save time on this week's page, with a person reading every listing before it runs. How should the assistant respond?
+Option AAgree, and spend the week experimenting with connectors until Claude can collect the venue listings and produce the page each night with nobody involved
+Option BDecline any use of Claude on the page at all, since a listing with one wrong date or time would damage the paper’s credibility with readers and venues
+Option CEscalate the overnight version to the technical team with a note of what the process needs, meanwhile using Claude to reformat the emailed submissions for checking
+Option DRedesign the whole listings operation all at once: print, web and social editions built from the same submitted material and launched together
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Map One Process You Own
+
+Difficulty
+
+45 minutes
+
+What you'll learn
+How to classify each step of a process: augment, redesign, escalate or human-only
+How to write a usable escalation brief for a Developer or Architect
+How to pick the augmentation with the best ratio of time saved to risk
+How to measure an integration honestly over two weeks
+
+Pick a recurring process you could describe to a new colleague in five minutes, and write its steps from start to finishWhy: Integration decisions are made per step; a process you cannot enumerate cannot be integrated deliberately.
+You should see: A numbered list of steps from trigger to finished output, including the informal ones.
+Stuck? Get a nudge
+
+Mark each step: augment (a person brings this step to Claude today), redesign (this step only exists because something used to be expensive), escalate (this needs a technical implementation, such as systems communicating with each other or a process running with nobody present), or human-only (this is where the decision happens)Why: The four labels are the objective’s whole decision framework applied to real work.
+You should see: Every step carrying exactly one label.
+Stuck? Get a nudge
+
+For every escalate step, write the two-sentence brief you would hand a Claude Developer: what the process needs, and what must stay humanWhy: Describing the need clearly is the Associate’s contribution to work beyond the features this exam covers, and writing it tests whether you understand the process.
+You should see: A brief per escalate step that a Developer could act on without a meeting.
+Stuck? Get a nudge
+
+Pick the single augmentation with the best ratio of time saved to risk and run it for two weeks, keeping the human gate exactly where it wasWhy: Integrations succeed by improving one step and measuring it; the rule to pilot first applies even at this scale.
+You should see: Two weeks of the process running with one step augmented and nothing else changed.
+Stuck? Get a nudge
+
+Measure it honestly (the before, the after, how you know) and note anything the redesign question should revisit now that the step is cheapWhy: The honest measurement is input for objective 4.5, and the cheap step may have removed a constraint that decided how the process works.
+You should see: A three-line record: before, after, evidence, plus any redesign candidate worth piloting.
+Stuck? Get a nudge
+
+## Sources
+What are projects? — Anthropic
+Manage project visibility and sharing — Anthropic
+Use connectors to extend Claude's capabilities — Anthropic
+Use Google Workspace connectors — Anthropic
+How do usage and length limits work? — Anthropic
+Claude Enterprise Administrator Guide — Anthropic
+Introduction to Claude Cowork: What Claude Cowork can do for you — Anthropic (current-state note only: the exam guide does not name Cowork)
+Claude Certified Associate – Foundations Exam Guide — Anthropic (exam guide; claims about professional practice are our judgement, not Anthropic guidance)
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonSupporting Solution Design, Development and IterationNext LessonCommunicating Value and Limitations to Stakeholders

@@ -1,0 +1,112 @@
+
+
+## Using Claude for Research, Planning and Process Optimisation
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+Research gathers and synthesises outside material, so you start from material that already exists. Planning turns a goal into ordered steps. Process optimisation finds and fixes the step that slows a process. All three work the same way: Claude makes the first draft, and you make the decisions about it.
+
+This lesson uses one made-up example throughout: an estate agency. Its manager uses Claude for all three: other agencies' valuation practice, an open-house weekend plan, and slow lettings.
+
+## Research at Two Scales
+The product supports research at two scales, and the Help Center describes the difference. Web search suits straightforward factual queries that one or two lookups can answer. Research mode runs multiple searches that build on each other. It explores different angles of a question and addresses the open questions systematically. It returns cited findings and suits bigger multi-source jobs. At the agency, one lettings rule is a job for web search. A survey of valuation practice is a job for Research.
+
+The value is coverage and speed. The limit is that anything important gets checked before anyone repeats it, whether it has citations or not. A citation shows where a finding came from, not that the finding is right.
+
+## Plans Are Built from Stated Constraints
+Starting from Claude's first plan is better than starting from nothing. Claude is good at finding gaps in a plan. If you ask what a plan is missing, you get dependencies, sequencing problems and the step that everyone forgets.
+
+Claude will also confidently make plans that omit constraints you never mentioned, because it does not know them. Examples are the one accessible entrance, the volunteer who cannot work Sundays and the double-booked room. Nothing in the output warns you that Claude built the plan without them. An unconstrained open-house plan might staff Sunday viewings with a negotiator who never works Sundays. The plan is wrong, but it looks correct. That makes it more dangerous than an obviously bad plan, because people are more likely to trust it.
+
+This is easy to prevent. Anthropic's business prompt-engineering guidance says to treat Claude like an intern on its first day, with clear, explicit instructions and all the necessary detail. For a useful plan, put the real constraints in the brief, then ask for the assumptions that the plan rests on. When the plan states an assumption, you can read it and correct it.
+
+## The Optimisation Loop
+Claude generates hypotheses about where a process is slow, fragile or duplicated. It cannot tell you which one is true, because it has never watched your process run. Data decides which hypothesis is true. The loop has four steps:
+
+Describe the process and its constraints.
+
+Ask for candidate bottlenecks, and for the evidence that would confirm each one.
+
+Collect that evidence.
+
+Change the step that the evidence identifies.
+
+Evidence comes after Claude names the hypotheses, so you know what you are looking for. Evidence comes before anything changes, so the change has a target. For the agency's lettings, Claude might suggest slow referencing or late landlord sign-off. The stage dates in the agency's own files decide between them.
+
+The same guidance advises approaching the work like a scientist, and testing and iterating often. It also advises pairing prompt work with the organisation's own subject-matter experts rather than trusting either alone.
+
+## The Wrong Bottleneck
+The most expensive mistake is optimising a step that was never the constraint. It wastes the budget on a step that was working, and people are then less willing to try another change. It usually comes from treating the most plausible hypothesis as the confirmed one. The cause that looks most likely is often the real one, so it is tempting to act without evidence. But the likely cause is wrong often enough to make this expensive. Collecting the evidence that shows the real cause usually needs a day's work. Suppose the dates show that landlord sign-off causes the delay. If the agency buys faster referencing, it spends its money and the delay remains.
+
+## In the exam
+The exam tests your judgement, not Claude's first draft. Every right answer in this objective either supplies the facts Claude could not know or checks something before acting. Every wrong option that recurs treats a fluent output as a finished one. Domain 3 covers which feature does the research. This objective tests the practice around that feature. Checking findings before repeating them belongs to Domain 2.
+How to spot the right answer
+In this objective's questions, the right answer checks the evidence before changing anything: last season's timings, the usage records, the complaint log. The wrong options redesign the process based on reasoning that sounds convincing, or choose a bigger feature when local facts were missing.
+
+## Exam Traps
+
+Exam Trap
+Treating a plausible, well-structured plan as a checked one
+Claude confidently makes plans that ignore constraints it was not told, and nothing in the output warns you. The plan looks correct but is wrong. Put the real constraints in the brief, then ask for the assumptions it is based on.
+
+Exam Trap
+Changing the process because of the best-sounding hypothesis
+Claude's candidate bottlenecks are hypotheses; it has never watched the process run. Acting on the most plausible one can spend money on a step that was fine. Get the evidence that would confirm each one, then change the step that the evidence identifies.
+
+Exam Trap
+Substituting more research for local evidence
+Citations from elsewhere cannot say which cause is true in your process. Research mode suits bigger multi-source jobs, but the deciding evidence here is the process's own data. Pull that data before changing anything.
+
+## Practice Scenario
+A city bike-hire scheme's coordinator keeps hearing that commuter-belt docking stations are empty by eight in the morning. She describes the scheme to Claude, which suggests four plausible causes: the overnight rebalancing round finishes too early, two residential stations feed the same office cluster, weekend maintenance keeps bikes off the road on Mondays, and riders arriving at full stations cycle on with the bikes. Only her own scheme's figures will show which cause is the real one, and she will act on none of them until they do. What is the professional next step?
+Option AAdd a second morning rebalancing round straight away, since the first cause Claude listed is the most plausible one and the mornings are when the complaints arrive
+Option BAsk Claude what evidence would confirm or rule out each cause, then pull the scheme’s trip and docking data before changing anything at all
+Option CRun the same question again in Research mode so that the four candidate causes come back supported by citations from other cities’ bike schemes
+Option DAsk Claude to redesign the docking network around commuter flows, treating the empty morning stations as sufficient evidence that the current layout has failed
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Plan It Twice, Then Find the Real Bottleneck
+
+Difficulty
+
+40 minutes
+
+What you'll learn
+How stated constraints change the usefulness of a first-pass plan
+How to spot a plan that looks correct but is wrong
+How to run the describe, hypothesise, evidence, change loop
+How to test whether the data points at the step you would have guessed
+
+Pick a real upcoming piece of work with genuine constraints: an event, a rota, a launch, anything that is actually yoursWhy: The exercise only works when you know the real constraints well enough to catch a plan that ignores them.
+You should see: One named piece of work and, privately, its three most binding constraints.
+Stuck? Get a nudge
+
+Ask Claude for a first-pass plan twice: once with no constraints stated, once with the three most binding real constraints written inWhy: The comparison makes the objective’s core failure visible: the unconstrained plan looks just as correct as the constrained one.
+You should see: Two fluent plans that differ in exactly the places where your constraints apply.
+Stuck? Get a nudge
+
+List what the unconstrained plan got wrong that nonetheless reads as perfectly sensibleWhy: Naming the specific errors makes it a habit to check plans against facts rather than against how well they are written.
+You should see: Three or four concrete errors, each invisible to someone who did not know the constraints.
+Stuck? Get a nudge
+
+Now pick a process that feels slow and describe it to Claude from start to finish; ask for four candidate bottlenecks and, for each, the evidence that would confirm or rule it outWhy: This is the optimisation loop’s first half: hypotheses plus the evidence that would decide between them.
+You should see: Four candidate causes, each paired with a named, gettable piece of evidence.
+Stuck? Get a nudge
+
+Collect one of those pieces of evidence this week, and note whether the data pointed at the step you would have guessedWhy: The gap between the guessed bottleneck and the evidenced one is what this step teaches; most people are surprised at least once.
+You should see: One piece of real data and a one-line verdict: guess confirmed or guess wrong.
+Stuck? Get a nudge
+
+## Sources
+Use research on Claude — Anthropic
+When should I use web search, extended thinking, and research? — Anthropic
+Prompt engineering for business performance — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic. No Anthropic document covers process optimisation as a business skill. This lesson draws on the exam guide's objective and standard practice; the articles above support only the points they are cited for.
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonAnalysing Requirements and Use CasesNext LessonSupporting Solution Design, Development and Iteration

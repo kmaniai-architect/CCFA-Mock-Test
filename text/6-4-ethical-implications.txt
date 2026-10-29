@@ -1,0 +1,110 @@
+
+
+## Understanding the Ethical Implications of AI Usage
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+Accountability means being responsible for work when the work goes wrong. Disclosure means telling people that AI helped to make the work. A stakeholder is anyone whom the work affects. Domain 2 asks whether an output is correct. This objective asks who owns the output, who deserved to know how it was made, and whom the output describes. Unlike most objectives in this domain, this objective has little documentation.
+
+This lesson uses one made-up example throughout: a family-run takeaway that uses Claude for its newsletter, its website order chat and the weekly specials. The head cook used to write the weekly specials.
+
+## Accountability
+The person whose name is on the work owns it: the email's sender, the report's publisher, the letter's signer. Saying that Claude drafted the work describes the production method. It is like saying that an assistant typed the work. The statement moves no responsibility. The Usage Policy includes this rule in its high-risk requirements. The policy names High-risk Areas, such as legal or medical advice. When Claude's output becomes advice or a decision in one of these areas, a qualified person must "remain accountable for what is delivered or decided". The AI Fluency framework calls the same duty Diligence.
+
+If the newsletter prints a wrong price under the owner's name, the owner owes the correction. Blaming Claude, or whoever configured the Project, only explains how the error happened. Under pressure, that blame is tempting, so practise the rule until you apply it automatically.
+
+## When Disclosure Is Owed
+The Usage Policy sets one categorical rule. Consumer-facing chatbots and external-facing AI agents must tell users that they are interacting with AI rather than a human. This disclosure must happen at a minimum at the beginning of each chat session or in the product interface. The takeaway's order chat can open each conversation by saying that it is AI, or it can show a label in the chat window. A line in a privacy notice elsewhere on the site does neither of these things.
+
+For everything else, disclosure depends on proportion, and both extremes are wrong. Nobody declares AI assistance on a routine internal email, such as the staff rota. Declaring everything is over-caution. Disclosure is owed when:
+
+the reader's trust depends on who did the thinking or the judging: assessed work, a professional opinion
+
+a claim of authorship would be false
+
+a policy or client agreement requires it
+
+The test is what the reader relies on. If the reader relies on the information, disclosure adds little. If the reader relies on the fact that you did the thinking, disclosure is owed. A personal message such as condolence, or thanks meant as your own feeling, is different. The reader of such a message relies on the feeling being your own. A disclosure note cannot restore that, so you write the message yourself. An organisation's routine thank-you letters are ordinary drafting work. The newsletter's prices need no note. The owner writes the thank-you card for a retiring driver without Claude.
+
+## Fairness Is a Different Review from Accuracy
+An output can pass every accuracy check and still be unfair. Descriptions of groups, communities, applicants or service users can repeat assumptions that the facts never required. Suppose that the newsletter's delivery section presents one estate as a problem, a village as declining and older customers as resistant to change. Every delivery time is correct, yet the people that the section describes still see the unfairness at once. Checking the numbers misses the unfairness, because the unfairness is in how the section presents people. This unfairness needs a different reviewer: someone who knows those customers and reads for how the section describes them. The Usage Policy also prohibits using Claude to critique anyone's body shape or size. The policy treats such critique as promoting unhealthy body image.
+
+Domain 2 covers spotting bias as an evaluation skill. This objective covers the responsibility half: whose job it is to catch unfairness in work about people before publishing. It also covers what the publisher owes when unfairness is published.
+
+## Colleagues Are Stakeholders Too
+The stakeholder that most candidates never consider is the person whose work changes. When Claude starts to do part of a process, the colleagues who do that work need to know what changed and why. When colleagues discover that a shared task was automated without notice, that discovery damages the trust that disclosure protects. So the owner tells the head cook before Claude's first specials board is displayed. Using Claude to produce a colleague's contribution without telling them is an ethical question of honesty between colleagues, not a question of output quality. Examples are appraisal comments that the colleague was meant to write and a section that the colleague was meant to own.
+
+## In the exam
+Questions ask who owns an output, who should have known, who is described, or whose work changed. The right answer keeps accountability with the person named on the work. Wrong options spread accountability onto the tool or the Project's configurer, or offer a general rule to declare everything, which is over-caution.
+What to notice in the exam
+An option whose main content is checking, cross-referencing or validating belongs to a Domain 2 objective. The right answer for objective 6.4 is always about ownership, disclosure, fairness or colleagues.
+
+## Where These Rules Come From
+This lesson extends the Usage Policy's high-risk accountability rule to everyday workplace outputs. This extension is the exam guide's objective, interpreted through ordinary professional practice. The same two grounds support the disclosure framework beyond the chatbot rule. They also support the section on colleagues. No first-party document covers either of these.
+
+## Exam Traps
+
+Exam Trap
+Transferring accountability to the tool or its configurer
+Explaining that Claude produced the figure, or that someone else set up the Project, describes how the error was made, not who owes the correction. Responsibility attaches to the name on the work, so the author corrects the figure and fixes the check.
+
+Exam Trap
+Using disclosure to avoid blame or as a rule for every output
+An AI-assistance note added to soften ownership of an error misuses disclosure, and declaring assistance on every routine output is over-caution that drowns the cases where it genuinely matters. Disclosure is about what the audience is relying on, not a ritual or a deflection.
+
+Exam Trap
+Signing off work about people once the figures are confirmed as correct
+Fairness failures survive accuracy checks by definition. The characterisation review is a separate pass by someone who knows the people described, and an option that stops at verified figures has answered the accuracy question while the ethical one is still open.
+
+## Practice Scenario
+The clerk of an almshouse charity publishes the annual report to residents and donors, largely drafted by Claude from the charity's own maintenance and occupancy records. A resident spots that the report overstates how quickly repairs were completed last year, and asks the clerk who wrote it. What is the professional response?
+Option AAmend the figure quietly in the online copy so the record is accurate without drawing further attention to the mistake
+Option BAdd a note to the report disclosing that AI was used in the drafting, so readers can weigh the figures accordingly
+Option CExplain that the figure came from an AI-assisted draft, so the error is a software fault the charity will raise with the provider of the tool
+Option DOwn the error as the author of the report, issue the correction to residents and donors, and fix the checking step that let it through
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Audit One Published Piece
+
+Difficulty
+
+30 minutes
+
+What you'll learn
+How to write the ownership line for a piece of AI-assisted work
+How to decide whether disclosure was owed and on what ground
+How to run a fairness pass separately from an accuracy pass
+How to identify the colleagues a piece of work affected
+
+Pick one piece of AI-assisted work you have already sent or published, ideally with your name on it and an audience beyond your own teamWhy: The audit is only useful for work with real ownership and real readers. Drafts and private notes have nothing at stake to examine.
+You should see: One named piece: what it was, who received it, whose name was on it.
+Stuck? Get a nudge
+
+Write its ownership line: whose name is on it, and exactly what you would say if a reader challenged a claim in it tomorrowWhy: The anchor only holds if you can say the words; drafting them now is what prevents the accountability transfer under pressure.
+You should see: Two sentences: the owner, and the response to a challenge that accepts ownership before explaining anything.
+Stuck? Get a nudge
+
+Decide whether disclosure was owed: what was the reader relying on, the information itself or the fact that you did the thinking, and did any policy or client agreement require a declarationWhy: Deciding when disclosure is owed needs practice on real cases, because both extremes feel safe and neither is.
+You should see: A yes or no with the ground named: reliance, authorship, or a policy requirement.
+Stuck? Get a nudge
+
+Re-read every passage that describes a group of people and mark anything accurate but unfair; name who knows those people well enough to review it, and whether they didWhy: The fairness pass is a separate skill from fact-checking, and it only becomes visible when run separately.
+You should see: Marked passages, or a note that none describe people; plus the name of the right reviewer.
+Stuck? Get a nudge
+
+Note whose work the piece changed or replaced, and whether they knew; if they did not, that conversation is the output of the exerciseWhy: The colleague stakeholder is the one this objective says candidates always miss, and the audit is incomplete without them.
+You should see: Either a note that colleagues knew, or the name of the person who deserves the conversation and a line on what you will say.
+Stuck? Get a nudge
+
+## Sources
+Usage Policy — Anthropic
+AI Fluency: Framework and Foundations — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic. Beyond the chatbot disclosure rule and the high-risk responsibility sentence, no Anthropic document covers this objective. The sections on fairness and on colleagues draw on the exam guide's objective and standard professional practice.
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonFollowing Organisational AI Policies and Governance StandardsNext LessonDiagnosing and Resolving Underperforming Prompts and Poor Outputs

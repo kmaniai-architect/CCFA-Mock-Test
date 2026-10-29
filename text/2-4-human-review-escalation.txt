@@ -1,0 +1,115 @@
+
+
+## When Human Review or Additional Verification Is Required
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+Escalation passes a Claude output to a qualified person to review before anyone uses it. Triage is the decision about who reviews each output. Triggers are properties of the situation that raise the cost of an error. This objective covers when your own review is not enough. It also covers whose review is enough in that case.
+
+This lesson uses one made-up example throughout: a driving school. Its owner has four Claude drafts: a website advert, a refund reply under the booking terms, appraisal notes on an instructor, and a car-cleaning reminder. All four read well.
+
+## The Triggers
+Each trigger below needs qualified human review.
+
+an external audience: customers, the public, press, funders
+
+legal, financial or contractual consequence
+
+decisions about people: hiring, appraisal, allocation
+
+safety or health implications
+
+output that is irreversible once sent
+
+One trigger is enough reason for a review by a second, qualified person. When several triggers apply together, escalation is mandatory. Confidence and polish are not on the list, because every Claude draft already has them. Claude is not a single source of truth, and high-stakes output deserves careful scrutiny.
+
+At the driving school, the advert has an external audience. The refund reply has a contractual consequence. The appraisal notes inform a decision about a person. The cleaning reminder has none of these triggers, so the owner reviews it herself.
+
+You review outputs with no trigger yourself, carefully, using the habits from objectives 2.1 to 2.3. These outputs are internal working material, first drafts that will change in later versions, and routine low-consequence messages. That review is real. It is not a way to skip review. Triage decides who reviews, never whether anyone reviews.
+
+## Qualified, Not Senior
+Anthropic's Usage Policy sets the standard. It names High-risk Areas, such as legal, medical, financial and employment matters. In these areas, Claude's output can become advice to a person or a decision about them. The policy calls that output a High-risk AI Recommendation. It requires two things for it. The person must be told that AI was used, and a qualified person must review it. The review rule reads: "A qualified person must meaningfully review a High-risk AI Recommendation, with the authority to change or modify it, before it is delivered as advice". The same rule applies before the recommendation is used to make a decision. Advising someone on their legal rights, or on what to do in a specific legal matter, is one of these areas.
+
+A qualified person is "someone with the training or experience to evaluate the output in that field". The words that pick the reviewer are "in that field". Contract language goes to someone with legal competence. Tax figures go to the accountant. Clinical claims go to the clinician. Hiring criteria go to HR judgement. Outside the High-risk Areas, the policy sets no review rule, but competence is still the test that picks the reviewer.
+
+Seniority and availability are neither necessary nor sufficient. An unqualified reader, however senior, cannot catch the errors that make the content dangerous. A busy director who skim-reads a lease clause gives reassurance, not review. The refund reply goes to a solicitor, not to the owner.
+
+## Both Failure Directions
+Under-escalation, too little escalation, is the intuitive failure. It sends content to an external audience when that content makes claims with professional consequences, because the draft reads authoritatively. Or it accepts an output as "only internal" when that output informs an external or consequential decision. Claude's output reads authoritatively by default. But the triggers belong to the situation, and the polish does not remove them. The next destination of the output decides more than the place where Claude drafted it. The appraisal notes stay in the office but inform a decision about an instructor.
+
+Over-escalation feels safe because caution feels safe. It is not safe. One example is a committee for a rota note. Another is a professional reviewer for every routine draft. Each adds more process than the work needs. Over-escalation overloads reviewers, delays routine work and teaches the organisation to ignore the escalation channel that high-stakes outputs need. A solicitor who reads the cleaning reminder reaches the refund reply later. The skill is triage, not maximal caution.
+
+## Two Different Reasons to Stop
+In this objective, the reasons to escalate are quality and stakes. These are what happens if the output is wrong, and who is competent to catch the errors. Domain 6 covers other reasons to stop: the data is personal or regulated, or the use is outside organisational AI policy. Both kinds of reason can arise in one situation, such as a refund reply that quotes a pupil's personal data, but the trigger differs. The programme's technical escalation is a third kind. It hands a task to a Claude Developer or Architect because the task needs automation or integration. In that case, the task needs more than the chat can give. It is not a case of an output that needs a qualified reviewer.
+
+## In the exam
+The exam tests this objective as triage: a decision based on the triggers that the output has, not on how polished it looks. It penalises a wrong decision in either direction. In the questions, look for the destination and for what qualifies a named reviewer. Candidates rarely expect the exam to test over-escalation, and "escalate everything" is a real wrong answer. The exam keeps Domain 6 triggers distinct.
+Key Concept
+Triage asks two questions in order. Which triggers does this output have? If it has any, who is qualified in that subject to catch the errors that matter? The wrong options answer with rank, availability or a process that applies to every output.
+
+## Exam Traps
+
+Exam Trap
+Choosing the reviewer by seniority or availability
+Where the Usage Policy requires review, a qualified person must do it: someone with the training or experience to evaluate the output in that field. A senior manager's sign-off on legal wording is reassurance, not review. Choose whoever can catch the dangerous error.
+
+Exam Trap
+Letting output pass unchecked because it is only internal
+The trigger is what the output carries, not where it first goes. An internal analysis that feeds an external bid or a decision about people carries the consequence with it, so escalate on the destination and the stakes, not the label.
+
+Exam Trap
+Escalating everything to be safe
+Over-escalation is a tested wrong answer, not a cautious right one. Routing routine internal drafts through committees or professionals overloads reviewers and weakens the escalation channel that high-stakes outputs need; careful self-review suffices for genuinely low-stakes material.
+
+## Practice Scenario
+An opticians' practice manager has three Claude drafts: advertising copy for a new lens range claiming specific visual outcomes, a reworded internal rota-swap policy, and a reply to a patient complaint that touches on what may have gone wrong clinically. The manager has no clinical training and does not know what eye-care advertising may legally promise. Each draft must be checked by someone who knows its subject, with no needless delay. What is the right triage?
+Option APublish the advertising copy, since it reads professionally and was drafted from the product literature, and ask the optometrist to look over the rota policy and complaint reply
+Option BPut all three drafts to the practice’s weekly management meeting for collective sign-off before any of them is used, so that responsibility for every document is shared by the whole team
+Option CQualified review before either goes out (a health-claims expert for the advertising claims, the optometrist for the complaint reply), and the manager’s own careful read for the rota policy
+Option DReview all three personally and carefully as the accountable manager, then send them, keeping turnaround fast and responsibility in one place
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Triage Your Last Five Outputs
+
+Difficulty
+
+25 minutes
+
+What you'll learn
+How to spot the triggers that demand qualified review
+How to name a reviewer by subject competence rather than rank
+How to check a triage for both failure directions
+How to turn one triage session into an escalation list that you keep
+
+List the last five things Claude drafted for you, or generate five typical ones from your roleWhy: Triage only becomes a habit when practised on the actual mix of stakes your role produces.
+You should see: Five one-line descriptions of real outputs, from routine to consequential.
+Stuck? Get a nudge
+
+For each output, mark the triggers present: external audience, legal or financial consequence, decisions about people, safety or health implications, irreversibility once sentWhy: The triggers are properties of the situation, and listing them stops the polish of the prose deciding the triage.
+You should see: Each output with its triggers marked, or marked as having none.
+Stuck? Get a nudge
+
+For each triggered item, name the qualified reviewer in your organisation: a person or role competent in that subject, not merely seniorWhy: Naming a real person tests whether the escalation channel actually exists before you need it.
+You should see: A named reviewer per triggered item, with the competence that qualifies them.
+Stuck? Get a nudge
+
+For each untriggered item, write down what your own careful review covers, using the objective 2.1 two-pass habit as the checklistWhy: Self-review is the correct outcome for low-stakes work, and writing it down keeps it a real review rather than a way to skip review.
+You should see: A short self-review note per untriggered item.
+Stuck? Get a nudge
+
+Check the finished triage for both failure directions, then keep the result as your escalation list for future useWhy: Under- and over-escalation are both tested, and both show up clearly in a written triage.
+You should see: Nothing external-facing sent unchecked, nothing routine queued for committee, and a reusable list.
+Stuck? Get a nudge
+
+## Sources
+Usage Policy — Anthropic
+Claude is providing incorrect or misleading responses. What's going on? — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonFact-Checking and Validation TechniquesNext LessonEditing, Adapting and Comparing Outputs for the Audience

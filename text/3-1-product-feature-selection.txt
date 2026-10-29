@@ -1,0 +1,101 @@
+
+
+## Selecting the Right Claude Product Feature
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+Claude offers four ways to handle work. Ordinary chat is a single conversation. The Help Center describes Projects as self-contained workspaces with their own chat histories and knowledge bases. Research is for questions whose answer must be assembled from several outside sources, and it returns a cited report. An artifact is standalone content displayed in its own window, beside the conversation. Most people pick a feature by habit. Identify the kind of task instead, before writing any prompt.
+
+This lesson uses one made-up example throughout: a hair salon. Its owner has four jobs. She needs one reply to a client's complaint. Each week she writes booking reminders from the same price list and house style. She wants to know how other salons handle no-show deposits, with sources her partner can check. She revises an aftercare sheet for her stylists every quarter. Four questions sort the jobs. Is the work one-off or recurring? Does it stand alone, or does it need the same standing context (background information that stays the same) again and again? Is it consumed once, or revised and reused? Can Claude answer from what you supply, or must the answer be gathered from outside sources? Each feature exists for one kind of task.
+
+## Ordinary Chat Is the Default
+A single question, a single draft or an analysis of a document attached during the chat needs no workspace, agentic search (Research, which builds a cited answer from several sources) or separate artifact window. Ordinary chat handles such a task immediately. Ordinary chat is the right choice more often than enthusiasts admit. The complaint reply is this kind of task.
+
+## Projects: Recurring Shared Context
+A Project has two assets that persist across chats. Its instructions shape Claude's responses in every chat inside the workspace. Its knowledge base holds uploaded material Claude uses as background for those chats. You configure both assets once, and then both apply to every chat in the Project. The signal is a need for the same background documents, standing preferences and working material across many conversations. Re-pasting the same context into chat after chat is a Project's work done by hand. Projects exist to end that workaround. A Project would hold the price list and house style the salon owner re-pastes each week.
+
+## Research: Cited Multi-Source Synthesis
+In Research, Claude works agentically. It runs multiple searches, and later searches use what earlier searches found. Its synthesised report includes citations so that the findings can be checked. The signals are a survey of a whole field, a brief on how others do something, and an overview of the current state. Another signal is an audience who will want to see where the findings came from. The deposit question fits Research. Research is not a quality upgrade for ordinary questions. A task answerable from material you already hold gains nothing from Research, because nothing needs gathering.
+
+## Artifacts: Work with Its Own Life
+Claude creates an artifact when the output is significant, self-contained and likely to be edited, iterated on or reused outside the conversation. That last condition is the dominant signal: the work is used beyond the chat that produced it. Examples are a reference sheet revised every quarter and a plan that will be shared and updated. Each should exist as one evolving version, not as fragments scattered through a conversation history. You iterate an artifact in one of two ways. You ask Claude to change it, or you edit an earlier message. Editing an earlier message creates a branch of the chat with artifacts of its own. You can return to an artifact and share a finished one. The aftercare sheet fits this signal.
+
+## One Dominant Signal
+Real work mixes the features. A Project can contain chats that produce artifacts. A Research report can be the basis of an artifact document that is revised each quarter. The salon's deposit report might be the basis of a deposit policy artifact.
+
+## In the exam
+This objective tests whether you pick a feature by reading the task. The exam does not test the combinations. Each question presents one piece of work with one dominant signal: recurring context, multi-source citation, iterative deliverable or simple one-off. The wrong answers are always real features applied to the wrong kind of task. Do not dismiss ordinary chat, because the exam treats it as a right answer. When a question's dominant signal is a simple one-off, ordinary chat is the professional answer, however capable the other features are. The exam is willing to make the plainest option the right answer.
+
+Writing a Project's instructions and curating its knowledge base belong to Domain 5. In this objective, the exam tests whether you recognise the recurrence. Checking a Research report's citations belongs to Domain 2. Choosing between an inline answer, a table and a document is Domain 2's format question. In this objective, an artifact is the place for iterative, reusable work.
+Key Concept
+Find the dominant signal first, and then choose the feature that matches it. Recurring shared context means a Project. A cited multi-source answer means Research. An output that is revised and reused means an artifact. A self-contained one-off means ordinary chat.
+
+## Exam Traps
+
+Exam Trap
+Treating an artifact as the place to keep standing context for new chats
+An artifact is a container for one evolving output; it does not give new conversations standing context. A Project's instructions and knowledge base apply from the start of every chat, so nothing needs pasting in.
+
+Exam Trap
+Running everything through a Project or Research to maximise quality
+The most elaborate feature is not the safest choice. A simple one-off gains nothing from a workspace or a multi-source report. Ordinary chat is a legitimate answer in this objective. The dominant signal decides, not the feature's prestige.
+
+Exam Trap
+Treating re-pasting the same context into every chat as diligence
+The manual workaround repeats a Project's setup work every single time instead of once. When a scenario describes the same documents and preferences supplied chat after chat, the answer moves that work into a Project.
+
+## Practice Scenario
+A parish council clerk has four pieces of work: the monthly agenda-and-minutes cycle that always needs the council's standing orders, member list and format conventions; a one-off briefing on how five nearby councils run allotment waiting lists, with sources the councillors can check; a single resident's question about a grant deadline; and an emergency-contacts sheet that is revised every quarter and shared with all members. She wants nothing more elaborate than each piece needs, no Project for work that never recurs, and nothing re-supplied by hand. Which plan matches feature to work?
+Option ARun everything in ordinary chat, pasting the standing orders and member list in each month and rebuilding the contacts sheet from the old conversation each quarter
+Option BA Project for the monthly agenda-and-minutes cycle, Research for the five-councils briefing, ordinary chat for the grant deadline question, and the contacts sheet built and revised as an artifact
+Option CCreate one Project holding all four pieces of work, since keeping every council task inside a single workspace is simpler than making a separate feature decision for each individual piece as it comes up
+Option DUse Research for both the allotments briefing and the grant deadline question, and publish every output as a shareable artifact so that all four pieces of council work carry the same maximum level of rigour
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Audit Your Feature Choices
+
+Difficulty
+
+20 minutes
+
+What you'll learn
+How to identify the kind of task before choosing a feature
+How to name the dominant signal that picks each feature
+How to spot the manual workaround in your own working pattern
+How to decide when a recurring task deserves a Project
+
+List your five most recent Claude conversations from your own workWhy: Real conversations expose real habits; an invented list makes the results look better than they are.
+You should see: Five one-line descriptions of actual tasks you ran recently.
+Stuck? Get a nudge
+
+Label each with the feature it should have used: ordinary chat, a Project chat, Research, or an artifact for the outputWhy: The labelling forces the selection decision this objective tests, one task at a time.
+You should see: A feature label against each of the five tasks.
+Stuck? Get a nudge
+
+Name the dominant signal that decides each label: recurring shared context, multi-source cited synthesis, iterative shareable deliverable, or simple one-offWhy: Signals, not feature names, are what exam questions give you; practising how to match signals to features is the point.
+You should see: One named signal beside each feature label.
+Stuck? Get a nudge
+
+Find one manual workaround in your own pattern, such as context re-pasted across chats or a document that is revised over time, hidden in an old conversation, and name the feature that ends itWhy: The workaround is the bad practice that the exam most often presents as careful work; finding your own makes it easier to see in exam questions.
+You should see: One workaround described in a sentence, with the feature that replaces it.
+Stuck? Get a nudge
+
+If a recurring piece of work deserved a Project, note it for setup, then stop; configuring it well is a later skillWhy: This objective ends at the selection decision; instructions and knowledge curation belong to Domain 5.
+You should see: A note naming the Project you would create and the recurring work it serves.
+Stuck? Get a nudge
+
+## Sources
+What are projects? — Anthropic
+Use research on Claude — Anthropic
+Analyze campaign performance — Anthropic
+What are artifacts and how do I use them? — Anthropic
+When should I use web search, extended thinking, and research? — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonCurating Information and Selecting Output FormatsNext LessonDifferentiating Between Claude Model Types

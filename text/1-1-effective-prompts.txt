@@ -1,0 +1,114 @@
+
+
+## Creating Effective Prompts for Business and Technical Tasks
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+A prompt is the brief that you give Claude: the task and everything that Claude needs to do it. Briefing well is not a technical skill. It is the same skill that you use when you delegate work to a colleague. Every other objective in this certification depends on it. A good brief gives the other six domains something to work with. No feature, model choice or troubleshooting step fixes a bad brief.
+
+This lesson uses one made-up example throughout: a roofing firm. Its office manager wants Claude to draft a one-page update on this month's jobs for the firm's two directors. The one-line version of this prompt is "write something about this month's jobs".
+
+## The Briefing Mindset
+Anthropic's guidance is to treat Claude as a brilliant but new employee. This employee is highly capable and has no context on your company, project or standards until you supply it. The Help Center gives chat users the same comparison: a newly hired contractor who needs very specific instructions. The Help Center also advises that you explain a failing prompt as if to someone with no background knowledge of what you are asking.
+
+An effective prompt contains as much context as possible, because Claude works from what you give it. When you delegate work well, you cover the task, the background, the audience, the format and what a good result looks like. A prompt covers the same things. Neither a new hire at the roofing firm nor Claude knows which jobs ran late.
+
+## The Five Components
+A complete business prompt has five parts.
+
+Task. Say precisely what you want done, with a verb and a deliverable. "Draft a one-page project update for the steering committee" is a task. "Help me with my project" is not a task. The office manager's task is a one-page update on this month's jobs for the directors.
+
+Context. Give the background that Claude cannot know. That is who the audience is, what the document is for, what has already been decided, and any constraints that apply. For a writing task, the prompt outlines the requirements, the target audience and the main points.
+
+Source material. Paste or attach the actual inputs, such as the report, the meeting notes or the data. Do not describe them from memory. Claude works from what you give it. A summary from memory adds errors and omissions that the real document does not have. claude.ai accepts documents, spreadsheets and images, so you can give Claude the real inputs. The roofing firm attaches its job sheets instead of describing them from memory.
+
+Output specification. Format, length, tone and structure: three bullet points per workstream, neutral tone, under 400 words.
+
+An example, when standards matter. One sample of a previous document in the house style (your organisation's own style rules) works better than three paragraphs that describe the style. Anthropic calls examples one of the most reliable ways to guide format, tone and structure. Last month's update is the roofing firm's sample.
+
+## Role and Audience Framing
+Opening a prompt with a role, such as "As an HR communications specialist", shapes vocabulary, tone and priorities. Anthropic notes that even a single sentence makes a difference.
+
+Naming the audience changes the output more than most small edits to the instructions do. The same analysis should read differently for the board and for the project team. Claude shapes the analysis if you tell it who is reading. So the roofing firm's brief names the directors. When you explain the reason for a requirement, you also get a more targeted response.
+
+## What Specificity Buys
+A vague prompt produces generic output, and generic output needs a lot of rework. Being specific about the desired output format and constraints improves Claude's results. A minute that you spend on the brief saves a round of rework. The official usage guidance agrees: be specific and concise, and review and edit your prompt before you send it. A first attempt with a good brief costs less time and less usage than correcting the output more than once. The roofing firm's one-line prompt gives no job sheets, readers or format.
+
+## Technical Tasks at Associate Level
+"Technical" does not mean code. At this level, it means asking Claude for a spreadsheet formula, a first attempt at simple data analysis, or a technical document's first draft. The skill is the same: brief the task well. The office manager might write: I need a formula that flags any invoice more than 30 days overdue, here is a sample of the data.
+
+## In the exam
+The recurring wrong answer in this objective is the one-line prompt, "write something about our Q3 results". That answer presents the prompt as acceptable because Claude will infer what is needed. Claude cannot infer it: the prompt gives Claude none of the five components to work from. The formula brief above covers what Domain 1 tests. The question never tested how elegant the formula is.
+Key Concept
+When an exam question compares prompts, count the components. The right answer almost always supplies the missing task, context, source material, output specification or example. The wrong options improve the wording, and the missing component stays missing.
+
+## Exam Traps
+
+Exam Trap
+Accepting the one-line prompt because Claude will infer what is needed
+Claude has none of the context a colleague would need, so the output is generic and the user spends time on rework because the brief was skipped. Briefing the task properly at the start is the documented fix.
+
+Exam Trap
+Choosing the option that improves the wording while the missing component stays missing
+Questions that compare prompts usually test a missing component: no audience, no source material, no format. A change to the wording only leaves that gap open. Supplying the missing component is what fixes the output.
+
+Exam Trap
+Writing the deliverable yourself and using Claude only to proofread
+It looks like diligence, but it under-uses the tool. Drafting from a good brief is exactly the work Claude does well. A role that only proofreads loses the time saving. The exam treats it as lazy under-use of the tool.
+
+## Practice Scenario
+A facilities coordinator needs Claude to draft a staff memo introducing a new desk-booking system to all office-based staff. She has the supplier's how-to guide and wants a draft she can send without reworking it by hand or going back to Claude for more rounds. Which prompt prepares the work best?
+Option ASend a single line asking for a memo about the desk-booking system, keeping the request short so Claude has creative freedom, and plan to pick the best parts of whatever comes back
+Option BWrite the memo yourself from the how-to guide and ask Claude only to check the spelling, grammar and tone of the finished text before it goes out to staff
+Option CAttach the one-page how-to guide, name the audience as all office-based staff, state the goal of cutting confusion in the first week, and ask for a friendly but firm tone, 300 words, with a three-bullet summary at the top
+Option DAsk Claude first to describe how desk-booking systems usually work, then let it draft the memo in whatever format it judges best, supplying the guide, the audience and the tone preferences in later follow-up rounds if the first draft turns out to miss them
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Write the Five-Component Brief
+
+Difficulty
+
+20 minutes
+
+What you'll learn
+How to state a task as a verb plus a deliverable
+How to supply the context Claude cannot know
+How to attach real source material instead of describing it
+How to specify format, length, tone and structure
+How to use one example document to set the standard
+
+Pick a real recurring task from your own job: a report, a briefing or an email you produce every weekWhy: A task you know well makes gaps in the brief visible; you can tell instantly when the output misses your standard.
+You should see: One line naming the task, the deliverable and how often it recurs.
+Stuck? Get a nudge
+
+Write the task line as a verb plus a deliverable, then add the context Claude cannot know: the audience, the purpose, what has already been decided, any constraintsWhy: The task line and the context are the two components most often missing from weak prompts, and the two cheapest to add.
+You should see: A task sentence plus three or four lines of context a new colleague would need on their first day.
+Stuck? Get a nudge
+
+Attach or paste the actual source material: the report, the notes, the data, not a from-memory summary of themWhy: Claude works from what it is given; a description from memory adds errors and omissions the real document does not have.
+You should see: The real files or pasted text sitting in the conversation alongside your brief.
+Stuck? Get a nudge
+
+Specify the output: format, length, tone and structure, and attach one example of a previous document in the house styleWhy: Examples are among the most reliable ways to steer format, tone and structure; one sample works better than paragraphs of description.
+You should see: An output specification of one or two lines plus an attached exemplar (an example document).
+Stuck? Get a nudge
+
+Run the prompt and compare the draft against what your usual first attempt looks like, noting which component made a differenceWhy: The comparison shows what each part of the brief added, which is how briefing becomes a habit.
+You should see: A first draft noticeably closer to publishable than a one-line prompt would produce.
+Stuck? Get a nudge
+
+## Sources
+Get started with Claude — Anthropic
+Introduction to prompt design — Anthropic
+My prompt isn't giving me a helpful answer — Anthropic
+Prompting best practices — Anthropic
+Upload files to Claude — Anthropic
+Usage limit best practices — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Next LessonDecomposing Complex Requests

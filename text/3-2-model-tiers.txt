@@ -1,0 +1,101 @@
+
+
+## Differentiating Between Claude Model Types
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+This objective names three model families: Haiku, Sonnet and Opus. Each family is a tier. The tiers make a real trade-off of speed and cost against depth of reasoning. The Haiku family is the lowest-cost tier. Anthropic lists it as the fastest and describes it as built for high-volume, latency-sensitive tasks. The Opus family is the most capable reasoning tier, for complex, high-stakes work. The Sonnet family offers the best combination of speed and intelligence: the balanced middle and the sensible everyday default. No tier is "the good one". Each tier is the right choice for work that matches its strengths.
+
+This lesson uses one made-up example throughout: a florist that has two jobs for Claude. One is standardising three hundred product listings into one website template. The other is reconciling two wholesalers' reports that partly disagree into one ordering recommendation.
+
+## The Trade-Off
+The most capable tier takes longer for each response. Your choice of model is one of the factors that determine how quickly a usage allowance is consumed. The fastest tier is fast because it is not built for the most demanding work. On Opus, every florist listing would take longer for no gain.
+
+## What Capability Means
+Capability means depth on demanding work. That depth covers resolving ambiguity and contradiction, multi-step reasoning, synthesis across sources that partly disagree, and drafting where a subtle error has real consequences. Capability does not mean better at everything, so the top tier is not the universal choice. For routine, well-specified work, the lighter tiers (the faster, lower-cost ones) produce what the task needs, faster. The florist's listings are routine. The wholesaler recommendation is not routine.
+
+Never claim a lighter tier matches a heavier tier's quality on demanding work. The documentation does not claim it. Use a lighter tier because it fits the task and its output is reviewed, never because the quality is equal.
+
+## Reading the Signals in a Task
+Lighter-tier signals are high volume, a routine and repetitive shape, simple transformation, speed that matters, and outputs that are individually low-stakes. Examples of simple transformation are reformatting, extracting or standardising. Those outputs are still spot-checked, because the review discipline from Domain 2 never stops. Signals for the most capable tier are ambiguity, contradiction to resolve, judgement with consequences and complex synthesis. Another signal is work where a wrong subtle conclusion costs more than the extra time. When neither set dominates, the balanced middle is the everyday answer.
+
+Size does not decide the tier. The kind of work decides it. Standardising a long list of entries into one template is lighter-tier work however many rows it has. Reconciling two reports that partly disagree into a single recommendation is capable-tier work however short the final page is. The florist's listings go to a lighter tier, and a sample of them is checked. The one-page recommendation goes to Opus.
+
+## The Model Picker
+You choose the model in the chat interface, not in technical configuration. Click the model name and choose another available model. You can change it at any point in a conversation, and the change applies from Claude's next response. The model picker shows the models your account has access to. That list varies by plan and, in workplaces, by what an organisation has enabled.
+
+So the tier decision is not a one-off commitment. Routine preparation can run on a lighter tier, and the hard synthesis can run on the most capable tier, inside one piece of work. The florist can extract each wholesaler's terms on Haiku, then switch to Opus for the recommendation. Never opening the model picker serves the average task. It serves both the routine end and the demanding end badly. A default model is a setting on your account, not a decision about your work.
+
+## In the exam
+The guide names the three families. The objective exists because no tier suits every task. It tests whether you read a task's actual demands, not its prestige. That skill remains useful after any change to the set of models. In the guide's own sample question, the right answer for a high volume of short, routine drafts, where speed and cost matter more than deep reasoning, is the faster, lower-cost model. "Always use the top model" is a named wrong answer.
+Choosing by a project's importance
+"This project is important" does not move a routine task to the top tier. Importance belongs to projects. Demands belong to tasks. The right answer is the tier that matches the current task. A routine reformat inside an important project is still a routine reformat.
+
+Specific model names and the current line-up change over time and belong on the quick reference.
+
+## Exam Traps
+
+Exam Trap
+Choosing the most capable model for everything because the work is important
+Always using the top model wastes the cost and latency budget on work that does not need it. Routine high-volume work does not need depth, and a project's importance does not make every task inside it demanding.
+
+Exam Trap
+Sending work that plainly needs depth to the fastest tier because it is just writing
+This saving costs more in the end. Quality demands depend on the cost of being wrong: a short output that carries judgement, contradiction or consequences is exactly where the extra time of the capable tier is worth it, however quick the typing would be.
+
+Exam Trap
+Accepting a claim that the lighter tier gives the same quality on demanding work
+No documentation says a lighter tier matches a heavier one on demanding work; fitness for the task plus review justifies it. The exam guide reserves the most capable model for complex reasoning. Current docs (October 2026) advise moving up when top effort settings fall short.
+
+## Practice Scenario
+A community energy co-operative employs one administrator, who has two jobs side by side: standardising six hundred member records into one address format, and drafting the co-op response to a complex regulatory consultation where three board members have given partly contradictory advice. She must keep spending on the routine job as low as she can, without risking the quality of the co-op's position. How should she assign models?
+Option AUse the most capable model for the member records, since data accuracy matters at that scale, and the fastest model for the consultation response, since a single letter is quick to produce
+Option BUse the fastest model for both jobs, since the records are routine and the consultation response is just plain drafting once all three board views are pasted in
+Option CUse the most capable model for both jobs, since the reputation of the co-op with all its members depends on this work and the best model maximises quality everywhere
+Option DRun the six hundred records on the fastest, lower-cost model and spot-check a sample, and draft the regulatory consultation response on the most capable model
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Match a Week of Tasks to Tiers
+
+Difficulty
+
+25 minutes
+
+What you'll learn
+How to label tasks as routine-at-volume, everyday middle, or high-stakes synthesis
+How to check which models your own account offers in the picker
+How to run a routine task on a lighter tier with a sampled quality check
+How to name what depth gives you on a genuinely demanding task
+
+List the Claude tasks from your last working week and label each one: routine-at-volume, everyday middle, or high-stakes synthesisWhy: The three labels are the signal sets exam questions use; practising them on your own work makes them fast to spot.
+You should see: A short list of real tasks, each with one of the three labels.
+Stuck? Get a nudge
+
+For each task, note the tier its demands call for and the tier you actually used, then open the model picker and confirm which models your account offersWhy: The gap between called-for and actually-used is where the habit of using one model for everything shows itself.
+You should see: Two tier columns per task, plus the list of models your picker currently shows.
+Stuck? Get a nudge
+
+Pick one routine task and rerun it on the lighter tier, spot-checking a sample of the output against your quality standardWhy: Fitness for the task plus review is what justifies the lighter tier; the spot-check is what makes the choice professional rather than merely cheap.
+You should see: Output that passes your sampled check, produced faster than your usual setting.
+Stuck? Get a nudge
+
+Pick your most demanding recent task and write one sentence on what the capable tier gave, or would have given, that speed could notWhy: Naming the benefit in a sentence tests whether the task genuinely needed depth or just felt important.
+You should see: One sentence naming a concrete benefit: a contradiction resolved, a subtle point kept, a consequence avoided.
+Stuck? Get a nudge
+
+Flag any task where you chose by prestige rather than by the task demands, and relabel it with the tier it actually neededWhy: Choosing by prestige is the recurring wrong answer in this objective; catching it in your own week protects you from choosing it in exam questions.
+You should see: At least one honest relabel, or a week that genuinely had none.
+Stuck? Get a nudge
+
+## Sources
+Models overview — Anthropic
+Change the model, effort, and thinking settings — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonSelecting the Right Claude Product FeatureNext LessonAligning Model Choice with Cost, Speed and Quality

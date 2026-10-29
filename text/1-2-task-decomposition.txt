@@ -1,0 +1,103 @@
+
+
+## Decomposing Complex Requests
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+Claude gives its best output on complex work when you split the work into pieces that Claude can do properly, one at a time. That splitting is task decomposition. Connected parts pass results to each other: a later part needs an earlier part's output or decisions. Independent parts work on their own.
+
+A single well-formed prompt handles a lot of work, but it has a limit. When you put a whole project's requests into one message, the result is shallow and uneven. Claude does some parts well and gives other parts little attention.
+
+This lesson uses one made-up example throughout: a supermarket. Its manager writes a quarterly customer-feedback report for head office. The report needs an outline, sections in one voice and an action list. She also needs a rival-store summary, a press release and a budget table. The Help Center's list of remedies for an unhelpful answer includes breaking complex requests into substeps. The Help Center also says that a prompt should contain as much context as possible.
+
+## Four Techniques, Lightest to Heaviest
+Numbered steps inside one prompt. For connected parts, list them explicitly. The manager writes: first summarise the feedback themes, then rank them by frequency, then draft one improvement action per theme. Claude follows an explicit sequence far more reliably than one long paragraph of requests. Anthropic's guidance is to use numbered sequential steps when order or completeness matters, and to be specific about output format and constraints.
+
+Staged prompting in one conversation. For a deliverable that you build in stages, ask for the outline, review and adjust it, then draft section by section. You review each stage's output before the next stage runs. The approved output becomes the starting point for the next stage. So you correct the work while correcting still takes little effort. The manager corrects her outline before any section exists.
+
+Plan-first prompting. When the right structure is not obvious, ask Claude to propose an approach first. For example: before writing anything, list the sections you would include and what each covers. Reviewing a plan takes seconds. Reworking a wrong 2,000-word draft does not take seconds.
+
+Separate conversations per sub-task. Put genuinely independent pieces, such as a rival-store summary, a press release or a budget table, in separate chats. Separate chats keep each context clean and focused. The manager gives each of her three side jobs its own chat.
+
+## Choosing the Technique
+Connected parts belong in one conversation, in stages, so that later stages start from the approved earlier stages. Independent deliverables belong in separate chats. When the structure is unclear, ask for the plan first. A mismatch between technique and task fails in one of two ways. The first is one very large prompt that asks for a finished 20-page product in one pass. The second is connected work that you split across chats. Each new chat has then lost the outline and tone decisions that the previous chat made. Report sections that the manager splits across chats would lose her outline and tone.
+
+## Carrying Context Forward
+A new conversation does not automatically contain another conversation's working material. Claude does now remember across chats. This memory is a set of individual topics that cover your role, projects, preferences and ongoing work context. Memory is context about you, not a transcript. Memory does not carry your approved outline, tone guide or half-finished draft into a new chat. On paid plans, you can ask Claude to search past chats and bring relevant details into the current chat. That search is retrieval that you must ask for, not automatic carry-over.
+
+The dependable pattern is explicit persistence: you carry outputs forward yourself. Paste the output into the new conversation, re-attach the file, or keep the output in a Project's knowledge base. Projects are self-contained workspaces with their own chat histories and knowledge. When the manager returns to the report in a new chat, she first pastes her outline into the chat. Carrying outputs forward is your job, not the product's.
+
+## In the exam
+The exam tests matching a technique to a situation, not reciting the four. The right answer follows the three matching rules. Both failure modes appear as wrong options. Where persistent material should be stored is a Domain 3 and Domain 5 question.
+Current state (September 2026)
+Memory became available on claude.ai on 11 September 2025 for Team and Enterprise plans, then for Pro and Max from 23 October 2025. As of 30 September 2026 memory is on by default for Free, Pro and Max. As of that date, on Team and Enterprise an owner decides whether memory is available. Memory stays off for each member until that member enables it. Chat search, which lets you ask Claude to reference past conversations, is available on paid plans. Neither feature changes the rule: memory saves context about you as individual topics, and you must ask for chat search.
+
+## Exam Traps
+
+Exam Trap
+One very large prompt that asks for everything, chosen to keep the whole deliverable in one place
+Attention spreads unevenly across a project of requests in one message. As a result, some sections are strong and others are skimmed. Corrections also arrive only after the whole thing is wrong. Breaking complex requests into substeps is the documented remedy.
+
+Exam Trap
+Fragmenting connected work across separate conversations
+Each new chat lacks the outline, tone decisions and approved material that the previous chat built. So the pieces arrive in different voices. They need reconciling by hand. Separate chats are for independent deliverables, not connected ones.
+
+Exam Trap
+Plan-first prompting offered where the structure is already known and agreed
+Asking Claude to propose sections you have already settled is a small unnecessary extra step: it adds a review round without adding information. Plan-first is useful only when the right structure is genuinely unclear.
+
+## Practice Scenario
+A programme director at a charity must produce a 20-page annual impact report: an overview, five sections drafted from the notes of five different programme teams, and one consistent voice throughout. The director wants to approve each part as it is produced, and never to explain settled decisions again to a new chat. How should the director structure the work with Claude?
+Option ASend one prompt with the notes from all five teams and request the complete 20-page report, overview included, in a single pass so nothing is lost between chats and the voice stays consistent
+Option BUse one conversation: agree the outline and a tone guide first, then draft section by section, each prompt carrying the notes for that section, with the overview written last from the finished sections
+Option CAsk each of the five programme teams to run its own Claude chat in whatever style it prefers, then combine the six resulting drafts into a single document afterwards
+Option DOpen six separate conversations, one per section and one for the overview, so each chat stays small and focused and no single conversation reaches its length limit
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Stage a Multi-Part Deliverable
+
+Difficulty
+
+30 minutes
+
+What you'll learn
+How to sort the parts of a deliverable into connected and independent
+How to assign the simplest technique that fits each part
+How to correct an outline before any drafting starts
+How to carry an approved output forward into later stages
+
+Choose a genuinely multi-part deliverable from your work: an annual report, a project plan, a course packWhy: Decomposition only shows its value on work too big for one prompt; a small task will not need the techniques.
+You should see: One deliverable named, with its parts listed as bullet points.
+Stuck? Get a nudge
+
+Sort the parts into connected, meaning a later part needs an earlier part’s output, and independent, meaning they stand aloneWhy: This sorting is the judgement the exam tests: connected parts need one staged conversation, and independent parts need separate chats.
+You should see: Each part labelled connected or independent, with one phrase saying why.
+Stuck? Get a nudge
+
+Assign a technique to each part: numbered steps, staged conversation, plan-first, or a separate chat, with one sentence of justification eachWhy: Matching technique to task is the objective itself; the justification makes you check the choice.
+You should see: A short list pairing every part with a technique and a reason.
+Stuck? Get a nudge
+
+Run the first stage, the outline or the plan, and correct it before any drafting startsWhy: Corrections at the outline stage take seconds; the same corrections after 2,000 words take an afternoon.
+You should see: An approved outline you have actively edited, not just accepted.
+Stuck? Get a nudge
+
+Each time a later stage needs an earlier output, note how you carried it forward: pasted in, re-attached, or stored in a ProjectWhy: A new conversation does not automatically contain the working material of an earlier one; explicit carry-forward is the reliable pattern.
+You should see: A note per stage recording the carry-forward method you used.
+Stuck? Get a nudge
+
+## Sources
+My prompt isn't giving me a helpful answer — Anthropic
+Prompting best practices — Anthropic
+How do usage and length limits work? — Anthropic
+Use Claude's chat search and memory to build on previous context — Anthropic
+Bringing memory to Claude — Anthropic
+What are projects? — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonCreating Effective Prompts for Business and Technical TasksNext LessonIterating Prompts to Improve Output

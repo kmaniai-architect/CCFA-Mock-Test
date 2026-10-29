@@ -1,0 +1,110 @@
+
+
+## Identifying Hallucinations, Inconsistencies and Bias
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+Objective 2.1 gave you the reviewer's stance. This objective names the three failure types a review looks for. A hallucination is content that sounds convincing but is not grounded in fact. An inconsistency is an output that disagrees with itself. Bias is skewed framing, assumptions or language. Each has recognisable signs, and each needs a different response.
+
+This lesson uses one made-up example throughout: a garden centre. Its manager gives Claude three jobs in one week. She wants the steps for the stock report in the till system, a spring sales summary with a table, and appraisal notes for seasonal staff. Each job can fail in one of the three ways.
+
+## Hallucination: Fluent, Specific, Fabricated
+The Help Center says Claude "can occasionally produce responses that are incorrect or misleading". It "can display quotes that may look authoritative or sound convincing, but are not grounded in fact". That last phrase is the working definition. A hallucination is not vague or hesitant. It appears as an exact-looking figure, a named source or a numbered list of steps. An invented detail has the same confidence as a real one, so specificity is not evidence. For any detail, ask "where would this have come from?" Asking "does this sound right?" tests only the confidence.
+
+Claude can also hallucinate its own capabilities. A separate Help Center article warns that Claude may falsely claim to have sent an email, produced an external document or supplied a working link. Claude has no access to email or file transfer unless they have been explicitly integrated. A claim that Claude has done something outside the conversation is a claim to check. It is not a confirmation that the delivery happened. If Claude says it has emailed the stock figures to the supplier, the manager checks with the supplier.
+
+## Where the Risk Concentrates
+Hallucination risk depends on grounding: how much material Claude has to work from. The risk is highest where Claude has least to work from:
+
+your organisation's private, internal systems and documents Claude was never given
+
+very recent events that happened after its training data was collected
+
+precise figures that were not in the source material
+
+The highest-risk type of output is a set of confident numbered instructions for an internal tool whose documentation Claude has never seen. These instructions are fluent and specific, but nothing supports them. The stock-report steps are this type of output. Claude names menus in a till system that it was never shown, and some of those menus may not exist. The less grounding Claude could possibly have, the less its specificity means.
+
+## Inconsistency: The Output Disagrees With Itself
+You need no external source to detect an inconsistency. One common form is a number in the prose that contradicts the table. Another is a recommendation that contradicts the findings. A third is two sections that give different dates for one event. An internal contradiction is a warning about the reliability of the whole output. It is not a single typo to fix. The process that produced one visible failure was just as able to produce invisible ones. So re-verify the whole output against its source, rather than fixing the one mismatch you noticed and sending the rest. If the spring sales prose and table give different compost figures, the manager checks the whole summary against the till data.
+
+## Bias: The Pattern, Not the Sentence
+Bias has the most serious consequences in outputs about people: recruitment material, appraisals, customer descriptions, and anything that ranks or characterises groups. Anthropic's Usage Policy treats employment, housing, finance and healthcare decisions about individuals as high-risk uses. This shows how much is at risk. The skew is in the pattern, so compare the descriptions with each other rather than read sentence by sentence. Suppose the appraisals describe older staff by reliability and younger staff by innovation. No single sentence is objectionable, but the output still is. Look for coded language (words that suggest a group without naming it) and unstated assumptions about age, gender, background or ability. Then apply the read-aloud test: would the framing be acceptable if someone read it aloud to the group that it describes?
+
+## In the exam
+The exam tests whether you can distinguish the three failure types and respond to each correctly, because the correct responses differ. For inconsistency, the tested point is the response: re-verify the whole output. Wrong options match a failure type with an incorrect response. They fix one contradiction, delete one biased word, or ask Claude to confirm its own invented steps.
+Match the response to the failure type
+Verify a hallucination against an authoritative source. When you find an inconsistency, re-verify the whole output. Rework bias as a pattern across the document. Asking "is this right?" on its own is not a check. Anthropic documents two checks. The first is a re-run that you compare against the first output. The second is a follow-up that asks Claude to verify its previous statements and flag what does not fit together. Each check gives you a list of items to check against the source. For the stock-report steps, that source is the till system's documentation.
+
+## Exam Traps
+
+Exam Trap
+Trusting confident, step-by-step instructions for a private internal system
+Claude has no access to an organisation's internal software unless material about it was provided in the conversation, so specific detail with no source behind it is the highest-risk type of hallucination. Treat the steps as unverified and check the system's own documentation.
+
+Exam Trap
+Believing Claude's claim to have sent an email or produced an external file
+Claude can hallucinate its capabilities and has no access to tools that are not integrated, so a completion claim is a claim like any other. Verify that the action actually happened rather than treating the statement as confirmation.
+
+Exam Trap
+Fixing the one contradiction you spotted and sending the rest
+An internal inconsistency is evidence the output's process failed somewhere, so the whole output needs re-verification against its source. Fixing the one visible contradiction keeps a document that has already shown you it cannot be trusted line by line.
+
+Exam Trap
+Treating bias as one bad word to delete
+Bias is in the pattern across descriptions: who gets caveats, whose achievements get qualifiers, which groups are framed in different terms. Deleting a single biased phrase leaves the skew intact, so rework the pattern, not the word.
+
+## Practice Scenario
+A skin clinic's practice manager asks Claude how to produce the monthly patient-recall report in the clinic's management software. Claude has had no access to this software or to anything written about it, yet it replies with confident, numbered steps naming specific menus and buttons. She still wants to use Claude for other work that involves this software. What should the manager do with these steps?
+Option AFollow the steps as written: detail down to the level of named menus and buttons suggests Claude has reliable knowledge of this software
+Option BStop using Claude for anything connected to the clinic’s software, since it has just shown that it will invent plausible instructions rather than admit that it does not know the answer
+Option CAsk Claude to double-check each of its steps against the clinic’s software and confirm they are all correct before trying them, so that nothing invented is missed
+Option DTreat the steps as unverified and check the software supplier’s documentation or the built-in help instead
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Run a Three-Failure Sweep
+
+Difficulty
+
+30 minutes
+
+What you'll learn
+How to separate traceable claims from unverified ones
+How to respond when an output contradicts itself
+How to read across descriptions of people to find a biased pattern
+How to match the correct response to each failure type
+
+Collect three real Claude outputs from your work: one making factual claims, one containing the same figures in more than one place, and one describing or comparing peopleWhy: Each output type is where one failure type most often appears, so the exercise teaches all three failure types on real material.
+You should see: Three outputs open and ready: a claims document, a figures document, and a people document.
+Stuck? Get a nudge
+
+Hallucination check: underline every specific that did not come from material you supplied. Specifics are figures, names, references and instructions. Mark each one traceable or unverifiedWhy: Hallucinations appear as specific details, so every specific without a source is a possible hallucination until traced.
+You should see: A marked-up output where every specific is labelled one way or the other.
+Stuck? Get a nudge
+
+Inconsistency check: compare every figure, date and conclusion that appears more than once, and where two appearances disagree, flag the whole output for re-verificationWhy: The tested judgement is that a contradiction discredits the process, not just the sentence it appears in.
+You should see: Either a cross-check with no mismatch or a flag on the whole output, never a single corrected number.
+Stuck? Get a nudge
+
+Bias check: compare the descriptions of people with each other rather than read each one alone, and note whether different people or groups are systematically described in different termsWhy: No single sentence needs to be objectionable for the output to be; the pattern is the finding.
+You should see: A note on whether the framing pattern passes the read-aloud test.
+Stuck? Get a nudge
+
+For each flag you raised, write down the correct response: verify against a source, re-verify the whole output, or rework the patternWhy: Naming the response helps you remember which response matches which failure type, and the exam tests this: each failure type has its own fix.
+You should see: A three-line response plan, one line per failure type.
+Stuck? Get a nudge
+
+## Sources
+Claude is providing incorrect or misleading responses. What's going on? — Anthropic
+Claude is producing links that don't work and falsely claiming that it has sent emails or produced external documents. What's going on? — Anthropic
+How up-to-date is Claude's training data? — Anthropic
+Reduce hallucinations — Anthropic
+Usage Policy — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonEvaluating Outputs for Accuracy and CompletenessNext LessonFact-Checking and Validation Techniques

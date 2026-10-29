@@ -1,0 +1,109 @@
+
+
+## Iterating Prompts to Improve Output
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+A first output, Claude's first answer to a prompt, is a draft. The prompt that set the task is the brief. Feedback is the follow-up message that you send about the output. Iteration is the cycle of output, specific feedback and better output. Iteration is the normal way of working, not a failure. The Help Center's getting-started advice says this directly: do not hesitate to refine your prompts or ask follow-up questions. People who get the most from Claude plan one or two rounds of feedback for every task. People who get the least accept a mediocre first attempt, or abandon the tool after one attempt.
+
+This lesson uses one made-up example throughout: a dental practice. Its manager asks Claude for a letter that reminds patients that their check-up is due. The draft has the right parts but is too formal, too long and full of clinical terms.
+
+## Feedback That Names the Gap
+The Help Center names feedback as an official remedy for an unhelpful answer: provide follow-up instructions, clarify, or ask for a rewrite. "Make it better and try again" reproduces the problem, because the message adds no new information to the conversation. Suppose the manager writes "Cut it to 200 words, keep the paragraph on fees, and lose the marketing adjectives." That message fixes the draft, because each clause names a gap.
+
+Good feedback does one of three things:
+
+It adds a missing constraint, such as the audience, the format or the thing to avoid.
+
+It corrects a misreading.
+
+It narrows the scope.
+
+All three depend on diagnosis: find the gap between the output and the need, then state the gap plainly. A quick method is to check the output against the five components of the original brief. The gap is usually where a component was weak or missing. The manager's one-line prompt never named the audience.
+
+Asking for variants is iteration too. The manager can request three versions of the opening paragraph: formal, conversational and urgent. Claude generates the options, and the manager judges them. This method is often the fastest way to find the right register, or style, when you know something is wrong but cannot yet name it.
+
+## Refine or Re-Brief?
+When the output is close to what you need, refine it. Stay in the conversation and give targeted follow-ups. Sometimes the output shows that the original prompt was wrong: the wrong task, the wrong framing or missing context. Then rewrite the brief and start a new conversation, rather than correct a misunderstanding through six follow-up turns. A long series of corrections makes the context that the conversation keeps less clear. Each correction also works against the original framing instead of fixing it.
+
+The miscall, the wrong choice between refining and re-briefing, happens in both directions. One miscall is to correct, turn after turn, a brief that asked for the wrong thing. The other miscall is to abandon a conversation that one specific fix would have finished. If the manager's letter needs only plainer words, one follow-up finishes it.
+
+## Three Responses to a Disappointing Draft
+You can respond in three ways to a draft that is structurally fine but wrong for its purpose. The vague retry, "not quite, try again", produces the same shortfall, because the retry adds nothing new to the conversation. The targeted follow-up names the tone, the phrases to avoid and the reader that the piece is for. The targeted follow-up produces a usable revision, because each named gap shows Claude what to fix in the rewrite. The manager names a warm tone, no clinical terms, and patients as the reader.
+
+The third response is the re-brief. Use it when the original one-line prompt was the real problem. An effective prompt contains as much context as possible, and one line holds very little context. Re-brief properly: attach the style guide and name the audience at the start. A proper re-brief fixes the current batch and improves every batch that follows.
+
+## Keep the Wording That Worked
+Suppose that two rounds of feedback finally produce the right output. Then the feedback that fixed the draft is exactly the instruction that the original prompt was missing. Add that feedback to the original prompt. The reusable prompt then starts the next run from the improved version, rather than from the beginning. The manager's next batch starts from a prompt that names the tone, plain words and the patient audience.
+
+## In the exam
+The exam tests the quality of feedback and ranks the three responses. It rewards the targeted follow-up over the vague retry every time. It expects you to recognise when the re-brief is the professional choice. Questions test the miscall in both directions. When a task recurs every week, moving its wording into standing configuration (instructions that stay in place for every run), such as the instructions of a Project, belongs to Domain 5. Domain 1 stops at refining the current request and keeping the wording that worked.
+Why start a new conversation?
+Longer chats consume more of your usage limit. When a chat approaches its length limit, the documented advice is to start a new conversation or use a Project. Restarting on a wrong brief is recommended as professional working practice, because a long series of corrections gives an unclear starting point. Official documentation does not claim that long conversations degrade output quality.
+
+## Exam Traps
+
+Exam Trap
+The vague retry that looks like diligence
+Regenerating, rewording slightly, or asking Claude to try again adds no new information to the conversation, so the next output repeats the shortfall. Feedback only works when it names the gap: the audience, the tone, the length, the constraint that was missing.
+
+Exam Trap
+Making small fixes to a fundamentally wrong brief through many follow-up turns
+When the output shows the original prompt asked for the wrong thing, each correction works against the framing instead of fixing it. Rewriting the brief and starting a new conversation is faster and gives every later batch of the same work a better starting point.
+
+Exam Trap
+Starting a fresh chat when the output needed only one specific fix
+This is the miscall in the other direction. A restart discards the context and approved material the conversation already holds; when the output is close, a single targeted follow-up in the same conversation is the cheaper, faster, professional choice.
+
+## Practice Scenario
+A retail merchandiser asks Claude for product descriptions for a seasonal homeware catalogue. The first batch is structurally fine but generic and in the wrong voice. The same prompt in a new chat came back just as generic, and she wants the copy fixed in one more round. What is the most effective next prompt?
+Option AStart a brand-new chat, paste the same one-line prompt in again, and rely on the fresh conversation to produce a fresher and more distinctive voice for the batch
+Option BAccept the copy as a reasonable starting point, then rewrite the voice by hand across all forty descriptions before the catalogue goes to print
+Option CReply with specific feedback naming the required tone, the overused phrases to avoid, and the shopper the catalogue is speaking to, then rerun the batch
+Option DReply that the copy is not quite right, ask Claude to try again, and keep regenerating in the same conversation until a batch finally arrives in the right voice
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Run Two Feedback Cycles
+
+Difficulty
+
+20 minutes
+
+What you'll learn
+How to diagnose the gap between an output and the need
+How to write feedback that names the gap plainly
+How to use variants in named registers to choose a direction
+How to add successful feedback to a reusable prompt
+
+Take a recent Claude output that disappointed you, or run the five-component brief from objective 1.1 and use its first draftWhy: Feedback practice needs a real gap to diagnose; invented examples make the exercise look easier than it is.
+You should see: A first draft in front of you plus the prompt that produced it.
+Stuck? Get a nudge
+
+Diagnose the gap: name what specifically differs from what you need, such as audience, tone, length, scope or a missing constraintWhy: Diagnosis is the tested skill; feedback can only name a gap you have identified first.
+You should see: One or two written sentences naming specific gaps, not a general feeling of wrongness.
+Stuck? Get a nudge
+
+Write feedback that names each gap plainly and run the first revisionWhy: Specific feedback shows what to change in the revision; vague feedback reproduces the problem.
+You should see: A revision that is measurably closer on the gaps you named.
+Stuck? Get a nudge
+
+Diagnose again and run a second cycle, asking for variants in named registers if you are choosing between directionsWhy: The second cycle builds the habit: output, specific feedback, better output, and variants make you the judge rather than the editor.
+You should see: A second revision, or a set of labelled variants, close enough to finish by hand.
+Stuck? Get a nudge
+
+Write down each piece of feedback you gave, mark which of it should have been in the original prompt, and add it to the prompt as your reusable versionWhy: The feedback that fixed the draft is the instruction the original prompt was missing; adding it to the prompt makes the correction reusable.
+You should see: A revised prompt containing the added feedback, saved wherever you keep working notes.
+Stuck? Get a nudge
+
+## Sources
+Get started with Claude — Anthropic
+My prompt isn't giving me a helpful answer — Anthropic
+How do usage and length limits work? — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonDecomposing Complex RequestsNext LessonAdapting Strategy to Task Type

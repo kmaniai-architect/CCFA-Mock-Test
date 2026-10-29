@@ -1,0 +1,128 @@
+
+
+## Diagnosing and Resolving Underperforming Prompts and Poor Outputs
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+A poor output is a response that fails to give what the request needed. To diagnose a poor output, you name why a reasonable-looking request produced it, before you change anything. A Project's configuration is its instructions and knowledge.
+
+This lesson uses one made-up example throughout: an independent bookshop. Its owner keeps a Project for the weekly new-titles newsletter. The owner asks for one-off shelf cards in ordinary chats.
+
+## The Routing Question
+The most useful diagnostic test is one question: did the problem happen once, or does it happen every time? A bland summary from one request that gave too little information is a prompt problem. A better brief fixes it. The same wrong tone, format or assumption in every output from the same Project is a configuration problem. The sign to look for is the word every. The Project's instructions or knowledge produce the defect, so correct the configuration once. Correcting each output by hand instead repeats the same cost forever.
+
+One bland shelf card needs a better brief. A stiff tone in every newsletter needs one fix in the Project's instructions.
+
+## A Cause List You Can Run in a Minute
+Six causes cover nearly everything:
+
+context starvation: a request without the context it needs
+
+instruction overload: a request with too many requirements
+
+a configuration defect
+
+a degraded conversation
+
+stale or superseded material
+
+a feature or setting mismatch
+
+Context starvation is by far the most common cause. A request with no audience, no purpose and no source material can only produce generic output, because Claude cannot guess what was withheld. The Help Center advises giving as much context as possible, as if instructing someone with no background knowledge of the task. Supply what was missing. Asking more forcefully supplies nothing. The shelf card needed its audience, its purpose and the book's blurb.
+
+Instruction overload comes next. A request with a dozen requirements loses some of them. The documented remedy is structural: split complex requests into substeps, and group and prioritise the requirements so the important ones cannot be missed. Re-sending the same list with the missed items in capitals supplies nothing new. The owner splits and prioritises a newsletter brief that repeatedly loses the opening hours.
+
+## When the Conversation Itself Is the Problem
+A long chat accumulates superseded drafts, corrections that were later contradicted, and unrelated topics. Claude has to work with all of it. The chat eventually reaches its length limit. Longer conversations that trigger automatic context management also consume more of your usage limit. The documented advice is to split the content into parts, summarise the important sections, or start a new conversation. Projects handle large recurring material through retrieval. To fix a degraded chat, start a new conversation that contains a verified summary of what still matters. A chat that holds three newsletter drafts restarts from a summary.
+
+## The Failure Modes Anthropic Names
+The Help Center's troubleshooting articles name this objective's symptoms. Incorrect or misleading responses include fabricated quotes that look right. Claude is not a singular source of truth. So scrutinise high-stakes claims and review cited sources, such as a newsletter's author quote. Hallucinated capability means links that look as if they work but fail, or a claim that Claude has sent an email. Claude has no access to email or to any software that is not explicitly integrated. The diagnosis is hallucinated capability, not a delivery problem to investigate.
+
+A response that is too brief is a prompting problem, so revise the prompt. Give Claude the previous prompt and response so that it continues from the point where it stopped. Error messages are not quality defects. A capacity notice means wait and retry. A length-limit message means split the content into parts, summarise it or start a new conversation. Half of the diagnosis is recognising which of these the symptom is, because each has a different fix.
+
+## The Escalation Reflex
+The favourite trap in this domain is to choose the most capable model or a higher effort setting because the output was disappointing. A vague brief fails with every model, because the missing context is missing for every model. Escalation produces the same generic answer, more thoroughly and at more cost, and the shelf card stays bland. Changing a feature or setting is legitimate when the task needs depth or current outside information. For depth, use the effort and extended thinking settings. For current outside information, use web search or Research. Use these features and settings only after the brief is sound.
+
+## In the exam
+Every question in this domain starts after something has gone wrong. Domain 1 covers how to write a good request. This domain covers how to diagnose a poor output. Domain 5 covers how to change a configuration. This domain covers how to recognise that a configuration needs a change. Candidates lose these marks when they choose a fix before they name a cause.
+Key Concept
+Classify the symptom before you read the options. Did it happen once or every time, and which named failure mode is it? The right answer fixes the cause. At least one wrong option treats the symptom, usually by rewriting a prompt that was never the problem.
+
+## What the Sources Do Not Say
+No official source says long chats get slower or that Claude confuses topics. The case for starting a new conversation is based on what is documented.
+
+## Exam Traps
+
+Exam Trap
+Rewriting today’s prompt when every output has the same defect
+A defect appearing in every output of the same kind comes from the setup, so the fix belongs in the Project’s instructions or knowledge once. Rewriting individual prompts, or hand-correcting each output, repeats the same cost forever and leaves the cause in place.
+
+Exam Trap
+Escalating to a more capable model or higher effort as the first response to a disappointing output
+If the request never named its audience or attached its material, escalation returns the same generic answer more slowly and at more cost. Diagnose first: a brief without enough context is fixed by supplying context, and no model can guess what was withheld.
+
+Exam Trap
+Treating an error message as a quality defect and rewording the prompt
+Capacity and length-limit messages have documented responses: retry after a short wait, or split the content into parts, summarise it and start a fresh conversation. Rewording the request does not address what the message is about.
+
+Exam Trap
+Investigating the delivery of an email Claude claims to have sent in a chat with no email integration
+Without an integration, Claude has no email access, so a claimed send is fabricated capability, not a delivery failure. Checking outboxes or asking Claude to resend treats a send that never happened as real. Deliver the content yourself.
+
+## Practice Scenario
+The administrator of a small art gallery drafts loan-request letters to lenders inside a correspondence Project. For two months, every letter has come out in American spelling, and she has corrected each one by hand before posting. A more capable model gave the same spelling. She wants to stop the hand corrections and keep drafting inside the Project. What is the most appropriate next step?
+Option AKeep correcting each letter by hand before it is posted, since the fix only takes a few minutes each time, and the letters are otherwise exactly what she wants to send
+Option BReview the Project’s instructions and knowledge for what produces the defect, and state the spelling standard there once
+Option CSwitch the Project to a more capable model so the letters come out in the right spelling first time, with no hand correction
+Option DDraft future letters in fresh conversations outside the Project so its settings cannot influence the spelling of the finished text
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Diagnose Your Last Disappointment
+
+Difficulty
+
+25 minutes
+
+What you'll learn
+How to find where a symptom comes from with the once-or-every-time question
+How to check a short list of causes before touching the prompt
+How to recognise the failure modes Anthropic documents
+How to apply one fix and check whether the symptom changed
+
+Find the last piece of Claude work that disappointed you, and resist rewriting anything until you have diagnosed itWhy: The domain’s core discipline is naming a cause before applying a fix; rewriting at once is the habit this exercise changes.
+You should see: The disappointing output and the request that produced it, side by side, untouched.
+Stuck? Get a nudge
+
+Ask the routing question first: did that happen once, or does it happen every time you do this kind of work?Why: One-off defects point at the request or the conversation; recurring defects point at the setup, and the two diagnoses lead to entirely different fixes.
+You should see: A one-word routing decision written down: once, or every time.
+Stuck? Get a nudge
+
+If it happened once, run the cause list: missing context, too many requirements at once, a conversation that had gone on too long, superseded material, or a task that needed a feature or setting no wording can supplyWhy: A short list you can actually check works better than an open-ended search; most one-off failures are context starvation (a request without the context it needs), and the list stops you missing the rarer causes.
+You should see: One named cause, with a sentence of evidence for why you chose it.
+Stuck? Get a nudge
+
+If it happens every time, open the Project’s instructions and knowledge and look for the line, or the missing line, that produces the defectWhy: Recurring defects are produced by configuration; the evidence is in the instructions and knowledge, not in any single conversation.
+You should see: The offending line identified, or a note that the standard producing the defect was never stated.
+Stuck? Get a nudge
+
+Apply the one fix your diagnosis points at, re-run the same request, and note whether the symptom changed before touching anything elseWhy: Changing one thing and re-testing is what turns a guess into a diagnosis; if the symptom changed, you found the cause, and if not, you have not yet found the cause in the list.
+You should see: A before-and-after pair of outputs and a one-line verdict on whether the fix worked.
+Stuck? Get a nudge
+
+## Sources
+My prompt isn't giving me a helpful answer — Anthropic
+Claude is providing incorrect or misleading responses. What's going on? — Anthropic
+Claude is producing links that don't work and falsely claiming that it has sent emails or produced external documents — Anthropic
+Claude's response to my prompt is too brief — Anthropic
+Troubleshoot Claude error messages — Anthropic
+How do usage and length limits work? — Anthropic
+Change the model, effort, and thinking settings — Anthropic
+When should I use web search, extended thinking, and research? — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonUnderstanding the Ethical Implications of AI UsageNext LessonAdjusting Your Approach Based on Feedback and Results

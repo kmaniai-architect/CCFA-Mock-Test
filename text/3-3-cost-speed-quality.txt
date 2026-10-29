@@ -1,0 +1,101 @@
+
+
+## Aligning Model Choice with Cost, Speed and Quality
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+Objective 3.2 taught what the tiers are. Every choice between them affects three things, which this lesson calls currencies: cost, speed and quality. Cost is the plan's usage allowance, not a per-use invoice. Speed is the wait for each response. You feel that wait most sharply across many runs. Quality is depth on demanding work, as objective 3.2 defines it: handling ambiguity, reconciling contradiction and making judgements safely. The skill is to name the currency that a task needs, and then to spend only that currency.
+
+This lesson uses one made-up example throughout: a fish and chip shop. Its owner uses Claude for two jobs. One is five hundred review replies that vary only in a name and a dish. The other is one response to the council after a hygiene inspection.
+
+## Three Questions Name the Currency
+Ask three questions in order. What does being wrong cost here? How many times will this run? Who is waiting for the answer? The answers name the currency. Without the answers, the choice is a feeling rather than a decision with named requirements. For the shop's replies, an error is cheap, the job runs five hundred times and nobody is waiting. For the hygiene response, an error is costly, the job runs once and the council is waiting.
+
+## Cost Means Your Usage Allowance
+The Help Center lists model choice, effort level, current conversation length and file attachment size among the factors that determine how quickly usage is consumed. The allowance is finite, so every task that you overpay for takes allowance from the tasks that are still to come. Review replies on the heaviest model use allowance that the hygiene response needs.
+
+## Volume Multiplies Cost and Speed
+If a job runs once, the difference between tiers is seconds and a very small part of the allowance. If it runs five hundred times, the same difference decides whether the job finishes today. It also decides whether the allowance lasts the week. High-volume routine work, like the review replies, belongs on the lighter tier.
+
+Volume work on a fast tier gets a sampled spot-check, because Domain 2's duty to verify never stops. The spot-check is sized to the job: the owner reads a sample of the replies. The fast tier plus the spot-check makes the choice professional rather than merely cheap.
+
+## Stakes Multiply Quality
+Stakes act on a different currency: quality. Some single outputs are inputs to a decision with consequences, and they need depth. Such outputs include a regulatory submission, a legally sensitive letter and a recommendation that a board will act on. The seconds that a lighter tier saves are worth nothing against the cost of a subtly wrong conclusion. "It is only one letter" is true and irrelevant, because one letter with consequences demands more than five hundred letters without consequences. Quality requirements depend on the cost of being wrong, not the prestige of the task. Then a qualified human reviews the high-stakes output, whatever model drafted it. The hygiene response gets the capable tier and a qualified checker.
+
+## Split Mixed Workloads
+Real workloads mix shapes. Split them by their demands rather than run everything at one setting. Put the routine bulk on the fast tier with sampled review. Put the difficult core on the capable tier with proper review. The model picker makes the split easy. You can change the model at any point in a conversation, and the change applies from the next response.
+
+Three wrong answers recur. The first is maximum quality everywhere. It spends depth on work that does not need it, and the waste grows with the volume. The second is minimum cost everywhere. It delivers shallow output on the work whose errors are expensive. The third is the escalation loop, which re-runs a disappointing output on heavier and heavier models. The loop treats a vague brief as a model problem, but a vague brief fails at every tier. Fixing the brief belongs to Domain 1, and no tier upgrade replaces that fix. If the hygiene brief never names its reader, every tier fails.
+
+## In the exam
+Exam questions ask you to judge what a real task needs in the three currencies. In the guide's sample question, the right answer is a faster, lower-cost model for straightforward, high-volume drafting. The usual trap is a decision about stakes that is argued with reasons about volume.
+Key Concept
+Volume multiplies cost and speed. Stakes multiply quality. When a question mixes both kinds of work, the right answer almost always splits the workload. The bulk gets the fast tier plus sampled review. The piece that carries consequences gets the capable tier plus proper review.
+
+## Exam Traps
+
+Exam Trap
+Justifying the fast tier on a high-stakes output because it is only one letter
+Stakes, not volume, set the quality requirement. One output that informs a consequential decision needs more than hundreds of routine ones do, and the seconds saved by the lighter tier are worthless against the cost of a subtly wrong conclusion.
+
+Exam Trap
+Justifying the top tier on routine bulk because the work is important
+Importance does not transfer from a project to every task inside it. Routine transformation at volume needs speed and cost kept low, with a sampled check; using the most capable model hundreds of times over gives nothing the task needs.
+
+Exam Trap
+Escalating to a heavier model when the real defect is a vague brief
+A vague brief fails at every tier, so each heavier re-run spends usage allowance and waiting time and still misses. Fixing the brief belongs to Domain 1. Check the brief before changing the model.
+
+## Practice Scenario
+A regional athletics association is preparing its annual awards night: five hundred personalised invitation letters that vary only in name, club and event, and one difficult letter to a club being suspended for a safeguarding failure, where tone, precision and care about legal risk all matter. Spending on the invitations must stay as low as possible, and nothing that would make the suspension letter safer may be skimped. How should the administrator run the two jobs?
+Option ARun the five hundred invitations on the faster, lower-cost model and spot-check a sample, then draft the suspension letter on the most capable model with qualified human review before it is sent
+Option BDraft the suspension letter on the faster model to conserve usage, and if the tone misses, re-run the same prompt on the most capable model, repeating until an acceptable version of the letter finally appears
+Option CRun both jobs on the most capable model, since the awards night is the most important event of the association and nothing about it should look second-rate
+Option DRun both jobs on the faster model, since the invitations are obvious volume work and the suspension letter is only one letter, easily handled by any model
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Assess a Mixed Workload in Three Currencies
+
+Difficulty
+
+25 minutes
+
+What you'll learn
+How to name the currency a task needs most: cost, time or depth
+How to run bulk work on a lighter tier with a sampled review
+How to send a high-stakes output to the capable tier plus qualified human review
+How to catch decisions made by prestige or by the habit of using one tier for everything in your own week
+
+Pick a real week that contains both a bulk task with many similar outputs and a single high-stakes taskWhy: The mixed workload is the kind of work this objective tests; a week with only one kind of task has no split decision to make.
+You should see: Two named tasks: one bulk, one consequential.
+Stuck? Get a nudge
+
+For each task, write one line naming the currency it needs most, cost, time or depth, and whyWhy: Naming the currency is the whole discipline; every wrong answer in this objective skips this step.
+You should see: Two one-line justifications, each naming a single dominant currency.
+Stuck? Get a nudge
+
+Assign a tier to each task and run the bulk task on the lighter tier, spot-checking a sample against your quality standardWhy: The sampled check is what separates professional cost control from releasing unreviewed output.
+You should see: Bulk output that passes the sample, produced noticeably faster.
+Stuck? Get a nudge
+
+For the high-stakes task, note who gives it qualified human review after the capable tier drafts itWhy: Depth on the draft does not fulfil the review duty; consequential output goes to a qualified human whatever model produced it.
+You should see: A named reviewer qualified to catch a subtle wrong conclusion.
+Stuck? Get a nudge
+
+Review the week: mark any decision made by prestige or by uniform habit rather than by the task demands, and write the corrected assignmentWhy: The two uniform settings, maximum quality everywhere and minimum cost everywhere, are the recurring wrong options; auditing your own week makes them easier to see in exam questions.
+You should see: Each task marked demand-led, prestige-led or habit-led, with corrections written for the last two.
+Stuck? Get a nudge
+
+## Sources
+Models overview — Anthropic
+Usage limit best practices — Anthropic
+Change the model, effort, and thinking settings — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonDifferentiating Between Claude Model TypesNext LessonManaging Context Limits and Memory: Restart, Summarise, Persist

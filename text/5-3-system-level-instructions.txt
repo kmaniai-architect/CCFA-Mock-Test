@@ -1,0 +1,126 @@
+
+
+## Creating Effective System-Level Instructions
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+In this certification, system-level instructions means the standing rules a person writes in plain English. These rules are in one of three places: the claude.ai settings, a Project, or, for an administrator, the organisation settings. There is no technical layer underneath.
+
+This lesson uses one made-up example throughout: a small locksmith firm. Its office manager uses Claude for customer emails, landlord quotes and home-security guides. Some of her rules are true of her. Some are true of the quotes, some are true of everyone at the firm, and some are true only of this week. Two choices decide whether those rules work: where she places each rule, and how she words it.
+
+## Three Levels, Three Reaches
+Each level has an owner and a reach (the conversations it applies to), and all three are documented.
+
+Account-wide. The claude.ai settings have a box labelled Instructions, under Settings > Your Claude (Instructions for Claude in the older Settings layout). Anything written there applies to all of your conversations. The suggested content is personal and applies across all your work, such as preferred approaches, common terms and general communication preferences.
+
+Project-level. Instructions defined for a Project tailor Claude's responses in that Project's chats only.
+
+Organisation-level. On Team and Enterprise plans, Owners and Primary Owners can set organisation instructions. Claude follows them in every conversation across the organisation.
+
+Where levels overlap, organisation instructions take precedence. Individual instructions still apply to anything the organisation instructions do not address. An Owner's rule on email sign-offs takes precedence over her own rule on sign-offs. Her spelling rule still applies, because the organisation set nothing on spelling.
+
+The practical point is about role, not mechanics. An ordinary member does not set organisation instructions. So if a rule should bind the whole organisation, a member asks whoever administers the workspace to add it. If she wants every colleague's drafts to omit customers' home addresses, she asks the Owner to add that rule.
+
+## The Placement Question
+Place every rule by asking what it is true of. A rule applies to every chat at its level, so the level should match that answer.
+
+True of you across all your work, such as your language, a summary first, or a non-specialist audience by default: account-wide.
+
+True of one body of work, its audience, its format conventions, its standing rules: that Project's instructions.
+
+True of everyone in the organisation: an organisation instruction, requested through the workspace Owner.
+
+Only true of today's job: not an instruction at any level, but part of today's prompt.
+
+Her British spelling and her rule to put the summary first are true of all her work, so they belong in the account-wide instructions. "Show the call-out fee as its own line" is true of the landlord quotes, so it belongs in that Project's instructions. This week's price rise belongs in this week's prompts.
+
+A rule at the wrong level causes problems whether the level is too wide or too narrow. A Project rule moved to account level changes every unrelated conversation. Her call-out-fee rule would appear in the security guides. A rule that belongs everywhere but stays at Project level has to be copied and maintained in every Project that needs it. Her spelling rule would need a copy in every Project.
+
+## Behaviour, Not Aspiration
+A useful instruction is checkable: someone could see whether it was followed. "Keep each item under ninety seconds when read aloud" can be followed and can be failed. Claude cannot follow "Be engaging" in any way that differs from how the work would have gone anyway. That instruction names no behaviour, so there is nothing to check.
+
+The working test for every line: could a new colleague follow this and produce what you wanted? If not, the line says what you hope for, but it is not an instruction yet. "Sound trustworthy" fails the test for her quotes. "Put the price and the call-out fee in the first two lines" passes. Aspirations also make the set longer and make it look as if it covers more than it does.
+
+## Short and Prioritised Beats Long and Exhaustive
+Standing instructions apply to every chat in their scope, so they should contain only what is true every time. A rule that is true of only one job distorts the other jobs. An instruction set that collects per-task detail stops describing the work. It starts to describe whichever task came last. If you put the price-rise note in the quotes Project, every later quote mentions it until someone removes it.
+
+Length works the same way. Claude follows a short prioritised set more reliably than a long exhaustive one. When everything is a rule, Claude cannot follow every rule equally well. The rules that Claude follows less well are not the ones you would have chosen. When a set becomes too long for a colleague to remember, group it and prioritise it. Appending another rule does not fix it. Her quotes Project might group its rules under price, wording and layout, with price first.
+
+Styles are a separate control that sets how a response is formatted and delivered (see the note below). Our reading of that is that Styles are not the place for rules about content.
+
+## In the exam
+This objective tests those two judgements: the level a rule is true of, and wording that can be checked. The point about role matches Domain 4: escalate, do not improvise. The line between a standing instruction and today's prompt is the cleanest boundary with Domain 1. Aspirations are the typical wrong option in this objective, because "tell it to be clear and professional" always reads as sensible advice.
+Key Concept
+Two tests settle almost every question in this objective. Who or what does this rule apply to? The answer sets the level. Could a new colleague follow it and be checked against it? The answer sets the wording. The right answer passes both tests. Each wrong option fails exactly one.
+
+## A Note on Styles
+The Help Center covered Styles only in one formatting comparison, so the point about substance is our reading, not a documented statement. Current state (checked 30 September 2026): the personalisation article no longer mentions Styles. Its formatting comparison names Skills for customising how Claude formats and delivers responses.
+
+## Exam Traps
+
+Exam Trap
+An aspiration written as an instruction: be professional, be thorough, produce high-quality work
+Aspirations cannot be followed differently from the default and cannot be failed, so they change nothing and make the useful rules harder to follow. A checkable behaviour gives a new colleague something to follow and be checked against.
+
+Exam Trap
+Writing this week's requirement into the standing instructions
+A standing instruction applies to every chat in its scope. A rule true of one job distorts every other job until someone remembers to remove it; it belongs in that job's prompt, which is where the Domain 1 boundary sits.
+
+Exam Trap
+Placing one Project's rules at account level, or setting an organisation-wide rule personally as an ordinary member
+Account-wide rules change every unrelated conversation. Organisation instructions are set by Owners and Primary Owners on Team and Enterprise plans. So an ordinary member asks whoever administers the workspace. An Owner sets the rule directly.
+
+## Practice Scenario
+An easy-read editor at a learning-disability self-advocacy charity is writing the Project instructions for the easy-read document summaries the charity produces for its members. Every line must still hold for documents produced years from now. Which instruction set will a volunteer checking the outputs be able to use?
+Option AUse the sentence-length and everyday-word rules, plus a standing line to always include the closing date of the current member survey, because it matters to members right now
+Option BBe clear, respectful and accessible at all times, and always produce high-quality easy-read documents that members of the charity will find genuinely useful
+Option CKeep sentences under fifteen words with one idea each, use everyday words, explain any difficult word in brackets on first use, and end each summary by saying what the reader can do next
+Option DPut the sentence-length and everyday-word rules in her account-wide Instructions for Claude rather than the Project, so every conversation she has follows the easy-read rules
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Test and Place a Real Instruction Set
+
+Difficulty
+
+30 minutes
+
+What you'll learn
+How to rewrite aspirations as checkable behaviours
+How to place each rule at the level it is true of
+How to route organisation-wide rules through the workspace administrator
+How to shorten a set until a colleague could remember it
+
+Take the instructions from a Project you use, or draft the set for the Project built in the 5.1 exerciseWhy: The exercise needs a real set with real flaws; invented examples pass the test too easily.
+You should see: The full instruction set in front of you, one rule per line.
+Stuck? Get a nudge
+
+Apply the new-colleague test line by line: could someone follow this and produce what you wanted? Rewrite each aspiration as the behaviour you actually check for, and delete lines that restate defaultsWhy: Checkability is what separates an instruction from a statement of what you hope for, and defaults restated add length without changing anything.
+You should see: A set where every surviving line names something that could visibly be done or failed.
+Stuck? Get a nudge
+
+Mark each remaining line: true of this work every time, true of you everywhere, or only true of a recent task; move the rules that are true of you everywhere to your account-wide Instructions for Claude settings and the per-task lines back into task promptsWhy: Placement is half the objective: each rule belongs at the level it is true of, and misplacement causes problems whether the level is too wide or too narrow.
+You should see: Each line tagged with its level, and at least one line moved out of the Project set.
+Stuck? Get a nudge
+
+If any rule should apply to your whole organisation, write the one-sentence request you would send to whoever administers the workspace rather than trying to place it yourselfWhy: Organisation instructions are set by Owners and Primary Owners, so what you can contribute is a well-stated request.
+You should see: A single sentence naming the rule and why it should bind every conversation in the organisation.
+Stuck? Get a nudge
+
+If the surviving set is longer than a colleague could remember, group it under three or four headings and put the rules that matter most firstWhy: When everything is a rule, Claude cannot follow every rule equally well. Grouping and prioritising lets you decide on purpose which rules take priority, instead of leaving it to chance.
+You should see: A short, grouped, ordered set, with the rules you care most about at the top.
+Stuck? Get a nudge
+
+## Sources
+Understanding Claude's personalization features — Anthropic
+Set organization instructions — Anthropic
+What are projects? — Anthropic
+How can I create and manage projects? — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonManaging Uploaded Knowledge and ConnectorsNext LessonInforming, Maintaining, and Updating Configurations

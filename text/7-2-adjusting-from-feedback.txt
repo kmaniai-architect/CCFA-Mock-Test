@@ -1,0 +1,96 @@
+
+
+## Adjusting Your Approach Based on Feedback and Results
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+An adjustment round means changing a request, running it again and judging the output. Objective 1.3 taught what good feedback sounds like inside a conversation. This objective covers the discipline around that feedback. A systematic round gives you more than a different result. It gives you knowledge that you can reuse tomorrow and explain to a colleague. A systematic round needs three parts. You change one thing at a time. You hold the test input fixed. You judge the result against a criterion that you state before you look.
+
+This lesson uses one made-up example throughout: a carpet shop. It has Claude draft the quote letter that the shop sends after each measuring visit. Customers continue to phone the shop to ask for the total.
+
+## Change One Thing at a Time
+One change at a time shows what fixed the output. Suppose the owner changes only the audience line and the letter improves. Then the audience line was the problem, and that lesson applies to every similar task. Suppose she changes the wording, the model and the attached example at once. The letter improves, and nobody knows which of the three worked. Tomorrow, when she does the same kind of task, she knows no more than before. A bundled change, which changes several things at once, looks efficient until you need a second good result. Anthropic's Help Center says that an effective prompt contains as much context as possible. About adjustment, the Help Center gives no advice beyond giving Claude feedback, clarifications and rewrite requests. The one-variable discipline, one change at a time, is ordinary professional method.
+
+## Hold the Test Input Fixed
+A new prompt that you try on a new document tells you nothing, because two things changed. A better result may only mean an easier input. When you hold the test input fixed (the same course, report or source file), the comparison between rounds is meaningful. For the owner, the test input is one customer's measuring notes. She uses these notes in every round. When you edit an earlier message, the edit creates a different version of the chat. That version has its own artifacts. Each round can start from the same input, and you can compare its result with the round before.
+
+## State the Criterion Before You Look
+"Better" is not a criterion. "A customer can find the total price in five seconds" is a criterion. Stating the criterion in advance stops your judgement from drifting towards whatever the new draft happens to do well. That drift is how you accept a round that fixed nothing. A stated criterion also makes other people's reactions usable. A returned draft and a criterion together identify which requirement failed. "The manager didn't like it" identifies nothing.
+
+## Feedback Arrives from Readers, Not Just the Text
+The results that matter often come from outside the conversation. A colleague says the tone is wrong. A manager returns a draft. A reader asks the same clarifying question three times. These reactions usually show what the output lacks more precisely than you do when you re-read the text yourself. The customers who phone about the total are such a result. When you treat these results as inputs to the next round, not as noise, you can iterate on whether the output works. When you ignore them, you iterate on how the output looks.
+
+## Know When to Stop Adjusting
+Adjustment assumes that the approach is right and that the execution is wrong. When several well-aimed rounds have not changed the output, that assumption has failed. The task may need different source material, a feature such as web search or Research, or a different setting. The task may be work that you should not give to Claude at all. The third failed adjustment is a signal to return to the cause list in 7.1 and diagnose the cause again. A fourth round of slightly different words tests the same failed assumption. If customers still phone after the owner's third round, she stops rewording.
+
+## In the exam
+The exam has questions on each of the three parts. The exam presents the bundled change as decisiveness.
+Where this method comes from
+No Anthropic article teaches one-variable adjustment. The Help Center's advice ends at giving Claude feedback and asking for rewrites. Branching a chat only gives you versions to compare. This lesson's discipline is based on the wording of the exam guide's objective and on ordinary professional practice.
+
+## Exam Traps
+
+Exam Trap
+Changing several things at once and calling it decisive
+Changing the wording, the model and the example in one round leaves nobody knowing which change worked, so the improvement cannot be attributed or repeated. Change one thing at a time and keep the rest fixed.
+
+Exam Trap
+A fourth round of rewording after three aimed rounds changed nothing
+Several well-aimed rounds that changed nothing mean the approach, not the execution, is wrong. Go back to 7.1's cause list and re-diagnose: different source material, a different feature or setting, or work not to be handed over.
+
+Exam Trap
+Testing the adjusted prompt on a different document and crediting the prompt
+When the input changed too, the comparison is meaningless; the improvement may only mean the new document was easier. Round-to-round learning requires the same test input every time.
+
+## Practice Scenario
+The owner of a ceramics studio drafts the joining email she sends attendees before each weekend workshop, and attendees keep saying it is too long and too formal. She has time for one adjustment round this week. Which round is set up to teach her something?
+Option AAdd one line naming the reader, re-run the same workshop’s email, and judge it against a criterion set in advance: an attendee can find the start time in five seconds
+Option BAsk Claude to make the email warmer and shorter, and adopt the new version if it reads better
+Option CRun the unchanged prompt on a different workshop’s joining email to see whether the problem follows the prompt or that particular workshop
+Option DRewrite the prompt, switch to a different model and attach a friendlier example email all in the same round, then keep whichever combination works best
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Run One Honest Adjustment Round
+
+Difficulty
+
+25 minutes
+
+What you'll learn
+How to choose one instance of a task and keep it as a fixed test case
+How to write a pass-or-fail criterion before adjusting
+How to change exactly one variable per round
+How to recognise the third failed round as a signal to re-diagnose
+
+Take a real recurring task whose last output disappointed you, and choose one instance of it and keep it as your test caseWhy: A fixed test input is what makes round-to-round comparison meaningful; without it, a better result may only mean an easier input.
+You should see: One named test case: the same document, request and materials you will use for every round.
+Stuck? Get a nudge
+
+Write down the criterion before you start: one sentence describing what the improved output must let its reader doWhy: A criterion stated in advance stops your judgement drifting to whatever the new draft happens to do well.
+You should see: A single written sentence with a pass-or-fail reading, not a wish for something better.
+Stuck? Get a nudge
+
+Change exactly one thing about your request: the audience line, the attached material, or the order of requirements, and note which you choseWhy: One changed variable is what lets an improvement be attributed, repeated and explained; a bundle of changes teaches nothing.
+You should see: A one-line record of the single change this round makes.
+Stuck? Get a nudge
+
+Re-run the request on the same test case and judge the result only against the written criterionWhy: Judge the round by the criterion; general impressions let a round that fixed nothing get accepted.
+You should see: A pass or fail verdict against the criterion, recorded next to the change that produced it.
+Stuck? Get a nudge
+
+If the round fails, run at most two more aimed rounds; if the third fails too, stop adjusting and re-diagnose against 7.1’s cause listWhy: Repeated failed adjustment is evidence that the approach is wrong, and the professional skill is noticing the signal rather than rewording again.
+You should see: Either a passing round, or a written note that adjustment has stopped and diagnosis has started again.
+Stuck? Get a nudge
+
+## Sources
+My prompt isn't giving me a helpful answer — Anthropic
+What are artifacts and how do I use them? — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic. No Anthropic article teaches the one-variable, fixed-input, stated-criterion method. This lesson draws on the exam guide's objective and standard practice; the Help Center documents the feedback direction.
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonDiagnosing and Resolving Underperforming Prompts and Poor OutputsNext LessonOptimising Workflows for Efficiency and Effectiveness

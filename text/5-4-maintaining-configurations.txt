@@ -1,0 +1,118 @@
+
+
+## Informing, Maintaining, and Updating Configurations
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+A configuration is the setup of a Project: its custom instructions and its knowledge base. Claude applies the instructions to every chat within the Project. Claude also uses anything uploaded to the knowledge base in every chat within the Project. Keeping a configuration right has three duties: inform, maintain and update. The work has three parts: check on a schedule, remove old items rather than keep adding new ones, and remember the people that the configuration serves.
+
+This lesson uses one made-up example throughout: a pet shop that configured a Project well last year to answer customer questions. Its knowledge base holds the price list and the returns policy. Nobody has changed the Project since.
+
+## Three Ways a Good Setup Decays
+Knowledge becomes out of date. An uploaded file is a copy from one moment, and nothing tells you that its source was superseded. Outputs continue to quote the old policy, price or procedure with complete confidence. At the pet shop, last year's price list still answers price questions.
+
+Instructions become out of date. They apply to every chat, whether or not the situation they describe still exists. When the audience or the format changes, the rules continue to enforce the old situation.
+
+The scope grows. When a Project works, people start to use it for related work. With each new task, the instructions written for the original job fit the work less well, until they fit none of the work.
+
+All three problems are invisible while you use the Project, so you have to schedule maintenance. If you wait for a sign that maintenance is needed, that sign never comes.
+
+## Remove, Do Not Accumulate
+When a document is superseded, remove the old version. Do not add the new one alongside it. Completeness is a good quality in an archive. A working Project needs exactly one answer to which version is current. If a knowledge base holds both versions, Claude has no way to know which version is current. The pet shop uploads the new price list and deletes the old one.
+
+Two compromise options fail: a note file explaining which version governs, or an instruction telling Claude to prefer the newer document. Both options compensate for a problem that the knowledge base should simply not have.
+
+After you replace a document, also read the instructions for rules written for the old wording. A standing rule that quotes the old notice period stays after its source file is gone. At the pet shop, that rule might quote last year's returns window.
+
+## Informing Is a Human Step
+When colleagues share a Project, an unannounced change produces outputs that they cannot explain. They stop trusting those outputs. The person who made the change is rarely present when this happens.
+
+The documentation gives one notification fact: members receive an email notification when a project is first shared with them. The documentation describes no notification of any kind for later edits to knowledge or instructions. So telling collaborators what changed and when is always a human step.
+
+The date matters as much as the change, because it lets people tell whether work in progress was done before or after the change. People can recognise a reply drafted last week as pre-revision, instead of arguing about it. The pet shop's manager tells staff which file changed and on what day. Where a plan supports shared editing, several people may hold edit permission on the same Project. This makes it more important to say what changed.
+
+## The Maintenance Habit
+The habit that works has three parts.
+
+First, a named owner. "Someone should keep this current" means nobody does. A Project that has slowly gone out of date usually has no owner. The pet shop names its manager as owner.
+
+Second, a review point tied to a real recurring event: the quarterly figures, the policy refresh, the start of the season. A diary note attached to something that already happens makes the review happen. A general intention does not. The pet shop reviews its Project whenever a new price list arrives.
+
+Third, treat removal as an active step of the review. Additions happen naturally all year. Deletions happen only when someone asks which items are superseded and which have never been used.
+
+## In the exam
+The guide names the three duties. Every exam version of this objective is the same Project: a Project that was configured well once and has drifted since. Update matters least, because updating is easy once you have noticed. The guide names Inform explicitly, and almost everyone skips it.
+
+Two boundaries apply. A question that opens with a bad output and asks what went wrong belongs to Domain 7. A perfectly maintained Project still produces first drafts whose facts get verified under Domain 2.
+The additive trap
+The wrong option that keeps both versions feels thorough and careful. This feeling is why the option is wrong: it treats a working tool as if it were an archive. The right answer removes the superseded version, checks the instructions, and tells the people who use the Project.
+
+## A Note on Sources
+No Anthropic article covers editing a saved configuration or telling collaborators it changed. This lesson is based on the exam guide's objective wording, ordinary professional practice and the one documented sharing notification.
+
+## Exam Traps
+
+Exam Trap
+Uploading the revised document while keeping the superseded version, sometimes with a note saying which is current
+Nothing tells Claude which version governs, so outputs can cite either. A working Project needs one current version and the old one removed; completeness belongs in the archive, not the knowledge base.
+
+Exam Trap
+Adding an instruction telling Claude to prefer the newer document
+This patches the instructions to compensate for a knowledge base that should simply be curated. The superseded document should not stay in a working Project, and the patch itself becomes one more stale rule to maintain.
+
+Exam Trap
+Assuming the system will tell colleagues the configuration changed
+The only documented notification is the email when a project is first shared. None is documented for later edits to knowledge or instructions, so tell colleagues yourself.
+
+## Practice Scenario
+A bird observatory trust runs a Project that the bookings secretary and two other committee members use for overnight-stay booking correspondence. The booking terms were revised in March. Letters have started quoting the old cancellation notice period, and the secretary finds both versions of the terms in the project knowledge. The trust intends to keep the Project as its booking workspace. What should she do?
+Option ARemove the superseded terms, check the instructions for any rule written for the old wording, and tell the other two committee members what changed and when
+Option BStop using the Project for booking letters and have each member attach the current terms to every new chat instead
+Option CUpload the March version of the terms again and add a line to the custom instructions telling Claude to prefer the newer document wherever the two versions disagree
+Option DAdd a note file to the knowledge base stating that the March version is current, and keep both versions of the terms so the Project holds a complete record of how they have changed
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## The Three-Pass Audit
+
+Difficulty
+
+30 minutes
+
+What you'll learn
+How to audit instructions for aspirations, rules that no longer apply and wording left from replaced documents
+How to separate current, superseded and never-used knowledge
+How to name an owner and tie the next review to a real event
+How to write the one-sentence change note collaborators need
+
+Open a Project you already use, or the one built in the earlier exercises of this domain, and commit to auditing it in three passesWhy: Drift is invisible from inside day-to-day use; only a deliberate audit surfaces it.
+You should see: The instructions and the knowledge list open side by side.
+Stuck? Get a nudge
+
+Pass one, every line of the custom instructions: is it a behaviour a colleague could follow, an aspiration, or a rule written for a situation that has passed? Rewrite or delete accordinglyWhy: Instructions go out of date when the situation they describe has changed, and the audit is where rules that no longer match anything are finally found.
+You should see: A shorter instruction set where every line is checkable and currently true.
+Stuck? Get a nudge
+
+Pass two, every item in the knowledge base: current, superseded, or never actually used? Remove the superseded items rather than adding notes beside them, and remove anything that has never been neededWhy: Removal is the step that never happens naturally, and superseded material is how confident wrong answers get made.
+You should see: A reduced knowledge list holding exactly one version of everything, with upload dates noted.
+Stuck? Get a nudge
+
+Pass three, the parts nobody owns: write down who owns this Project, what real recurring event triggers its next review, and one sentence you would send to everyone else who uses it describing what you just changed and whenWhy: A named owner and a real trigger are what make the next audit happen, and the change note is the inform half done properly.
+You should see: An owner, a dated trigger, and a one-sentence change note ready to send.
+Stuck? Get a nudge
+
+If you could not name an owner in pass three, treat that as the finding: agree with the other users who owns it before closing the auditWhy: A Project that drifted usually turns out to have had no owner; fixing that outlasts every individual fix from passes one and two.
+You should see: A named person attached to the Project, even if it is you.
+Stuck? Get a nudge
+
+## Sources
+Manage project visibility and sharing — Anthropic
+How can I create and manage projects? — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic. No Anthropic article covers editing a saved configuration, removing knowledge files or telling collaborators about changes. This lesson draws on the exam guide's objective and standard practice; the sharing article documents the one notification.
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonCreating Effective System-Level InstructionsNext LessonIdentifying Appropriate and Inappropriate Use Cases

@@ -1,0 +1,112 @@
+
+
+## Identifying Appropriate and Inappropriate Use Cases
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+Two questions decide whether a task goes to Claude. Fit asks whether Claude would do the work well: the right shape, the right volume, output someone can check. Domain 4 covers fit. Appropriateness asks whether the task should be delegated to Claude at all. It looks at different evidence: the stakes, the authority the work requires, and who is accountable for the outcome. A task can be a perfect practical fit and still be work that only a qualified human should do.
+
+## Fit Is Not Permission
+This lesson uses one made-up example throughout: a bike shop. Its owner has two jobs to do. One is a long series of customer reviews to summarise into themes. The other is a stack of applications for a mechanic's job, to score so that the owner can pick the person to hire. Scoring the applications is an excellent practical fit: structured, voluminous, checkable. It can still be inappropriate, because of what the scoring decides and who cannot challenge it. The wrong answer that appears often bases its reasoning on quality: Claude would do the task quickly and well, so it must be fine to delegate. The quality of the output does not decide whether the task is appropriate.
+
+## The Four Inappropriate Categories
+Four recognisable categories make a use inappropriate.
+
+The first is work that needs professional authority: legal, medical, financial and safeguarding judgements. A qualified person must make these and be accountable for them. Claude can help someone prepare, summarise or understand. Claude cannot be the source of the advice. At the bike shop, medical advice for an injured customer must come from a qualified person. The Usage Policy names the settings where this category applies most. Its High-risk Areas include legal and medical advice, finance, credit, insurance, housing, employment, education and healthcare access. In these areas a qualified person must review Claude's recommendation before it is given as advice or used to make a decision. The policy also states: "The qualified person remains responsible for the accuracy and appropriateness of what is delivered or decided." The policy excludes wellness content, such as education on sleep, stress, nutrition or exercise.
+
+The second is a consequential decision about identifiable people: who gets the job, the award, the sanction, the visit. Poor output is not the reason. Nobody is accountable for the decision, and the person affected cannot challenge it. The scoring of the mechanic applications belongs in this category.
+
+The third is fabrication presented as real: invented quotes, testimonials, case studies or evidence, such as customer testimonials the shop writes itself. Plausibility makes fabrication worse, because a convincing invention is easier to believe. The Usage Policy's prohibitions on misinformation and deceptive practices are the basis of this category.
+
+The fourth is anything the Usage Policy or the organisation's own policy prohibits. Objective 6.3 covers this category.
+
+## The Substitution Test
+One test decides whether a task is appropriate. Picture a capable, well-meaning colleague who has:
+
+no professional qualification in the area
+
+no access to the person's history
+
+no accountability for the outcome
+
+Would you accept this piece of work from them? The test changes an abstract question about appropriateness into an ordinary judgement about delegation. Every professional already makes that judgement. The review summary passes: the same colleague could write it, and the owner would check it. The mechanic scoring fails on all three grounds at once. Anthropic's AI Fluency framework names this skill Delegation.
+
+## Most Work Is Appropriate
+The broad range of appropriate uses matters as much as the four categories. Official documentation describes a deliberately broad range of appropriate uses: writing across formats, summarising long documents, brainstorming, analysing images and data, translating. Drafting, reformatting, analysing material you hold, and preparing someone to make a decision are all appropriate. The inappropriate categories are narrow and specific. If you treat everything near them as forbidden, you abandon work that a simple safeguard would enable. The owner can still ask Claude to summarise each application, then read the applications and choose.
+
+## In the exam
+This objective asks a different question from the rest of the certification. Candidates who come to it from Domain 4 reliably answer the wrong question. The substitution test covers everything the exam asks. The exam also marks over-caution as wrong: the right answer almost always makes the work possible within the rules.
+What to notice in the exam
+Adding review to an inappropriate delegation does not repair it. Suppose a manager checks the output of a consequential decision about identifiable people. The check restores neither accountability for the judgement nor the affected person's ability to challenge it. When the owner reads every applicant's score, neither of those two things changes. Exam options that offer review as the fix test exactly this point.
+
+The Usage Policy's review rule answers a different question. It applies where a use in a High-risk Area proceeds. For that case, the policy states this requirement: "A qualified person must meaningfully review a High-risk AI Recommendation, with the authority to change or modify it, before it is delivered as advice". There, review is a mandatory control, and objective 2.4 teaches it as the standard. Review cannot convert a decision that should not have been delegated into one that should. Ask whether the delegation is appropriate first. Only then does the review requirement apply.
+
+The AI Fluency framework lists the four Ds as module names and does not define them. Reading Delegation as "deciding what to hand to AI and what to keep" is our own interpretation. The Help Center's use-case article lists what Claude is for and contains no prohibitions. The inappropriate categories are based on the Usage Policy and the exam guide.
+
+## Exam Traps
+
+Exam Trap
+Adding a human reviewer to an inappropriate delegation and treating that as the fix
+Adding review to an inappropriate delegation does not repair it. A reviewer who approves a decision made elsewhere restores neither the judgement nor a reasoned answer to the affected person's appeal. Keep the decision with an accountable person.
+
+Exam Trap
+Accepting the argument that a use is fine because the results stay inside the organisation
+Keeping an output in-house restores neither accountability for the decision it contains nor the affected person's ability to challenge it. Keep the decision with a named, accountable person.
+
+Exam Trap
+Declining both halves of a mixed proposal
+Declining everything looks cautious but loses help Claude can appropriately give. When a proposal mixes appropriate and inappropriate work, keep the appropriate half and decline only the inappropriate one.
+
+## Practice Scenario
+A children's centre manager is asked to use Claude on the annual family survey. Two proposals arrive together: summarise three hundred free-text responses into themes for the service review, and score individual families' responses to flag which should receive a home visit. The service review needs the themes. Centre policy allows Claude on the survey text and bars any tool from scoring families for home visits. What should the manager do?
+Option ASummarise the responses into themes once identifying details are removed, and keep the home-visit flagging with the qualified staff of the centre
+Option BRun the scoring as proposed, and have the deputy manager review every flagged family before any visit, so a person stays involved
+Option CDecline both proposals, since family survey material is too sensitive for any AI tool to touch
+Option DRun both pieces of work, since the survey data never leaves the centre and the families consented to its use for service planning when they completed the survey
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Sort a Fortnight of Real Work
+
+Difficulty
+
+25 minutes
+
+What you'll learn
+How to run the substitution test on real tasks
+How to name which of the four categories makes a task inappropriate
+How to write the enabling safeguard for a borderline task
+How to check your own judgement against the mistake of being too cautious
+
+List the last ten pieces of work you gave Claude, or considered giving it, plus two you would never hand overWhy: The test needs real delegations to work on; invented examples make the results look better than they are and hide your actual habits.
+You should see: A list of twelve tasks in your own words, each one line long.
+Stuck? Get a nudge
+
+Run the substitution test on each: would you accept it from a capable colleague with no qualification in the area, no access to the people involved, and no accountability for the outcome?Why: The test converts appropriateness into a delegation judgement you already know how to make.
+You should see: A pass or fail against each task, with the failing ground named: qualification, history or accountability.
+Stuck? Get a nudge
+
+Sort the list into appropriate and inappropriate, and for each inappropriate item name which of the four categories it falls underWhy: Naming the category is the exam skill: questions reward candidates who can say why a use is inappropriate, not just that it feels risky.
+You should see: Each inappropriate task labelled with one category: professional authority, consequential decision, fabrication, or policy prohibition.
+Stuck? Get a nudge
+
+For any borderline item, write the enabling safeguard that would let it proceed: what changes, the material, the route, or the authorisationWhy: The right answers almost always make the work possible; the professional skill is finding the safeguard, not finding reasons to refuse.
+You should see: A one-line safeguard per borderline task, specific enough to act on tomorrow.
+Stuck? Get a nudge
+
+Check the appropriate pile is the larger one; if it is not, check your test results again and remember that most work is appropriateWhy: Over-caution is the mistake that the wrong options in this objective are based on; a mostly-inappropriate list usually means the test was run too harshly.
+You should see: An appropriate pile of eight or more of the twelve tasks, or a written reason why your work is genuinely exceptional.
+Stuck? Get a nudge
+
+## Sources
+Usage Policy — Anthropic
+What are some things I can use Claude for? — Anthropic
+AI Fluency: Framework and Foundations — Anthropic
+Claude Certified Associate – Foundations Exam Guide — Anthropic. The Help Center article describes appropriate uses but lists no prohibitions. The inappropriate categories come from the Usage Policy and the exam guide's objective.
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonInforming, Maintaining, and Updating ConfigurationsNext LessonApplying Data Sensitivity, Regulatory and Privacy Considerations

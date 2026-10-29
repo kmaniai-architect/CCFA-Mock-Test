@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CCAO-F Mock Exam Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Tokens lifted from claudecertificationguide.com (HSL triplets) */
+:root{
+  --background:211 8% 98%;--foreground:211 5% 10%;--card:211 10% 94%;--popover:0 0% 100%;
+  --primary:211 60% 30%;--primary-foreground:0 0% 100%;--secondary:211 30% 38%;
+  --muted:211 6% 95%;--muted-foreground:211 17% 28%;--accent:211 5% 93%;
+  --border:211 15% 72%;--ring:208 27% 51%;--radius:0.125rem;
+  --surface-lowest:0 0% 100%;--surface-low:211 9% 94%;--surface-container:211 8% 92%;--surface-high:211 7% 89%;--surface-brand:210 30% 85%;
+  --primary-container:209 37% 63%;--on-primary-container:211 60% 17%;
+  --success:161 94% 24%;--success-subtle:152 81% 96%;--warning:38 92% 50%;--warning-subtle:48 100% 96%;--warning-emphasis:26 90% 37%;
+  --destructive:0 72% 51%;--destructive-subtle:0 86% 97%;--destructive-emphasis:0 74% 42%;
+  --feature:212 54% 15%;--feature-foreground:0 0% 100%;--feature-muted:211 39% 80%;
+  --d1:217 91% 60%;--d2:160 84% 39%;--d3:258 90% 66%;--d4:38 92% 50%;--d5:350 89% 60%;--d6:178 42% 45%;--d7:243 75% 59%;
+  --font-sans:"Inter",system-ui,sans-serif;--font-display:"Space Grotesk","Inter",sans-serif;--font-mono:"JetBrains Mono",ui-monospace,monospace;
+}
+:root[data-theme="dark"]{
+  --background:211 27% 8%;--foreground:211 33% 90%;--card:211 22% 11%;--popover:211 20% 6%;
+  --primary:212 70% 79%;--primary-foreground:211 45% 11%;--secondary:208 30% 78%;
+  --muted:211 19% 13%;--muted-foreground:211 15% 79%;--accent:211 12% 17%;--border:211 15% 18%;--ring:208 34% 73%;
+  --surface-lowest:211 25% 5%;--surface-low:211 22% 11%;--surface-container:211 19% 13%;--surface-high:211 12% 17%;--surface-brand:211 30% 20%;
+  --on-primary-container:211 60% 12%;
+  --success:152 70% 55%;--success-subtle:160 40% 12%;--warning-subtle:38 40% 13%;--warning-emphasis:38 92% 60%;
+  --destructive:0 80% 68%;--destructive-subtle:0 35% 14%;--destructive-emphasis:0 85% 72%;
+  --feature:212 54% 12%;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --background:211 27% 8%;--foreground:211 33% 90%;--card:211 22% 11%;--popover:211 20% 6%;
+    --primary:212 70% 79%;--primary-foreground:211 45% 11%;--secondary:208 30% 78%;
+    --muted:211 19% 13%;--muted-foreground:211 15% 79%;--accent:211 12% 17%;--border:211 15% 18%;--ring:208 34% 73%;
+    --surface-lowest:211 25% 5%;--surface-low:211 22% 11%;--surface-container:211 19% 13%;--surface-high:211 12% 17%;--surface-brand:211 30% 20%;
+    --on-primary-container:211 60% 12%;
+    --success:152 70% 55%;--success-subtle:160 40% 12%;--warning-subtle:38 40% 13%;--warning-emphasis:38 92% 60%;
+    --destructive:0 80% 68%;--destructive-subtle:0 35% 14%;--destructive-emphasis:0 85% 72%;
+    --feature:212 54% 12%;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:hsl(var(--background));color:hsl(var(--foreground));font-family:var(--font-sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+::selection{background:hsl(var(--primary-container));color:hsl(var(--on-primary-container))}
+h1,h2,h3{font-family:var(--font-display);margin:0;letter-spacing:-.02em;line-height:1.2}
+h1{font-size:40px;letter-spacing:-.6px}h2{font-size:28px;letter-spacing:-.4px}h3{font-size:22px}
+p{margin:0 0 .8em}
+a{color:hsl(var(--primary))}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid hsl(var(--ring));outline-offset:2px}
+.hidden{display:none!important}
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:hsl(var(--surface-lowest));border-bottom:1px solid hsl(var(--border))}
+.top-in{max-width:1760px;margin:auto;padding:12px 20px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.brand{font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-.02em;display:flex;align-items:center;gap:10px;color:hsl(var(--foreground));text-decoration:none}
+.brand i{width:12px;height:12px;background:hsl(var(--primary));display:inline-block}
+.brand small{font-family:var(--font-mono);font-weight:500;font-size:12px;color:hsl(var(--muted-foreground));border:1px solid hsl(var(--border));padding:1px 6px}
+nav.tabs{display:flex;gap:2px;flex-wrap:wrap;margin-left:12px}
+nav.tabs button{background:none;border:0;padding:8px 14px;cursor:pointer;font-size:14px;font-weight:500;color:hsl(var(--muted-foreground));border-radius:var(--radius)}
+nav.tabs button:hover{background:hsl(var(--surface-container));color:hsl(var(--foreground))}
+nav.tabs button[aria-current="true"]{color:hsl(var(--primary));box-shadow:inset 0 -2px 0 hsl(var(--primary))}
+.spacer{flex:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 18px;height:40px;border:1px solid hsl(var(--border));background:hsl(var(--surface-lowest));color:hsl(var(--foreground));font-size:14px;font-weight:500;cursor:pointer;border-radius:var(--radius);transition:background .15s,transform .1s;white-space:nowrap}
+.btn:hover{background:hsl(var(--surface-container))}
+.btn:active{transform:scale(.98)}
+.btn.primary{background:hsl(var(--primary));color:hsl(var(--primary-foreground));border-color:hsl(var(--primary))}
+.btn.primary:hover{filter:brightness(1.12)}
+.btn.sm{height:32px;padding:0 12px;font-size:13px}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+main{max-width:1200px;margin:auto;padding:32px 20px 80px}
+.eyebrow{font-family:var(--font-mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:hsl(var(--muted-foreground))}
+.lede{font-size:19px;color:hsl(var(--muted-foreground));max-width:70ch}
+.card{background:hsl(var(--card));border:1px solid hsl(var(--border));padding:20px;border-radius:var(--radius)}
+.card.flat{background:hsl(var(--surface-lowest))}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.stat{font-family:var(--font-display);font-size:34px;font-weight:700;letter-spacing:-.03em}
+.stat-l{font-size:13px;color:hsl(var(--muted-foreground))}
+.feature{background:hsl(var(--feature));color:hsl(var(--feature-foreground));padding:32px;border-radius:var(--radius)}
+.feature .lede{color:hsl(var(--feature-muted))}
+.feature .btn{border-color:transparent}
+/* domain chips */
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;flex:none}
+.d1{--c:var(--d1)}.d2{--c:var(--d2)}.d3{--c:var(--d3)}.d4{--c:var(--d4)}.d5{--c:var(--d5)}.d6{--c:var(--d6)}.d7{--c:var(--d7)}
+.dot{background:hsl(var(--c))}
+.chip{display:inline-flex;align-items:center;font-family:var(--font-mono);font-size:12px;padding:2px 8px;border:1px solid hsl(var(--c)/.55);background:hsl(var(--c)/.1);border-radius:var(--radius)}
+/* setup */
+.dom{border:1px solid hsl(var(--border));background:hsl(var(--surface-lowest));margin-bottom:10px;border-radius:var(--radius);border-left:4px solid hsl(var(--c))}
+.dom-h{display:flex;align-items:center;gap:10px;padding:12px 16px;cursor:pointer}
+.dom-h b{font-family:var(--font-display);font-size:17px}
+.dom-h .w{margin-left:auto;font-family:var(--font-mono);font-size:12px;color:hsl(var(--muted-foreground))}
+.dom-b{padding:0 16px 12px 42px;display:grid;gap:4px}
+.dom-b label,.dom-h label{display:flex;gap:10px;align-items:center;font-size:15px;cursor:pointer}
+input[type=checkbox],input[type=radio]{accent-color:hsl(var(--primary));width:17px;height:17px}
+.seg{display:flex;border:1px solid hsl(var(--border));width:max-content;max-width:100%;border-radius:var(--radius);overflow:hidden;flex-wrap:wrap}
+.seg button{border:0;background:hsl(var(--surface-lowest));padding:8px 16px;font-size:14px;font-weight:500;cursor:pointer}
+.seg button[aria-pressed="true"]{background:hsl(var(--primary));color:hsl(var(--primary-foreground))}
+input[type=number],input[type=search],input[type=text]{height:40px;padding:0 12px;border:1px solid hsl(var(--border));background:hsl(var(--surface-lowest));border-radius:var(--radius)}
+/* quiz */
+.qwrap{display:grid;grid-template-columns:1fr 260px;gap:24px;align-items:start}
+@media(max-width:900px){.qwrap{grid-template-columns:1fr}h1{font-size:32px}}
+.qhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.timer{font-family:var(--font-mono);font-weight:500;padding:4px 10px;border:1px solid hsl(var(--border));background:hsl(var(--surface-lowest))}
+.timer.low{color:hsl(var(--destructive-emphasis));border-color:hsl(var(--destructive))}
+.stem{font-size:19px;line-height:1.55;margin-bottom:20px}
+.opt{display:flex;gap:14px;align-items:flex-start;width:100%;text-align:left;padding:14px 16px;margin-bottom:10px;border:1px solid hsl(var(--border));background:hsl(var(--surface-lowest));cursor:pointer;border-radius:var(--radius);font-size:16px;line-height:1.5}
+.opt:hover:not(:disabled){border-color:hsl(var(--primary));background:hsl(var(--surface-brand)/.5)}
+.opt .k{font-family:var(--font-mono);font-weight:500;width:26px;height:26px;border:1px solid hsl(var(--border));display:grid;place-items:center;flex:none;font-size:13px}
+.opt.sel{border-color:hsl(var(--primary));background:hsl(var(--surface-brand)/.6);box-shadow:inset 3px 0 0 hsl(var(--primary))}
+.opt.sel .k{background:hsl(var(--primary));color:hsl(var(--primary-foreground));border-color:hsl(var(--primary))}
+.opt.ok{border-color:hsl(var(--success));background:hsl(var(--success-subtle));box-shadow:inset 3px 0 0 hsl(var(--success))}
+.opt.ok .k{background:hsl(var(--success));color:#fff;border-color:hsl(var(--success))}
+.opt.bad{border-color:hsl(var(--destructive));background:hsl(var(--destructive-subtle));box-shadow:inset 3px 0 0 hsl(var(--destructive))}
+.opt.bad .k{background:hsl(var(--destructive));color:#fff;border-color:hsl(var(--destructive))}
+.opt:disabled{cursor:default}
+.nav{position:sticky;top:84px}
+.pal{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+.pal button{height:34px;border:1px solid hsl(var(--border));background:hsl(var(--surface-lowest));font-family:var(--font-mono);font-size:12px;cursor:pointer;border-radius:var(--radius);position:relative}
+.pal button.ans{background:hsl(var(--surface-brand));border-color:hsl(var(--primary))}
+.pal button.cur{outline:2px solid hsl(var(--primary));outline-offset:1px}
+.pal button.flag::after{content:"";position:absolute;top:2px;right:2px;width:7px;height:7px;background:hsl(var(--warning))}
+.pal button.ok{background:hsl(var(--success-subtle));border-color:hsl(var(--success))}
+.pal button.bad{background:hsl(var(--destructive-subtle));border-color:hsl(var(--destructive))}
+.explain{margin-top:18px;border:1px solid hsl(var(--border));border-left:4px solid hsl(var(--primary));background:hsl(var(--surface-lowest));padding:16px 18px;border-radius:var(--radius)}
+.explain h3{font-size:16px;margin-bottom:6px}
+.src{margin-top:12px;padding:12px 14px;background:hsl(var(--card));border:1px solid hsl(var(--border));font-size:14px;line-height:1.55;white-space:pre-line;border-radius:var(--radius)}
+.src .m{font-family:var(--font-mono);font-size:12px;color:hsl(var(--muted-foreground));margin-bottom:4px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.src mark{background:hsl(var(--warning)/.3);color:inherit;padding:0 1px}
+.bar{height:10px;background:hsl(var(--surface-high));border-radius:1px;overflow:hidden}
+.bar>i{display:block;height:100%;background:hsl(var(--c,var(--primary)))}
+.score{font-family:var(--font-display);font-size:72px;font-weight:700;letter-spacing:-.04em;line-height:1}
+.pass{color:hsl(var(--success))}.fail{color:hsl(var(--destructive-emphasis))}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid hsl(var(--border))}
+th{font-family:var(--font-mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:hsl(var(--muted-foreground));font-weight:500}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.mt{margin-top:24px}.mt2{margin-top:40px}
+.note{font-size:14px;color:hsl(var(--muted-foreground))}
+@media(max-width:640px){body{font-size:16px}main{padding:20px 16px 60px}.top-in{padding:10px 16px}.stem{font-size:17px}.score{font-size:56px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#" onclick="go('home');return false"><i></i>Mock Exam Studio <small>CCAO-F</small></a>
+    <nav class="tabs" aria-label="Sections">
+      <button data-tab="home">Home</button>
+      <button data-tab="setup">Build a test</button>
+      <button data-tab="kb">Knowledge base</button>
+      <button data-tab="progress">Progress</button>
+    </nav>
+    <span class="spacer"></span>
+    <button class="btn sm" id="themeBtn" aria-label="Toggle theme">Theme</button>
+  </div>
+</header>
+<main id="app"></main>
+
+<script>
+const DOMAINS=/*DOMAINS*/;
+const LESSONS=/*LESSONS*/;
+const KB=/*KB*/;
+/*QUESTIONS*/
+</script>
+<script>
+"use strict";
+/* ---------- data prep ---------- */
+const LESSON = Object.fromEntries(LESSONS.map(l=>[l.id,l]));
+if(D.length!==Q.length)console.error("distractor/question count mismatch",D.length,Q.length);
+const BANK = Q.map((r,i)=>({id:i,l:r[0],d:+r[0][0],stem:r[1],opts:[r[2],...D[i]],exp:r[6]}));
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const LS={get(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+/* ---------- RAG: BM25 retriever over lesson chunks ---------- */
+const STOP=new Set("a an the and or of to in on for with is are was were be been it its this that these those as at by from not no but if then so than into which who what when where how can may should will would could do does did has have had you your they their them we our i he she his her about over under more most such also any all each per via".split(" "));
+const stem=w=>w.length>4?w.replace(/(ing|ed|es|ly|s)$/,""):w;
+const tok=s=>(s.toLowerCase().match(/[a-z][a-z'-]+/g)||[]).filter(w=>!STOP.has(w)).map(stem);
+const IDX=(()=>{
+  const docs=KB.map(c=>{const t=tok(c.h+" "+c.h+" "+c.t),tf={};t.forEach(w=>tf[w]=(tf[w]||0)+1);return{tf,len:t.length}});
+  const df={};docs.forEach(d=>Object.keys(d.tf).forEach(w=>df[w]=(df[w]||0)+1));
+  const avg=docs.reduce((a,d)=>a+d.len,0)/docs.length;
+  return{docs,df,avg,N:docs.length};
+})();
+function retrieve(query,k=3,opts={}){
+  const q=tok(query),{docs,df,avg,N}=IDX,K1=1.4,B=.75,sc=[];
+  docs.forEach((d,i)=>{
+    const c=KB[i];
+    if(opts.lesson&&c.l!==opts.lesson)return;
+    if(opts.domain&&c.d!==opts.domain)return;
+    let s=0;
+    for(const w of new Set(q)){const f=d.tf[w];if(!f)continue;
+      const idf=Math.log(1+(N-df[w]+.5)/(df[w]+.5));
+      s+=idf*f*(K1+1)/(f+K1*(1-B+B*d.len/avg));}
+    if(opts.boost&&c.l===opts.boost)s*=1.35;   // prefer the question's own lesson
+    if(s>0)sc.push([s,i]);
+  });
+  return sc.sort((a,b)=>b[0]-a[0]).slice(0,k).map(([s,i])=>({...KB[i],score:s}));
+}
+function hi(text,query){
+  const ws=[...new Set((query.toLowerCase().match(/[a-z][a-z'-]{3,}/g)||[]).filter(w=>!STOP.has(w)))];
+  let h=esc(text);
+  if(!ws.length)return h;
+  return h.replace(new RegExp("\\b("+ws.slice(0,14).map(w=>w.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")).join("|")+")\\w*","gi"),"<mark>$&</mark>");
+}
+function srcCard(c,q){
+  const L=LESSON[c.l];
+  return `<div class="src d${c.d}"><div class="m"><span class="chip d${c.d}">${c.l}</span><span>${esc(L.title)} · ${esc(c.h)}</span><a href="${L.url}" target="_blank" rel="noopener">open lesson ↗</a></div>${hi(c.t,q)}</div>`;
+}
+
+/* ---------- state ---------- */
+let tab="home", run=null, timerH=null;
+const hist=()=>LS.get("ccao_hist",[]);
+const stats=()=>LS.get("ccao_stats",{});   // lessonId -> {a:attempts,c:correct}
+const seen=()=>LS.get("ccao_seen",{});
+
+function go(t){tab=t;stopTimer();run=null;render();window.scrollTo(0,0)}
+document.querySelectorAll("nav.tabs button").forEach(b=>b.onclick=()=>go(b.dataset.tab));
+$("#themeBtn").onclick=()=>{const r=document.documentElement,cur=r.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");r.dataset.theme=cur==="dark"?"light":"dark";LS.set("ccao_theme",r.dataset.theme)};
+{const t=LS.get("ccao_theme",null);if(t)document.documentElement.dataset.theme=t}
+
+function render(){
+  document.querySelectorAll("nav.tabs button").forEach(b=>b.setAttribute("aria-current",String(b.dataset.tab===tab&&!run)));
+  const app=$("#app");
+  if(run&&run.phase==="quiz")return renderQuiz(app);
+  if(run&&run.phase==="result")return renderResult(app);
+  ({home:renderHome,setup:renderSetup,kb:renderKB,progress:renderProgress})[tab](app);
+}
+
+/* ---------- home ---------- */
+function renderHome(app){
+  const H=hist(),best=H.filter(h=>h.mode==="exam").reduce((m,h)=>Math.max(m,h.scaled),0);
+  app.innerHTML=`
+  <p class="eyebrow">Claude Certified Associate · Foundations</p>
+  <h1 style="margin:8px 0 14px">Mock Exam Studio</h1>
+  <p class="lede">Scenario questions written from all 30 lessons of the CCAO-F curriculum. Pick the topics you want to drill, or sit a full 60-question, 120-minute mock weighted like the real exam. Every answer is explained and backed by passages retrieved from the study notes.</p>
+  <div class="row mt"><button class="btn primary" onclick="startFull()">Start full mock exam (60 Q / 120 min)</button><button class="btn" onclick="go('setup')">Build a topic test</button><button class="btn" onclick="go('kb')">Search the notes</button></div>
+  <div class="grid g4 mt2">
+    <div class="card flat"><div class="stat">${BANK.length}</div><div class="stat-l">scenario questions</div></div>
+    <div class="card flat"><div class="stat">${KB.length}</div><div class="stat-l">retrievable note passages</div></div>
+    <div class="card flat"><div class="stat">${H.length}</div><div class="stat-l">tests taken</div></div>
+    <div class="card flat"><div class="stat">${best||"—"}</div><div class="stat-l">best mock score (pass = 720)</div></div>
+  </div>
+  <h2 class="mt2" style="margin-bottom:6px">Exam domains</h2>
+  <p class="note">Weights from the exam guide. Click a domain to practise only that domain.</p>
+  <div class="grid g2 mt" style="margin-top:14px">
+  ${Object.entries(DOMAINS).map(([d,o])=>{const n=BANK.filter(q=>q.d==d).length;return`<div class="card flat d${d}" style="border-left:4px solid hsl(var(--c))"><div class="row"><span class="chip">D${d}</span><b style="font-family:var(--font-display)">${esc(o.name)}</b><span class="spacer"></span><span class="note">${o.w}% of exam</span></div><div class="bar" style="margin:12px 0 10px"><i style="width:${o.w/21*100}%"></i></div><div class="row"><span class="note">${n} questions · ${LESSONS.filter(l=>l.d==d).length} lessons</span><span class="spacer"></span><button class="btn sm" onclick="startDomain(${d})">Practise</button></div></div>`}).join("")}
+  </div>
+  <div class="feature mt2"><p class="eyebrow" style="color:hsl(var(--feature-muted))">How it works</p><h2 style="margin:6px 0 10px">Retrieval-backed feedback</h2><p class="lede" style="margin:0">Your lessons are split into ${KB.length} passages and indexed with a BM25 retriever that runs entirely in your browser. When you check an answer, the question and its correct answer are used as the query to pull the most relevant passages from the notes, with a link back to the lesson.</p></div>
+  <p class="note mt">These are original practice questions modelled on the curriculum — not the real exam’s question bank or the site’s paid mocks. Scores are estimates.</p>`;
+}
+
+/* ---------- setup ---------- */
+let cfg={mode:"practice",count:20,domains:{},lessons:{},unseen:false,order:"random"};
+function renderSetup(app){
+  const pool=poolFor(cfg);
+  app.innerHTML=`
+  <p class="eyebrow">Build a test</p><h1 style="margin:8px 0 14px">Choose your topics</h1>
+  <div class="grid" style="grid-template-columns:minmax(0,1fr) 320px;gap:28px;align-items:start" id="sgrid">
+   <div>
+    ${Object.entries(DOMAINS).map(([d,o])=>{
+      const ls=LESSONS.filter(l=>l.d==d),all=ls.every(l=>cfg.lessons[l.id]);
+      return`<div class="dom d${d}"><div class="dom-h"><label><input type="checkbox" ${all?"checked":""} onchange="togDomain(${d},this.checked)"><span class="dot"></span><b>Domain ${d} · ${esc(o.name)}</b></label><span class="w">${o.w}%</span></div>
+      <div class="dom-b">${ls.map(l=>`<label><input type="checkbox" ${cfg.lessons[l.id]?"checked":""} onchange="togLesson('${l.id}',this.checked)"><span>${l.id} ${esc(l.title)}</span><span class="note" style="margin-left:auto">${BANK.filter(q=>q.l==l.id).length}Q</span></label>`).join("")}</div></div>`}).join("")}
+   </div>
+   <div class="card flat nav" style="position:sticky;top:84px">
+     <h3 style="font-size:18px;margin-bottom:12px">Test settings</h3>
+     <p class="note" style="margin-bottom:6px">Mode</p>
+     <div class="seg" role="group"><button aria-pressed="${cfg.mode==="practice"}" onclick="cfg.mode='practice';renderSetup($('#app'))">Practice</button><button aria-pressed="${cfg.mode==="exam"}" onclick="cfg.mode='exam';renderSetup($('#app'))">Exam</button></div>
+     <p class="note" style="margin:8px 0 14px">${cfg.mode==="practice"?"Immediate feedback, explanation and note passages after each answer.":"Timed, feedback only at the end — like the real thing."}</p>
+     <p class="note" style="margin-bottom:6px">Questions (max ${pool.length})</p>
+     <input type="number" min="1" max="${Math.max(pool.length,1)}" value="${Math.min(cfg.count,pool.length||1)}" onchange="cfg.count=+this.value" style="width:100%">
+     <label class="row" style="margin-top:14px;font-size:15px;gap:10px;cursor:pointer"><input type="checkbox" ${cfg.unseen?"checked":""} onchange="cfg.unseen=this.checked;renderSetup($('#app'))">Prefer questions I haven’t seen</label>
+     <div class="row" style="margin-top:12px"><button class="btn sm" onclick="selAll(true)">Select all</button><button class="btn sm" onclick="selAll(false)">Clear</button></div>
+     <button class="btn primary" style="width:100%;margin-top:18px" ${pool.length?"":"disabled"} onclick="startCustom()">Start · ${Math.min(cfg.count,pool.length)} questions</button>
+     <p class="note" style="margin-top:12px">${pool.length} questions match your topics.</p>
+   </div>
+  </div>`;
+  if(innerWidth<900)$("#sgrid").style.gridTemplateColumns="1fr";
+}
+function togDomain(d,v){LESSONS.filter(l=>l.d==d).forEach(l=>cfg.lessons[l.id]=v);renderSetup($("#app"))}
+function togLesson(id,v){cfg.lessons[id]=v;renderSetup($("#app"))}
+function selAll(v){LESSONS.forEach(l=>cfg.lessons[l.id]=v);renderSetup($("#app"))}
+const poolFor=c=>BANK.filter(q=>c.lessons[q.l]);
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a}
+function pick(pool,n,unseen){
+  const S=seen();let p=shuffle(pool);
+  if(unseen)p.sort((a,b)=>(S[a.id]||0)-(S[b.id]||0));
+  return p.slice(0,n);
+}
+function startDomain(d){cfg.lessons={};LESSONS.filter(l=>l.d==d).forEach(l=>cfg.lessons[l.id]=true);cfg.mode="practice";cfg.count=Math.min(15,poolFor(cfg).length);startCustom()}
+function startCustom(){const items=pick(poolFor(cfg),cfg.count,cfg.unseen);begin(items,cfg.mode,cfg.mode==="exam"?Math.ceil(items.length*2*60):0,"Topic test")}
+function startFull(){
+  let items=[];
+  for(const [d,o] of Object.entries(DOMAINS)){
+    const n=Math.round(o.w/100*60);
+    items=items.concat(pick(BANK.filter(q=>q.d==d),n,true));
+  }
+  items=shuffle(items);
+  begin(items,"exam",120*60,"Full mock exam");
+}
+function begin(items,mode,secs,label){
+  if(!items.length)return;
+  run={phase:"quiz",mode,label,items:items.map(q=>({q,order:shuffle([0,1,2,3]),sel:null,flag:false,checked:false})),i:0,secs,left:secs,t0:Date.now()};
+  startTimer();render();window.scrollTo(0,0);
+}
+
+/* ---------- quiz ---------- */
+function startTimer(){stopTimer();if(!run.secs)return;timerH=setInterval(()=>{run.left=Math.max(0,run.secs-Math.floor((Date.now()-run.t0)/1000));const el=$("#timer");if(el){el.textContent=fmt(run.left);el.classList.toggle("low",run.left<300)}if(run.left<=0)finish()},1000)}
+function stopTimer(){if(timerH)clearInterval(timerH);timerH=null}
+const fmt=s=>String(Math.floor(s/3600)).padStart(2,"0")+":"+String(Math.floor(s%3600/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");
+function renderQuiz(app){
+  const it=run.items[run.i],q=it.q,prac=run.mode==="practice",done=prac&&it.checked,N=run.items.length;
+  const opts=it.order.map((oi,pos)=>{
+    let cls="opt";
+    if(done){if(oi===0)cls+=" ok";else if(it.sel===pos)cls+=" bad"}
+    else if(it.sel===pos)cls+=" sel";
+    return`<button class="${cls}" ${done?"disabled":""} onclick="choose(${pos})"><span class="k">${"ABCD"[pos]}</span><span>${esc(q.opts[oi])}</span></button>`;
+  }).join("");
+  let fb="";
+  if(done){
+    const right=it.order[it.sel]===0,query=q.stem+" "+q.opts[0]+" "+q.exp;
+    const hits=retrieve(query,3,{boost:q.l});
+    fb=`<div class="explain"><h3 class="${right?"pass":"fail"}">${right?"Correct":"Not quite"} — the answer is ${"ABCD"[it.order.indexOf(0)]}</h3><p style="margin:0">${esc(q.exp)}</p></div>
+    <p class="eyebrow" style="margin-top:18px">Retrieved from the study notes</p>${hits.map(h=>srcCard(h,q.opts[0]+" "+q.exp)).join("")}`;
+  }
+  const L=LESSON[q.l];
+  app.innerHTML=`<div class="qwrap"><div>
+    <div class="qhead"><span class="chip d${q.d}">D${q.d} · ${q.l}</span><span class="note">${esc(L.title)}</span><span class="spacer"></span>${run.secs?`<span class="timer ${run.left<300?"low":""}" id="timer">${fmt(run.left)}</span>`:""}</div>
+    <p class="eyebrow">Question ${run.i+1} of ${N}</p>
+    <div class="stem">${esc(q.stem)}</div>
+    ${opts}
+    ${fb}
+    <div class="row mt">
+      <button class="btn" ${run.i?"":"disabled"} onclick="step(-1)">← Previous</button>
+      ${prac&&!done?`<button class="btn primary" ${it.sel===null?"disabled":""} onclick="check()">Check answer</button>`:""}
+      <button class="btn ${it.flag?"primary":""}" onclick="flag()">${it.flag?"Flagged ⚑":"Flag for review"}</button>
+      <span class="spacer"></span>
+      ${run.i<N-1?`<button class="btn ${done?"primary":""}" onclick="step(1)">Next →</button>`:`<button class="btn primary" onclick="finish()">Finish &amp; score</button>`}
+    </div></div>
+    <aside class="nav card flat"><p class="eyebrow" style="margin-bottom:10px">Navigator</p><div class="pal">${run.items.map((x,i)=>{let c="";if(i===run.i)c+=" cur";if(x.flag)c+=" flag";if(prac&&x.checked)c+=x.order[x.sel]===0?" ok":" bad";else if(x.sel!==null)c+=" ans";return`<button class="${c}" onclick="jump(${i})">${i+1}</button>`}).join("")}</div>
+    <p class="note" style="margin:12px 0 0">${run.items.filter(x=>x.sel!==null).length}/${N} answered</p>
+    <button class="btn sm" style="margin-top:12px;width:100%" onclick="if(confirm('Finish and score this test now?'))finish()">Finish test</button>
+    <button class="btn sm" style="margin-top:8px;width:100%" onclick="if(confirm('Abandon this test?'))go('home')">Quit</button></aside></div>`;
+}
+function choose(p){const it=run.items[run.i];if(run.mode==="practice"&&it.checked)return;it.sel=p;renderQuiz($("#app"))}
+function check(){const it=run.items[run.i];if(it.sel===null)return;it.checked=true;recordOne(it);renderQuiz($("#app"))}
+function step(n){run.i=Math.max(0,Math.min(run.items.length-1,run.i+n));render();window.scrollTo(0,0)}
+function jump(i){run.i=i;render();window.scrollTo(0,0)}
+function flag(){run.items[run.i].flag=!run.items[run.i].flag;renderQuiz($("#app"))}
+function recordOne(it){ // per-lesson stats + seen counter
+  const S=stats(),l=it.q.l;S[l]=S[l]||{a:0,c:0};S[l].a++;if(it.order[it.sel]===0)S[l].c++;LS.set("ccao_stats",S);
+  const sn=seen();sn[it.q.id]=(sn[it.q.id]||0)+1;LS.set("ccao_seen",sn);
+}
+function finish(){
+  stopTimer();
+  if(run.mode==="exam")run.items.forEach(it=>{if(it.sel!==null)recordOne(it)});
+  else run.items.forEach(it=>{if(it.sel!==null&&!it.checked){it.checked=true;recordOne(it)}});
+  const n=run.items.length,ok=run.items.filter(x=>x.sel!==null&&x.order[x.sel]===0).length;
+  const byD={};run.items.forEach(x=>{const d=x.q.d;byD[d]=byD[d]||{n:0,c:0};byD[d].n++;if(x.sel!==null&&x.order[x.sel]===0)byD[d].c++});
+  run.res={n,ok,scaled:Math.round(ok/n*1000),byD,secs:Math.floor((Date.now()-run.t0)/1000)};
+  const H=hist();H.push({t:Date.now(),mode:run.mode,label:run.label,n,ok,scaled:run.res.scaled,byD});LS.set("ccao_hist",H.slice(-100));
+  run.phase="result";run.filter="all";render();window.scrollTo(0,0);
+}
+
+/* ---------- results ---------- */
+function renderResult(app){
+  const r=run.res,pass=r.scaled>=720,full=run.items.length>=60;
+  const list=run.items.map((x,i)=>({x,i})).filter(({x})=>run.filter==="all"||(run.filter==="wrong"&&(x.sel===null||x.order[x.sel]!==0))||(run.filter==="flag"&&x.flag));
+  app.innerHTML=`
+  <p class="eyebrow">${esc(run.label)} · results</p>
+  <div class="grid g2 mt" style="margin-top:12px">
+    <div class="card flat"><div class="score ${pass?"pass":"fail"}">${r.scaled}</div><p class="note" style="margin:8px 0 0">estimated score out of 1000 (pass mark 720)${full?"":" — shorter tests give a rougher estimate"}</p><h3 class="${pass?"pass":"fail"}" style="margin-top:14px">${pass?"Above the pass mark":"Below the pass mark"}</h3><p class="note" style="margin:6px 0 0">${r.ok} of ${r.n} correct · ${Math.round(r.secs/60)} min</p></div>
+    <div class="card flat"><p class="eyebrow" style="margin-bottom:12px">By domain</p>${Object.entries(r.byD).sort().map(([d,v])=>{const p=Math.round(v.c/v.n*100);return`<div class="d${d}" style="margin-bottom:12px"><div class="row" style="gap:8px"><span class="dot"></span><span style="font-size:14px">D${d} ${esc(DOMAINS[d].name)}</span><span class="spacer"></span><b style="font-family:var(--font-mono);font-size:13px">${v.c}/${v.n}</b></div><div class="bar"><i style="width:${p}%"></i></div></div>`}).join("")}</div>
+  </div>
+  <div class="row mt"><button class="btn primary" onclick="retryWrong()">Retry my wrong answers</button><button class="btn" onclick="go('setup')">Build another test</button><button class="btn" onclick="go('progress')">Progress</button><span class="spacer"></span>
+    <div class="seg"><button aria-pressed="${run.filter==="all"}" onclick="run.filter='all';renderResult($('#app'))">All</button><button aria-pressed="${run.filter==="wrong"}" onclick="run.filter='wrong';renderResult($('#app'))">Wrong</button><button aria-pressed="${run.filter==="flag"}" onclick="run.filter='flag';renderResult($('#app'))">Flagged</button></div></div>
+  <h2 class="mt2" style="margin-bottom:14px">Review</h2>
+  ${list.length?list.map(({x,i})=>{const q=x.q,right=x.sel!==null&&x.order[x.sel]===0,hits=right&&run.filter==="all"?[]:retrieve(q.stem+" "+q.opts[0]+" "+q.exp,2,{boost:q.l});
+    return`<div class="card flat d${q.d}" style="margin-bottom:14px;border-left:4px solid ${right?"hsl(var(--success))":"hsl(var(--destructive))"}">
+      <div class="row" style="gap:8px"><span class="chip">D${q.d} · ${q.l}</span><b class="${right?"pass":"fail"}">${x.sel===null?"Unanswered":right?"Correct":"Incorrect"}</b>${x.flag?'<span class="chip" style="--c:var(--d4)">⚑ flagged</span>':""}<span class="note">Q${i+1}</span></div>
+      <p style="margin:10px 0">${esc(q.stem)}</p>
+      ${x.sel!==null&&!right?`<p class="note" style="margin:0 0 6px"><b>Your answer:</b> ${esc(q.opts[x.order[x.sel]])}</p>`:""}
+      <p style="margin:0 0 8px;font-size:15px"><b class="pass">Correct:</b> ${esc(q.opts[0])}</p>
+      <p class="note" style="margin:0">${esc(q.exp)}</p>${hits.map(h=>srcCard(h,q.opts[0]+" "+q.exp)).join("")}</div>`}).join(""):'<p class="note">Nothing in this filter.</p>'}`;
+}
+function retryWrong(){
+  const wrong=run.items.filter(x=>x.sel===null||x.order[x.sel]!==0).map(x=>x.q);
+  if(!wrong.length){alert("No wrong answers — nice work.");return}
+  begin(shuffle(wrong),"practice",0,"Retry: missed questions");
+}
+
+/* ---------- knowledge base ---------- */
+let kbq="",kbl="";
+function renderKB(app){
+  app.innerHTML=`<p class="eyebrow">Knowledge base</p><h1 style="margin:8px 0 14px">Ask the notes</h1>
+  <p class="lede">Search all ${KB.length} passages from the 30 lessons. Results are ranked by BM25 relevance.</p>
+  <div class="row mt"><input type="search" id="kbq" placeholder="e.g. when is human review required" value="${esc(kbq)}" style="flex:1;min-width:240px">
+  <select id="kbl" style="height:40px;border:1px solid hsl(var(--border));background:hsl(var(--surface-lowest));padding:0 10px;border-radius:var(--radius)"><option value="">All lessons</option>${LESSONS.map(l=>`<option value="${l.id}" ${kbl===l.id?"selected":""}>${l.id} ${esc(l.title)}</option>`).join("")}</select></div>
+  <div id="kbout" class="mt"></div>`;
+  const run_=()=>{kbq=$("#kbq").value;kbl=$("#kbl").value;const out=$("#kbout");
+    if(!kbq.trim()){out.innerHTML=`<div class="grid g2">${Object.entries(DOMAINS).map(([d,o])=>`<div class="card flat d${d}" style="border-left:4px solid hsl(var(--c))"><b style="font-family:var(--font-display)">D${d} ${esc(o.name)}</b>${LESSONS.filter(l=>l.d==d).map(l=>`<p style="margin:6px 0 0;font-size:15px"><a href="${l.url}" target="_blank" rel="noopener">${l.id} ${esc(l.title)}</a> <a href="#" onclick="document.querySelector('#kbl').value='${l.id}';document.querySelector('#kbq').value='key concept exam trap';document.querySelector('#kbq').dispatchEvent(new Event('input'));return false" class="note">notes</a></p>`).join("")}</div>`).join("")}</div>`;return}
+    const hits=retrieve(kbq,10,{lesson:kbl||undefined});
+    out.innerHTML=hits.length?hits.map(h=>srcCard(h,kbq)).join(""):'<p class="note">No matching passages.</p>';};
+  $("#kbq").oninput=run_;$("#kbl").onchange=run_;run_();
+}
+
+/* ---------- progress ---------- */
+function renderProgress(app){
+  const S=stats(),H=hist().slice().reverse();
+  const rows=LESSONS.map(l=>{const s=S[l.id]||{a:0,c:0};return{l,a:s.a,c:s.c,p:s.a?s.c/s.a:null}});
+  const weak=rows.filter(r=>r.a>=2&&r.p<.7).sort((a,b)=>a.p-b.p);
+  app.innerHTML=`<p class="eyebrow">Progress</p><h1 style="margin:8px 0 14px">How you’re doing</h1>
+  ${weak.length?`<div class="card flat" style="border-left:4px solid hsl(var(--warning))"><b>Weak topics</b><p class="note" style="margin:6px 0 12px">${weak.slice(0,6).map(r=>`${r.l.id} ${esc(r.l.title)} (${Math.round(r.p*100)}%)`).join(" · ")}</p><button class="btn primary sm" onclick="practiseWeak()">Practise weak topics</button></div>`:'<p class="note">Answer a few questions in each lesson and weak topics will show up here.</p>'}
+  <h2 class="mt2" style="margin-bottom:12px">Accuracy by lesson</h2>
+  <table><thead><tr><th>Lesson</th><th>Attempts</th><th style="width:40%">Accuracy</th></tr></thead><tbody>${rows.map(r=>`<tr class="d${r.l.d}"><td><span class="dot"></span>${r.l.id} ${esc(r.l.title)}</td><td>${r.a}</td><td>${r.a?`<div class="row" style="gap:10px"><div class="bar" style="flex:1"><i style="width:${r.p*100}%"></i></div><span style="font-family:var(--font-mono);font-size:13px">${Math.round(r.p*100)}%</span></div>`:'<span class="note">—</span>'}</td></tr>`).join("")}</tbody></table>
+  <h2 class="mt2" style="margin-bottom:12px">History</h2>
+  ${H.length?`<table><thead><tr><th>When</th><th>Test</th><th>Score</th><th>Est. /1000</th></tr></thead><tbody>${H.slice(0,20).map(h=>`<tr><td>${new Date(h.t).toLocaleString()}</td><td>${esc(h.label)}</td><td>${h.ok}/${h.n}</td><td class="${h.scaled>=720?"pass":"fail"}"><b>${h.scaled}</b></td></tr>`).join("")}</tbody></table>`:'<p class="note">No tests yet.</p>'}
+  <div class="row mt2"><button class="btn" onclick="if(confirm('Erase all saved progress?')){['ccao_hist','ccao_stats','ccao_seen'].forEach(k=>localStorage.removeItem(k));render()}">Reset progress</button></div>`;
+}
+function practiseWeak(){
+  const S=stats();cfg.lessons={};LESSONS.forEach(l=>{const s=S[l.id];if(s&&s.a>=2&&s.c/s.a<.7)cfg.lessons[l.id]=true});
+  cfg.mode="practice";cfg.count=Math.min(20,poolFor(cfg).length);startCustom();
+}
+render();
+</script>
+</body>
+</html>

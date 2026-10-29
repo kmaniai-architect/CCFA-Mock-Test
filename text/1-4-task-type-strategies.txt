@@ -1,0 +1,112 @@
+
+
+## Adapting Strategy to Task Type
+Learn this interactivelyConcept Check|Build Coach
+
+## What You Need to Know
+A task type is the kind of work that you give to Claude. This objective covers four task types. They are analysis (finding what material shows), research (gathering from sources), drafting (writing a piece) and brainstorming (generating ideas). Anthropic's documentation shows Claude doing all four. Claude analyses chart data, drafts anything from a text message to a screenplay, and generates viewpoints and recommendations as an ideas partner. One prompting style does not fit all four. Each type gets the best results from a different briefing shape. The briefing shape is what the prompt contains.
+
+This lesson uses one made-up example throughout: a lettings agency. Its manager has four jobs this month. She must learn why tenancy renewals fell and compare other agencies' tenant screening. She must also write to landlords about a new fee and find ways to win more landlords.
+
+## Analysis: Material Plus Questions
+Analysis starts with the material. Attach the spreadsheet or paste the survey results, because Claude works from what you give it. Uploads give Claude the real artefacts, even documents that are hundreds of pages long.
+
+Then name the questions that the analysis must answer and the decision that the analysis will inform. "Analyse this data" gives Claude no target, so Claude describes the data rather than analyses it. The manager attaches her renewals spreadsheet and asks why renewals fell, which properties lost most tenants, and what should change before next year. Ask for main findings, supporting evidence and caveats. Also ask how Claude reached each conclusion, so that you can check the reasoning. Checking that reasoning is Domain 2 work.
+
+## Research: A Scoped Question, Not a Topic
+For multi-source questions, Research works agentically: Claude runs multiple searches, and each search uses the results of earlier searches. Claude then returns a report with citations that are easy to check. For a quick current fact, an ordinary web search suffices. The documentation separates the two in this way: web search suits straightforward factual queries that one or two searches answer. Research suits thorough gathering across many searches.
+
+Either way, brief a research question, not a topic. State the scope, the angle, and what the findings must inform. The manager asks Research how agencies of her size locally screen tenants, so that she can decide whether to change her own screening. A bare topic gives the searches no direction, and Claude returns an unfocused report. Then verify the citations that matter.
+
+## Drafting: The Full Brief
+Drafting needs the full five-component brief from objective 1.1: audience, purpose, tone, length and format. Add an example when house style matters, because an example is one of the most reliable ways to guide format, tone and structure. For the fee letter, the manager names landlords as the audience and attaches a past letter. Expect to iterate (objective 1.3). For any long piece, stage the work (objective 1.2): outline first, then sections.
+
+## Brainstorming: Wide, Then Narrow
+Brainstorming reverses the drafting approach. First, ask for many different ideas: quantity and range, such as twenty ideas that include some unconventional ones. To get ideas beyond the obvious ones, ask for them explicitly, rather than leaving Claude to infer that you want them. Withhold judgement, because heavy constraints reduce the variety, and variety is the purpose of this step. Then narrow the ideas in a second step: apply your criteria, make a shortlist, and develop the ideas that remain. The manager asks for twenty ways to win landlords and applies her budget limit only at the shortlist step. This two-step method makes Claude a genuine ideas partner instead of a generator of three safe suggestions.
+
+## The Diagnostic Habit
+Name the type, then pick the shape.
+
+Analysis: material plus questions.
+
+Research: a scoped, cited question.
+
+Drafting: a full brief plus iteration.
+
+Brainstorming: many ideas first, then a shortlist.
+
+## In the exam
+The exam guide names these four task types. The tested skill is diagnostic: read the workplace situation, name the type, and brief in the shape of that type. Wrong answers mix up the task types: they apply the briefing of one task type to another task type. Examples are a tightly constrained brainstorm, a one-line research topic, an analysis with no material attached and a draft with no audience. The last example is the recurring wrong answer on drafting. Choosing which product feature or model to use belongs to Domain 3. This objective covers the briefing that follows.
+Watch for briefings that suit the wrong task type
+Most questions hide the error in a plausible plan that applies the right briefing to the wrong task type. Check each part of a multi-task option separately. One mismatch, such as constraints at the first step of a brainstorm, where you want many ideas, makes the whole option wrong.
+
+The wide-then-narrow sequence of brainstorming is standard facilitation practice, applied to Claude. It is not a rule from a product manual.
+
+## Exam Traps
+
+Exam Trap
+Asking for an analysis without naming the questions it must answer
+Material with no questions attached produces a description of the data, not an analysis. The professional brief supplies the material, the questions, and the decision the findings will inform, and asks for findings, evidence and caveats.
+
+Exam Trap
+Opening a brainstorm with tight constraints and a fixed number of acceptable directions
+Constraints applied at the divergence step remove the variety the exercise exists to produce. Criteria belong in the convergence step, where they shortlist a wide field rather than strangling it before it exists.
+
+Exam Trap
+Briefing research as a topic rather than a scoped question
+An unscoped topic returns an unfocused report. A research question states the scope, the angle and what the findings must inform, which tells the searching what to investigate and gives the citations claims to support.
+
+## Practice Scenario
+A university department administrator has four tasks this week: work out why tutorial attendance dropped this term; learn how three other universities run applicant open days; write the new-term welcome letter to students; and generate ideas for increasing open-day attendance. She intends to use Claude on all four. Which working plan matches strategy to task?
+Option ARun every task through Research, since cited sources raise the quality of any output and one consistent method is easier to manage across a busy week
+Option BUse Claude for the letter and the ideas only, handling the attendance analysis and the open-day research personally, since those two tasks call for real judgement
+Option CAsk Claude why attendance drops at universities generally, answer the open-day comparison from one quick web search, send a one-line request for the welcome letter, and specify exactly three safe, sensible ideas at the start
+Option DAttach the attendance data and name the questions for the analysis, give Research a scoped open-day question, brief the letter fully with last year’s letter as the example, and ask for many ideas before shortlisting
+
+Check Answer
+
+## Build Exercise
+Build Exercise
+
+## Brief All Four Task Types
+
+Difficulty
+
+30 minutes
+
+What you'll learn
+How to recognise the task type in a real piece of work
+How to brief an analysis with material, questions and the decision it informs
+How to scope a research question with an angle and a purpose
+How to open a brainstorm with many ideas and narrow them in a second step
+
+List four real tasks from your own week, one per type: an analysis, a research question, a document to draft, and a problem needing ideasWhy: The diagnostic habit forms only with real work; the four types look obvious in theory and are hard to tell apart in practice.
+You should see: Four one-line task descriptions, each labelled with its type.
+Stuck? Get a nudge
+
+Write the analysis brief: attach the actual material, then name the questions it must answer and the decision it informsWhy: Material plus questions is what separates an analysis from a description of the data.
+You should see: A brief with the real file attached and two or three named questions.
+Stuck? Get a nudge
+
+Write the research brief as a scoped question with an angle and a purpose, and note whether it warrants Research or a quick web searchWhy: A scoped question directs the searching; a bare topic returns an unfocused report.
+You should see: A research question stating scope, angle and what the findings must inform, plus a one-line tool call.
+Stuck? Get a nudge
+
+Write the drafting brief with the full five components plus an exemplar, and the brainstorming brief asking for quantity and range with criteria held backWhy: These two shapes are opposites: the draft needs full specification, and the brainstorm needs deliberate openness.
+You should see: A complete drafting brief with an exemplar attached, and a brainstorming ask for twenty ideas including unconventional ones.
+Stuck? Get a nudge
+
+Run all four, then note where a wrong-shaped brief would have cost you a rework cycleWhy: Seeing the cost of a mismatched brief on your own work is what makes the diagnostic habit permanent.
+You should see: Four outputs plus a short note per task naming the mismatched brief you avoided.
+Stuck? Get a nudge
+
+## Sources
+Use research on Claude — Anthropic
+When should I use web search, extended thinking, and research? — Anthropic
+What are some things I can use Claude for? — Anthropic
+Upload files to Claude — Anthropic
+Prompting best practices — Anthropic
+Drill This DomainBuild ExercisesQuick ReferenceGlossary
+Mark Complete
+
+Previous LessonIterating Prompts to Improve OutputNext LessonEvaluating Outputs for Accuracy and Completeness
